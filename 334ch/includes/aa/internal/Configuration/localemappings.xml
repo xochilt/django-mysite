@@ -1,0 +1,202 @@
+<?xml version="1.0" ?>
+<locale_mappings hash="false">
+	<country name="United Arab Emirates" iso_code="ae" custom_region="EMEA" custom_country="ae" supported_languages="en,ar" />
+	<country name="Afghanistan" iso_code="af" custom_region="APJ" custom_country="af" supported_languages="en" />
+	<country name="Antigua and Barbuda" iso_code="ag" custom_region="LA" custom_country="ag" supported_languages="en,es"/>
+	<country name="Anguilla" iso_code="ai" custom_region="LA" custom_country="ai" supported_languages="en,es"/>
+	<country name="Albania" iso_code="al" custom_region="EMEA" custom_country="al" supported_languages="en"/>
+	<country name="Armenia" iso_code="am" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Netherlands Antilles" iso_code="an" custom_region="LA" custom_country="an" supported_languages="en,es"/>
+	<country name="Angola" iso_code="ao" custom_region="EMEA" custom_country="ao" supported_languages="pt,en,fr"/>
+	<country name="Argentina" iso_code="ar" custom_region="LA" custom_country="ar" supported_languages="es,en"/>
+	<country name="Austria" iso_code="at" custom_region="EMEA" custom_country="at" supported_languages="de,en"/>
+	<country name="Australia" iso_code="au" custom_region="APJ" custom_country="au" supported_languages="en"/>
+	<country name="Aruba" iso_code="aw" custom_region="LA" custom_country="aw" supported_languages="en,es"/>
+	<country name="Azerbaijan" iso_code="az" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Bosnia and Herzegovina" iso_code="ba" custom_region="EMEA" custom_country="ba" supported_languages="en"/>
+	<country name="Barbados" iso_code="bb" custom_region="LA" custom_country="bb" supported_languages="en,es"/>
+	<country name="Bangladesh" iso_code="bd" custom_region="APJ" custom_country="bd" supported_languages="en"/>
+	<country name="Belgium" iso_code="be" custom_region="EMEA" custom_country="be" supported_languages="fr,en,nl"/>
+	<country name="Burkina Faso" iso_code="bf" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Bulgaria" iso_code="bg" custom_region="EMEA" custom_country="bg" supported_languages="en"/>
+	<country name="Bahrain" iso_code="bh" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Burundi" iso_code="bi" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Benin" iso_code="bj" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Bermuda" iso_code="bm" custom_region="LA" custom_country="bm" supported_languages="en,es"/>
+	<country name="Brunei Darussalam" iso_code="bn" custom_region="APJ" custom_country="bn" supported_languages="en"/>
+	<country name="Bolivia, Plurinational State of" iso_code="bo" custom_region="LA" custom_country="bo" supported_languages="es,en"/>
+	<country name="Brazil" iso_code="br" custom_region="LA" custom_country="br" supported_languages="pt,en"/>
+	<country name="Bahamas" iso_code="bs" custom_region="LA" custom_country="bs" supported_languages="en,es"/>
+	<country name="Bhutan" iso_code="bt" custom_region="APJ" custom_country="bt" supported_languages="en"/>
+	<country name="Botswana" iso_code="bw" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Belarus" iso_code="by" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Belize" iso_code="bz" custom_region="LA" custom_country="bz" supported_languages="en,es"/>
+	<country name="Canada" iso_code="ca" custom_region="CA" custom_country="ca" supported_languages="en,fr"/>
+	<country name="Congo, the Democratic Republic of the" iso_code="cd" custom_region="EMEA" custom_country="cd" supported_languages="fr,en"/>
+	<country name="Central African Republic" iso_code="cf" custom_region="EMEA" custom_country="cf" supported_languages="en,fr"/>
+	<country name="Congo" iso_code="cg" custom_region="EMEA" custom_country="cg" supported_languages="fr,en"/>
+	<country name="Switzerland" iso_code="ch" custom_region="EMEA" custom_country="ch" supported_languages="de,en,fr"/>
+	<country name="C&#244;te d'Ivoire" iso_code="ci" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Chile" iso_code="cl" custom_region="LA" custom_country="cl" supported_languages="es,en"/>
+	<country name="Cameroon" iso_code="cm" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="China" iso_code="cn" custom_region="APJ" custom_country="cn" supported_languages="zh,en"/>
+	<country name="Colombia" iso_code="co" custom_region="LA" custom_country="co" supported_languages="es,en"/>
+	<country name="Costa Rica" iso_code="cr" custom_region="LA" custom_country="cr" supported_languages="es,en"/>
+	<country name="Serbia and Montenegro (transitional)" iso_code="cs" custom_region="EMEA" custom_country="cs" supported_languages="en"/>
+	<country name="Cape Verde" iso_code="cv" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Cyprus" iso_code="cy" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Czech Republic" iso_code="cz" custom_region="EMEA" custom_country="cz" supported_languages="cs,en"/>
+	<country name="Germany" iso_code="de" custom_region="EMEA" custom_country="de" supported_languages="de,en"/>
+	<country name="Djibouti" iso_code="dj" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Denmark" iso_code="dk" custom_region="EMEA" custom_country="dk" supported_languages="da,en"/>
+	<country name="Dominica" iso_code="dm" custom_region="LA" custom_country="dm" supported_languages="en,es"/>
+	<country name="Dominican Republic" iso_code="do" custom_region="LA" custom_country="do" supported_languages="es,en"/>
+	<country name="Algeria" iso_code="dz" custom_region="EMEA" custom_country="dz" supported_languages="fr,ar,en"/>
+	<country name="Ecuador" iso_code="ec" custom_region="LA" custom_country="ec" supported_languages="es,en"/>
+	<country name="Estonia" iso_code="ee" custom_region="EMEA" custom_country="ee" supported_languages="en"/>
+	<country name="Egypt" iso_code="eg" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Eritrea" iso_code="er" custom_region="EMEA" custom_country="er" supported_languages="en"/>
+	<country name="Spain" iso_code="es" custom_region="EMEA" custom_country="es" supported_languages="es,en"/>
+	<country name="Ethiopia" iso_code="et" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Finland" iso_code="fi" custom_region="EMEA" custom_country="fi" supported_languages="fi,en"/>
+	<country name="Fiji" iso_code="fj" custom_region="APJ" custom_country="fj" supported_languages="en"/>
+	<country name="Faroe Islands" iso_code="fo" custom_region="EMEA" custom_country="fo" supported_languages="en"/>
+	<country name="France" iso_code="fr" custom_region="EMEA" custom_country="fr" supported_languages="fr,en"/>
+	<country name="Gabon" iso_code="ga" custom_region="EMEA" custom_country="ga" supported_languages="fr,en"/>
+	<country name="United Kingdom" iso_code="gb" custom_region="EMEA" custom_country="uk" supported_languages="en"/>
+	<country name="Grenada" iso_code="gd" custom_region="LA" custom_country="gd" supported_languages="en,es"/>
+	<country name="Georgia" iso_code="ge" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Guyana" iso_code="gf" custom_region="EMEA" custom_country="gf" supported_languages="en,fr"/>
+	<country name="Ghana" iso_code="gh" custom_region="EMEA" custom_country="gh" supported_languages="en,fr"/>
+	<country name="Gambia" iso_code="gm" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Guinea" iso_code="gn" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Equatorial Guinea" iso_code="gq" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Greece" iso_code="gr" custom_region="EMEA" custom_country="gr" supported_languages="el,en"/>
+	<country name="Guatemala" iso_code="gt" custom_region="LA" custom_country="gt" supported_languages="es,en"/>
+	<country name="Guam" iso_code="gu" custom_region="APJ" custom_country="gu" supported_languages="en"/>
+	<country name="Guinea-Bissau" iso_code="gw" custom_region="EMEA" custom_country="gw" supported_languages="en"/>
+	<country name="Guyana" iso_code="gy" custom_region="LA" custom_country="gy" supported_languages="en,es"/>
+	<country name="Hong Kong" iso_code="hk" custom_region="APJ" custom_country="hk" supported_languages="zh,en"/>
+	<country name="Honduras" iso_code="hn" custom_region="LA" custom_country="hn" supported_languages="es,en"/>
+	<country name="Croatia" iso_code="hr" custom_region="EMEA" custom_country="hr" supported_languages="en"/>
+	<country name="Haiti" iso_code="ht" custom_region="LA" custom_country="ht" supported_languages="en,es"/>
+	<country name="Hungary" iso_code="hu" custom_region="EMEA" custom_country="hu" supported_languages="hu,en"/>
+	<country name="Indonesia" iso_code="id" custom_region="APJ" custom_country="id" supported_languages="en"/>
+	<country name="Ireland" iso_code="ie" custom_region="EMEA" custom_country="ie" supported_languages="en"/>
+	<country name="Israel" iso_code="il" custom_region="EMEA" custom_country="il" supported_languages="he,en"/>
+	<country name="India" iso_code="in" custom_region="APJ" custom_country="in" supported_languages="en"/>
+	<country name="Iraq" iso_code="iq" custom_region="EMEA" custom_country="iq" supported_languages="en,ar"/>
+	<country name="Iceland" iso_code="is" custom_region="EMEA" custom_country="is" supported_languages="en"/>
+	<country name="Italy" iso_code="it" custom_region="EMEA" custom_country="it" supported_languages="it,en"/>
+	<country name="Jamaica" iso_code="jm" custom_region="LA" custom_country="jm" supported_languages="en,es"/>
+	<country name="Jordan" iso_code="jo" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Japan" iso_code="jp" custom_region="Japan" custom_country="jp" supported_languages="ja,en"/>
+	<country name="Kenya" iso_code="ke" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Kyrgyzstan" iso_code="kg" custom_region="APJ" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Cambodia" iso_code="kh" custom_region="APJ" custom_country="kh" supported_languages="en"/>
+	<country name="Kiribati" iso_code="ki" custom_region="APJ" custom_country="ki" supported_languages="en"/>
+	<country name="Comoros" iso_code="km" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Saint Kitts and Nevis" iso_code="kn" custom_region="LA" custom_country="kn" supported_languages="en,es"/>
+	<country name="Korea, Republic of" iso_code="kr" custom_region="APJ" custom_country="kr" supported_languages="ko,en"/>
+	<country name="Kuwait" iso_code="kw" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Cayman Islands" iso_code="ky" custom_region="LA" custom_country="ky" supported_languages="en,es"/>
+	<country name="Kazakhstan" iso_code="kz" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Lao People's Democratic Republic" iso_code="la" custom_region="APJ" custom_country="la" supported_languages="en"/>
+	<country name="Lebanon" iso_code="lb" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Saint Lucia" iso_code="lc" custom_region="LA" custom_country="lc" supported_languages="en,es"/>
+	<country name="Sri Lanka" iso_code="lk" custom_region="APJ" custom_country="lk" supported_languages="en"/>
+	<country name="Liberia" iso_code="lr" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Lesotho" iso_code="ls" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Lithuania" iso_code="lt" custom_region="EMEA" custom_country="lt" supported_languages="en,ru"/>
+	<country name="Luxembourg" iso_code="lu" custom_region="EMEA" custom_country="lu" supported_languages="fr,en"/>
+	<country name="Latvia" iso_code="lv" custom_region="EMEA" custom_country="lv" supported_languages="en"/>
+	<country name="Libya" iso_code="ly" custom_region="EMEA" custom_country="ly" supported_languages="en,ar"/>
+	<country name="Morocco" iso_code="ma" custom_region="EMEA" custom_country="ma" supported_languages="ar,en,fr"/>
+	<country name="Moldova, Republic of" iso_code="md" custom_region="EMEA" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Montenegro" iso_code="me" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Saint Martin (French)" iso_code="mf" custom_region="LA" custom_country="nm" supported_languages="en"/>
+	<country name="Madagascar" iso_code="mg" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Macedonia, the former Yugoslav Republic of" iso_code="mk" custom_region="EMEA" custom_country="mk" supported_languages="en"/>
+	<country name="Mali" iso_code="ml" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Myanmar" iso_code="mm" custom_region="APJ" custom_country="mm" supported_languages="en"/>
+	<country name="Mongolia" iso_code="mn" custom_region="APJ" custom_country="mn" supported_languages="en"/>
+	<country name="Martinique" iso_code="mq" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Mauritania" iso_code="mr" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Montserrat" iso_code="ms" custom_region="EMEA" custom_country="ms" supported_languages="en,fr"/>
+	<country name="Malta" iso_code="mt" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Mauritius" iso_code="mu" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Maldives" iso_code="mv" custom_region="APJ" custom_country="mv" supported_languages="en"/>
+	<country name="Malawi" iso_code="mw" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Mexico" iso_code="mx" custom_region="LA" custom_country="mx" supported_languages="es,en"/>
+	<country name="Malaysia" iso_code="my" custom_region="APJ" custom_country="my" supported_languages="en"/>
+	<country name="Mozambique" iso_code="mz" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Namibia" iso_code="na" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="New Caledonia" iso_code="nc" custom_region="APJ" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Niger" iso_code="ne" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Nigeria" iso_code="ng" custom_region="EMEA" custom_country="ng" supported_languages="en"/>
+	<country name="Nicaragua" iso_code="ni" custom_region="LA" custom_country="ni" supported_languages="es,en"/>
+	<country name="Netherlands" iso_code="nl" custom_region="EMEA" custom_country="nl" supported_languages="nl,en"/>
+	<country name="Norway" iso_code="no" custom_region="EMEA" custom_country="no" supported_languages="no,en"/>
+	<country name="Nepal" iso_code="np" custom_region="APJ" custom_country="np" supported_languages="en"/>
+	<country name="New Zealand" iso_code="nz" custom_region="APJ" custom_country="nz" supported_languages="en"/>
+	<country name="Oman" iso_code="om" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Panama" iso_code="pa" custom_region="LA" custom_country="pa" supported_languages="es,en"/>
+	<country name="Peru" iso_code="pe" custom_region="LA" custom_country="pe" supported_languages="es,en"/>
+	<country name="French Polynesia" iso_code="pf" custom_region="APJ" custom_country="pf" supported_languages="en,fr"/>
+	<country name="Papua New Guinea" iso_code="pg" custom_region="APJ" custom_country="pg" supported_languages="en"/>
+	<country name="Philippines" iso_code="ph" custom_region="APJ" custom_country="ph" supported_languages="en"/>
+	<country name="Pakistan" iso_code="pk" custom_region="APJ" custom_country="pk" supported_languages="en"/>
+	<country name="Poland" iso_code="pl" custom_region="EMEA" custom_country="pl" supported_languages="pl,en"/>
+	<country name="Puerto Rico" iso_code="pr" custom_region="LA" custom_country="pr" supported_languages="en,es"/>
+	<country name="Portugal" iso_code="pt" custom_region="EMEA" custom_country="pt" supported_languages="pt,en"/>
+	<country name="Palau" iso_code="pw" custom_region="APJ" custom_country="pw" supported_languages="en"/>
+	<country name="Paraguay" iso_code="py" custom_region="LA" custom_country="py" supported_languages="es,en"/>
+	<country name="Qatar" iso_code="qa" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="R&#233;union" iso_code="re" custom_region="APJ" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Romania" iso_code="ro" custom_region="EMEA" custom_country="ro" supported_languages="ro,en"/>
+	<country name="Serbia" iso_code="rs" custom_region="EMEA" custom_country="yu" supported_languages="en"/>
+	<country name="Russian Federation" iso_code="ru" custom_region="EMEA" custom_country="ru" supported_languages="ru,en"/>
+	<country name="Rwanda" iso_code="rw" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Saudi Arabia" iso_code="sa" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Seychelles" iso_code="sc" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Sweden" iso_code="se" custom_region="EMEA" custom_country="se" supported_languages="sv,en"/>
+	<country name="Singapore" iso_code="sg" custom_region="APJ" custom_country="sg" supported_languages="en"/>
+	<country name="Slovenia" iso_code="si" custom_region="EMEA" custom_country="si" supported_languages="en"/>
+	<country name="Slovakia" iso_code="sk" custom_region="EMEA" custom_country="sk" supported_languages="sk,cs,en"/>
+	<country name="Sierra Leone" iso_code="sl" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Senegal" iso_code="sn" custom_region="EMEA" custom_country="sn" supported_languages="fr,ar,en"/>
+	<country name="Somalia" iso_code="so" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Suriname" iso_code="sr" custom_region="LA" custom_country="sr" supported_languages="en,es"/>
+	<country name="El Salvador" iso_code="sv" custom_region="LA" custom_country="sv" supported_languages="es,en"/>
+	<country name="Sint Maarten (Dutch part)" iso_code="sx" custom_region="LA" custom_country="sx" supported_languages="en,nl"/>
+	<country name="Swaziland" iso_code="sz" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Turks and Caicos Islands" iso_code="tc" custom_region="LA" custom_country="tc" supported_languages="en,es"/>
+	<country name="Chad" iso_code="td" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Togo" iso_code="tg" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Thailand" iso_code="th" custom_region="APJ" custom_country="th" supported_languages="en"/>
+	<country name="Tajikistan" iso_code="tj" custom_region="APJ" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Turkmenistan" iso_code="tm" custom_region="APJ" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Tunisia" iso_code="tn" custom_region="EMEA" custom_country="tn" supported_languages="fr,ar,en"/>
+	<country name="Turkey" iso_code="tr" custom_region="EMEA" custom_country="tr" supported_languages="tr,en"/>
+	<country name="Trinidad and Tobago" iso_code="tt" custom_region="LA" custom_country="tt" supported_languages="en,es"/>
+	<country name="Taiwan, Province of China" iso_code="tw" custom_region="APJ" custom_country="tw" supported_languages="zh,en"/>
+	<country name="Tanzania, United Republic of" iso_code="tz" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Ukraine" iso_code="ua" custom_region="EMEA" custom_country="ua" supported_languages="ru,en"/>
+	<country name="Uganda" iso_code="ug" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="United States" iso_code="us" custom_region="US" custom_country="us" supported_languages="en"/>
+	<country name="Uruguay" iso_code="uy" custom_region="LA" custom_country="uy" supported_languages="es,en"/>
+	<country name="Uzbekistan" iso_code="uz" custom_region="APJ" custom_country="rs" supported_languages="ru,en"/>
+	<country name="Saint Vincent and the Grenadines" iso_code="vc" custom_region="LA" custom_country="vc" supported_languages="en,es"/>
+	<country name="Venezuela, Bolivarian Republic of" iso_code="ve" custom_region="LA" custom_country="ve" supported_languages="es,en"/>
+	<country name="Virgin Islands, British" iso_code="vg" custom_region="LA" custom_country="vg" supported_languages="en,es"/>
+	<country name="Virgin Islands, U.S." iso_code="vi" custom_region="LA" custom_country="vi" supported_languages="en,es"/>
+	<country name="Viet Nam" iso_code="vn" custom_region="APJ" custom_country="vn" supported_languages="en"/>
+	<country name="Vanuatu" iso_code="vu" custom_region="APJ" custom_country="vu" supported_languages="en"/>
+	<country name="Samoa" iso_code="ws" custom_region="APJ" custom_country="ws" supported_languages="en"/>
+	<country name="Kosovo (temporary)" iso_code="xk" custom_region="EMEA" custom_country="xk" supported_languages="en"/>
+	<country name="Yemen" iso_code="ye" custom_region="EMEA" custom_country="ae" supported_languages="en,ar"/>
+	<country name="Mayotte" iso_code="yt" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="South Africa" iso_code="za" custom_region="EMEA" custom_country="za" supported_languages="en"/>
+	<country name="Zambia" iso_code="zm" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	<country name="Zimbabwe" iso_code="zw" custom_region="EMEA" custom_country="ed" supported_languages="en,fr"/>
+	</locale_mappings>

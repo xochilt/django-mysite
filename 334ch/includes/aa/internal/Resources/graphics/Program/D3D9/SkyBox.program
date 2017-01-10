@@ -1,0 +1,17 @@
+vertex_program VSskyBox hlsl
+{
+	source SkyboxVertexShader.hlsl
+	entry_point main
+	target vs_3_0
+	default_params
+	{
+		param_named_auto wvp worldviewproj_matrix
+	}
+}
+
+fragment_program PSskyBox hlsl
+{
+	source SkyBoxPixelShader.hlsl
+	entry_point main
+	target ps_3_0
+}

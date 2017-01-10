@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SysinfoFilter version="2" version-description="First revision with a version">
+
+	<!--
+		No device will be profiled unless you have at least ONE of its
+		capabilities listed in the <includeDevices/> tag.  This is regardless
+		of if you add it below as a <Device/> tag that is child to <SysinfoFilter/>
+	-->
+	<IncludeDevices>
+		<Device capability="OperatingSystem" />
+		<Device capability="Service" />
+	</IncludeDevices>
+
+	<!-- 
+		 For each device capability, this section lists the property keys that will 
+		 be profiled.  A VideoCard with capabilities PCI|VideoCard will include all 
+		 property keys from both the PCI and VideoCard sections below.
+	 -->
+	<Device capability="OperatingSystem">
+        <Property key="StartupProcessInfo" name="Windows Startup Programs" type="STRINGARRAY" />
+    </Device>
+	<Device capability="Service">
+		<Property key="ServicesTable" name="Services Table" type="TABLE" />
+    </Device>
+</SysinfoFilter>

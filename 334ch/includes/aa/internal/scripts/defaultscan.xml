@@ -1,0 +1,94 @@
+<Script name="hardwarescan">
+	<TestSet>
+		<Device capabilities="HardDrive"/>
+		<Test key="SMARTStatusTest"/>
+		<Test key="SMARTThresholdsTest"/>
+		<Test key="TargetedReadTest"/>
+		<Test key="RandomSeekTest" module="pcdrharddrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrharddrive2"/>
+		<Test key="RandomSeekTest" module="pcdrssd"/>
+		<Test key="SSDWearLevelTest" module="pcdrssd"/>
+		<Test key="IntelSSDWearLevelTest" module="pcdrssd"/>
+		<Test key="SMARTShortSelfTest">
+			<Parameter key="TimeoutPrompt" value="false"/>
+		</Test>
+		<Device capabilities="HardDrive"/>
+		<!-- Linear Read Test 1 (Inner 5GB) -->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+5GB"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+		<!-- Linear Read Test 2 (Outer 5GB) -->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MAX-5GB"/>			 
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+		
+		<!-- Linear Read Test Inner 15 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+15GB"/>
+			<Parameter key="SectorPercentToTest" value="20"/>	
+		</Test>
+	
+		<!-- Linear Read Test Outer 15 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MAX-15GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="20"/>	
+		</Test>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="Optical"/>
+		<Test key="DRAMTest" module="pcdrobistdl">
+			<Parameter key="UpFrontMediaCheck" value="false"/>
+		</Test>
+		<Test key="FlashROMTest" module="pcdrobistdl"/>
+		<Test key="MainICTest" module="pcdrobistdl">
+			<Parameter key="PromptUserForMedia" value="false"/>
+		</Test>
+		<!-- The OPU test cannot run with media present.
+		    <Test key="OpuTest" module="pcdrobistdl"/>
+		-->
+	</TestSet>
+	
+	<TestSet>
+		<Device capabilities="CMOS"/>
+		<Test key="ChecksumTest" module="pcdrcmos"/>
+		<Test key="PatternTest" module="pcdrcmos"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="CPU"/>
+		<ExcludeTest key="StressTest"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="Memory"/>
+		<Test key="AdvancedPatternTest" module="pcdrmemory2"/>
+		<Test key="WindowsMemoryTest" module="pcdrmemory2"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="PCIExpress"/>
+		<Test key="StatusTest" module="pcdrpciexpress"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="PciBus"/>
+		<Test key="ConfigTest" module="pcdrpci"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="SystemBoard"/>
+		<Test key="RTCAccuracyTest" module="pcdrsystemboard"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="Battery"/>
+		<Test key="BatteryLifeTest" module="pcdrbattery"/>
+	</TestSet>
+	
+	<TestSet>
+		<Device capabilities="VideoCard"/>
+		<Test key="PrimarySurfaceTest" module="pcdr2d3dvideo"/>
+		<Test key="VideoMemoryTest" module="pcdr2d3dvideo"/>
+	</TestSet>
+</Script>

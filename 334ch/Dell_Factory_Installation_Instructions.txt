@@ -1,0 +1,19 @@
+Installation instructions for PC-Doctor Inc. factory deployment via msi.
+
+1) unzip the files
+2) open an elevated command prompt
+3) cd to the directory containing the .msi file
+4) execute: msiexec /qn /i {name of .msi file} FACTORY=1 FASTOEM=1
+	Example to install DSC 64-bit using factory mode: 
+	msiexec /qn /i PCDoctor_bundle_dell_x64.msi FACTORY=1 FASTOEM=1
+
+	
+5) Optionally, include a specific variant:
+	msiexec /qn /i PCDoctor_bundle_dell_x64.msi FACTORY=1 FASTOEM=1 VARIANT=aa
+	msiexec /qn /i PCDoctor_bundle_dell_x64.msi FACTORY=1 FASTOEM=1 VARIANT=dsc
+	
+6) Optionally, specify the toolbar to be visibly enabled:
+	msiexec /qn /i PCDoctor_bundle_dell_x64.msi FACTORY=1 FASTOEM=1 VARIANT=aa TOOLBAR=1
+	msiexec /qn /i PCDoctor_bundle_dell_x64.msi FACTORY=1 FASTOEM=1 VARIANT=dsc TOOLBAR=1
+
+Note: replace values in '{}' with appropriate value. If FASTOEM is specified, /qn must also be used.

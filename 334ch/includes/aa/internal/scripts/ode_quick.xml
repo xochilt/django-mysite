@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script name="quickTest" description="quickTest" haltOnResults="" passes="1">
+	<TestSet description="CPU" isParallel="true">
+		<Device capabilities="CPU"/>
+		<ExcludeTest key="StressTest"/>
+	</TestSet>
+	<TestSet description="Memory" isParallel="true">
+		<Test key="AddressTest" module="pcdrmemory2"/>
+	</TestSet>
+	<TestSet description="Video" isParallel="true">
+		<Test key="SLITest" module="pcdr2d3dvideo"/>
+		<Test key="VideoMemoryTest" module="pcdr2d3dvideo"/>
+		<Test key="PrimarySurfaceTest" module="pcdr2d3dvideo"/>
+		<Test key="GPUPipelineDataTest" module="pcdr2d3dvideo"/>
+	</TestSet>
+	<TestSet description="Optical" isParallel="true">
+		<Test key="DRAMTest" module="pcdrobistdl">
+			<Parameter key="UpFrontMediaCheck" value="false"/>
+		</Test>
+		<Test key="FlashROMTest" module="pcdrobistdl"/>
+		<Test key="MainICTest" module="pcdrobistdl"/>
+		<Test key="OpuTest" module="pcdrobistdl"/>
+		<Test key="TrayOutTest" module="pcdrobistdl"/>
+		<Test key="SpindleTest" module="pcdrobistdl"/>
+		<Test key="TrayInTest" module="pcdrobistdl"/>
+	</TestSet>
+	<TestSet description="SMART Short Self Test - nonSystem Drives" isParallel="true">
+		<device capabilities="HardDrive">
+			<not>
+				<property key="IsSystemDrive"/>
+			</not>
+		</device>
+		<Test key="SMARTShortSelfTest"/>
+	</TestSet>
+	<TestSet description="HDD/SSD" isParallel="true">
+		<Device capabilities="HardDrive"/>
+		<Test key="SMARTStatusTest"/>
+		<Test key="SMARTThresholdsTest"/>
+		<Test key="TargetedReadTest"/>
+		<Test key="SelfTest" module="pcdrscsi2"/>
+		<Test key="SelfTestBGShort" module="pcdrscsi2"/>
+		<Test key="FunnelSeekTest">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+		
+		<!-- Linear Read Test Inner 5 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+5GB"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+		
+		<!-- Linear Read Test Outer 5 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MAX-5GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+
+		<!-- Linear Read Test Inner 20 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+20GB"/>
+			<Parameter key="SectorPercentToTest" value="20"/>
+		</Test>
+
+		<!-- Linear Read Test Outer 20 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MAX-20GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="20"/>
+		</Test>
+	</TestSet>
+		<!-- This test is not run in parallel on the System Drive
+		 to avoid slow test run time -->
+	<TestSet description="SMART Short Self Test - System Drive" isParallel="false">
+		<device capabilities="SystemDrive"/>
+		<Test key="SMARTShortSelfTest"/>
+	</TestSet>
+	<TestSet description="StressTest" isParallel="true" minTimePerTest="90">
+		<Test key="StressTest" module="pcdrcpu">
+			<Parameter key="TestRunTime" value="90"/>
+		</Test>
+		<Test key="AdvancedPatternTest" module="pcdrmemory2"/>
+		<Test key="RandomSeekTest" module="pcdrharddrive2">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+		<Test key="RandomSeekTest" module="pcdrssd">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+	</TestSet>
+	<TestSet description="Video1StressTest" isParallel="true">
+		<Device type="VideoCard">
+			<inventory-check>
+				<device type="VideoCard">
+					<not>
+						<property key="HybridGPUCategory"/>
+					</not>
+				</device>
+			</inventory-check>
+		</Device>
+		<Test key="TLPipelineStressTest" module="pcdr2d3dvideo">
+			<Parameter key="AnimationLength" value="90000"/>
+		</Test>
+	</TestSet>
+	<TestSet description="Video2StressTest" isParallel="true">
+		<Device type="VideoCard">
+			<inventory-check>
+				<device type="VideoCard">
+					<property key="HybridGPUCategory"/>
+				</device>
+			</inventory-check>
+		</Device>
+		<Test key="TLPipelineStressTest" module="pcdr2d3dvideo">
+			<Parameter key="AnimationLength" value="45000"/>
+		</Test>
+	</TestSet>
+</Script>

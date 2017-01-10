@@ -1,0 +1,51 @@
+#<header>
+# <desc>
+#  The pcdravi metadata file
+# </desc>
+#</header>
+
+Module.Type=DIAG
+Module.Guid=pcdravi
+Module.Version=6.5.000000001.00
+Module.BuildDate=00000000
+Module.Capabilities=AVI|VideoCard|SoundCard
+Module.EnumTests=false
+Module.LocalizedLibraries=libDapi5
+
+DeviceProperty.1.Key=DeviceUID
+DeviceProperty.1.Category=Internal
+DeviceProperty.1.Type=STRING
+DeviceProperty.1.Capability=NIL
+
+DeviceProperty.2.Key=LocationUID
+DeviceProperty.2.Category=Internal
+DeviceProperty.2.Type=STRING
+DeviceProperty.2.Capability=NIL
+
+DeviceProperty.3.Key=ModelUID
+DeviceProperty.3.Category=Internal
+DeviceProperty.3.Type=STRING
+DeviceProperty.3.Capability=NIL
+
+DeviceProperty.4.Key=__ErrorCodeIdentifier
+DeviceProperty.4.Category=Internal|ErrorDevId
+DeviceProperty.4.Type=STRING
+DeviceProperty.4.Capability=NIL
+
+Parameter.1.ParameterKey=AVIFileName
+Parameter.1.DataType=STRING
+Parameter.2.ParameterKey=bRequestFocusWhenLost
+Parameter.2.DataType=BOOLEAN
+Parameter.3.ParameterKey=PromptAfterPlay
+Parameter.3.DataType=BOOLEAN
+
+Test.1.TestKey=AVITest
+Test.1.Capabilities=AVI
+Test.1.OptionalDeviceCapabilities=NIL
+Test.1.isInteractive=true
+Test.1.createsOwnGUI=true
+Test.1.supportsParallelTesting=true
+Test.1.deviceExistenceRequirements=VideoCard, SoundCard
+Test.1.enumeratesOnlyOnce=true
+
+

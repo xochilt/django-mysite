@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Error Report Form</title>
+<style type="text/css">
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.8em;
+	color:#69665a;
+	margin:0px;
+}
+label {
+	width:110px;
+	float:left;
+	display:block;
+	font-weight:bold;
+	padding-top:6px;
+}
+label.long {
+	width:140px;
+	float:left;
+	display:block;
+	font-weight:bold;
+}
+.field_required {
+	border:1px #d3d3ff solid;
+	background-color:#FFFFCC;
+	width:200px;
+	height:20px;
+	font-size:1.2em;
+	color:#69665a;
+}
+.text_box {
+	border:1px #d3d3ff solid;
+	width:590px;
+	height:65px;
+	margin-top:5px;
+}
+.text_log_box {
+	color:#999999;
+	border:1px #d3d3ff solid;
+	width:590px;
+	height:105px;
+	margin-top:5px;
+}
+</style>
+<script type="text/javascript">
+function validate_email(field,alerttxt)
+ {
+ with (field)
+ {
+ apos=value.indexOf("@");
+ dotpos=value.lastIndexOf(".");
+ if (apos<1||dotpos-apos<2) 
+   {alert(alerttxt);return false;}
+ else {return true;}
+ }
+}
+
+function validate_required(field,alerttxt)
+ {
+ with (field)
+ {
+ if (value==null||value=="")
+   {alert(alerttxt);return false;}
+ else {return true}
+ }
+}
+
+function match_fields(field1,field2,alerttxt)
+ {
+ if (field1.value!==field2.value)
+   {alert(alerttxt + field1.value + ' ' + field2.value);return false;}
+ else {return true;}
+}
+
+function validate_form(thisform)
+ {
+ with (thisform)
+ {
+ if (validate_required(Text1,"Please provide your name.")==false)
+   {Text1.focus();return false;}
+
+ if (validate_required(Text2,"An e-mail address is required.")==false)
+   {Text2.focus();return false;}
+
+ if (validate_email(Text2,"The provided e-mail address is not valid.")==false)
+   {Text2.focus();return false;}
+   
+ if (validate_required(Text3,"Please confirm your e-mail address.")==false)
+   {Text3.focus();return false;}
+
+ if (match_fields(Text2, Text3,"Your e-mail addresses do not match.")==false)
+   {Text2.focus();return false;}
+
+ }
+}
+</script>
+
+</head>
+<body>
+<form action="http://www.pc-doctor.com/alienware.php" method="post" onsubmit="return validate_form(this);">
+	<p><label>Name: </label><input id="Text1" name="Text1" type="text" class="field_required"></p>
+	<p><label>E-Mail: </label><input id="Text2" name="Text2" type="text" class="field_required"></p>
+	<p><label>Confirm E-Mail: </label><input id="Text3" name="Text3" type="text" class="field_required"></p>
+	<br />
+	<p><label>Description</label></p>
+	<textarea rows="2" cols="40" id="TextArea1" name="TextArea1" class="text_box"></textarea>
+	<br />
+	<p><label class="long">Included Information</label></p>
+	<!-- DO NOT CHANGE THE LINES BELOW -->
+	<textarea readonly="readonly" rows="10" cols="40" id="TextArea2" name="TextArea2" class="text_log_box">
+	TestlogHere
+	</textarea>
+	<!-- DO NOT CHANGE THE LINES ABOVE -->
+	<br />
+	<input id="Submit1" type="submit" value="Send Report" />
+</form>
+</body>
+</html>
+

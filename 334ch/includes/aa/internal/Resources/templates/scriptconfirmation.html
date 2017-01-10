@@ -1,0 +1,49 @@
+<html>
+<head>
+  <style type="text/css">
+{% include "scriptconfirmation.css" %}
+{% if isRTL %}
+body
+{
+	direction:rtl;
+}
+{% endif %}
+  </style>
+  <script lang="javascript">
+{% include "correctpng.js" %}
+  </script>
+</head>
+<body>
+
+{% for device in devices %}
+<p>
+   <div id="header">
+     <span id="headerimage"> <img src="{{ device.image }}"> </span>
+     <span id="deviceheadertitle">
+		<strong>{{ device.name }}</strong><br/>
+		   {% if device.show_deviceinfo_link %}
+			   <img id="sysinfoimg" src="/Images/img16_16/system_information_2.png"/> 
+			   <a href="#" onClick="{{ device.deviceinfo_action }}">{{ locstr_deviceinformation }}</a>
+		   {% endif %}
+	 </span>
+   </div>
+   
+   <div id="gradient_divider"></div>
+
+   {% for test in device.tests %}
+   <div id="testrow{{ test_alternating }}" class="clearfix"> 
+      <span id="testimage"><a href="#" onClick="{{ test.help_action }}"><img src="/Images/img16_16/help.png"></a></span> 
+      <span id="testname">{{ test.name }}</span>
+      <span id="testdescription">{{ test.description }}</span>
+   </div>
+   {% endfor %}
+</p>
+{% endfor %}
+
+<!--
+{% print_vars %}
+-->
+
+</body>
+</html>
+

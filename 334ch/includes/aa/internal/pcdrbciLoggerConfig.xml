@@ -1,0 +1,9 @@
+<pcd:logger>
+	<logger name="Root" priority="Error">
+		<appender type="console" name="ConsoleErr" out="err" priority="Fatal"/>
+		<appender type="file" name="pcdrbciLogger" priority="Error" usepid="true" file="logs/pcdrbci.log" overwrite="false" />
+	</logger>
+	
+	<logger name="Verbose" priority="Error"/>
+	<logger name="Localization" priority="Error"/>
+</pcd:logger>

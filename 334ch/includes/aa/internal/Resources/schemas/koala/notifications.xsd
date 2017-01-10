@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="notifications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="summary" type="summary" />
+        <xs:element name="items" type="itemcollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="summary">
+    <xs:sequence>
+      <xs:element name="criticality" type="criticality" />
+      <xs:element name="unread" type="countedelement" />
+      <xs:element name="archived" type="countedelement" />
+    </xs:sequence>
+    <xs:attribute name="lastsynctime" type="xs:nonNegativeInteger" use="required" />
+    <xs:attribute name="lastevaltime" type="xs:nonNegativeInteger" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="criticality">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="level" type="levelcollection" />
+    </xs:sequence>
+    <xs:attribute name="level" type="xs:nonNegativeInteger" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="levelcollection">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="value" type="xs:nonNegativeInteger" use="required" />
+        <xs:attribute name="count" type="xs:nonNegativeInteger" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="countedelement">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="count" type="xs:nonNegativeInteger" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="itemcollection">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" type="notification" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="notification">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="description" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="uuid" type="xs:string" use="required" />
+    <xs:attribute name="time" type="xs:unsignedInt" use="required" />
+    <xs:attribute name="level" type="xs:nonNegativeInteger" use="required" />
+    <xs:attribute name="unread" type="xs:boolean" use="required" />
+    <xs:attribute name="archived" type="xs:boolean" use="required" />
+  </xs:complexType>
+  
+</xs:schema>

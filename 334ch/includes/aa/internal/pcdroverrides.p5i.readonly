@@ -1,0 +1,39 @@
+﻿
+/* 
+ * 
+ * PC-Doctor is a trademark of PC-Doctor, Inc., Reno, NV.
+ * All other brand and product names are registered trademarks,
+ * trademarks or servicemarks their respective holders and are gratefully
+ * acknowledged. Product specifications subject to change without notice.
+ * 
+ *
+ * 
+ * All PC-Doctor® products are protected by one or more of the following
+ * patents: 6,742,148; 6,792,562; 6,829,726. Other patents pending.
+ * 
+ *
+ * 
+ * Module:    pcdroverrides
+ * Customer:  default
+ * Variant:   default
+ * OS:        windows
+ * 
+ *
+ * 
+ * @author  Automatically Generated from the Database
+ * 
+ * 
+ *
+ * THIS FILE WAS MACHINE GENERATED FROM THE DATABASE
+ * DO NOT MODIFY THIS FILE, IT WILL BE OVER-WRITTEN DURING
+ * COMPILATION
+ */
+
+Customer = dell
+Variant = aa
+
+# Added by build system 20151216
+MajorVersion = 1
+MinorVersion = 2
+BuildId = 6745
+Revision = 47

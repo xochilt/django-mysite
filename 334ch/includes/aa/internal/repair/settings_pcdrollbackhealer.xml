@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <os name="windows">
+    <module name="pcdrollbackhealer" cust="bundleots" var="boxxtech" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\BOXX Diagnostics" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor Toolbox for Windows" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="staplespt" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\Staples EasyTech Diagnostics" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="tobii" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\Tobii I-Series Diagnostic Tool" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="body.background.image" type="STRING" value="body.png" priority="3" category="Global"/>
+      <key name="button.background.disabled" type="STRING" value="smartbutton_normal.png" priority="3" category="Global"/>
+      <key name="button.background.down" type="STRING" value="smartbutton_normal.png" priority="3" category="Global"/>
+      <key name="button.background.focus" type="STRING" value="smartbutton_normal.png" priority="3" category="Global"/>
+      <key name="button.background.hover" type="STRING" value="smartbutton_normal.png" priority="3" category="Global"/>
+      <key name="button.background.normal" type="STRING" value="smartbutton_normal.png" priority="3" category="Global"/>
+      <key name="button.forecolor" type="STRING" value="Black" priority="3" category="Global"/>
+      <key name="button.forecolor.pressed" type="STRING" value="Black" priority="3" category="Global"/>
+      <key name="font.family" type="STRING" value="Segoe UI, Verdana, Arial" priority="3" category="Global"/>
+      <key name="font.header" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="font.normal" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="footer.background.image" type="STRING" value="footer.png" priority="3" category="Global"/>
+      <key name="header.background.image" type="STRING" value="header.png" priority="3" category="Global"/>
+      <key name="icon.image" type="STRING" value="icon.png" priority="3" category="Global"/>
+      <key name="installer.url" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="link.color" type="STRING" value="Blue" priority="3" category="Global"/>
+      <key name="manual.download.url" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor for Windows" priority="3" category="Global"/>
+      <key name="skin.progress" type="BOOLEAN" value="false" priority="3" category="Global"/>
+      <key name="skin.progress.backcolor" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="skin.progress.forecolor" type="STRING" value="NULL" priority="3" category="Global"/>
+      <key name="skin.progress.height" type="STRING" value="24" priority="3" category="Global"/>
+      <key name="text.color.header" type="STRING" value="Black" priority="3" category="Global"/>
+      <key name="text.color.normal" type="STRING" value="Black" priority="3" category="Global"/>
+      <key name="text.font.size" type="STRING" value="12 regular" priority="3" category="Global"/>
+      <key name="title.font.size" type="STRING" value="16 bold" priority="3" category="Global"/>
+      <key name="use.custom.fonts" type="BOOLEAN" value="false" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="dell" var="default" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="button.background.disabled" type="STRING" value="smartbutton_disabled.png" priority="3" category="Global"/>
+      <key name="button.background.down" type="STRING" value="smartbutton_down.png" priority="3" category="Global"/>
+      <key name="button.background.focus" type="STRING" value="smartbutton_focus.png" priority="3" category="Global"/>
+      <key name="button.background.hover" type="STRING" value="smartbutton_hover.png" priority="3" category="Global"/>
+      <key name="button.forecolor" type="STRING" value="White" priority="3" category="Global"/>
+      <key name="button.forecolor.pressed" type="STRING" value="0085C3" priority="3" category="Global"/>
+      <key name="font.header" type="STRING" value="MuseoForDell-Regular.ttf" priority="3" category="Global"/>
+      <key name="font.normal" type="STRING" value="MuseoSansForDell-Regular.ttf" priority="3" category="Global"/>
+      <key name="installer.url" type="STRING" value="http://content.dellsupportcenter.com/updates/aulauncher.exe" priority="3" category="Global"/>
+      <key name="link.color" type="STRING" value="0085C3" priority="3" category="Global"/>
+      <key name="manual.download.url" type="STRING" value="http://www.dell.com/dellsupportcenter" priority="3" category="Global"/>
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor for Windows" priority="3" category="Global"/>
+      <key name="skin.progress" type="BOOLEAN" value="true" priority="3" category="Global"/>
+      <key name="skin.progress.backcolor" type="STRING" value="E1E3E3" priority="3" category="Global"/>
+      <key name="skin.progress.forecolor" type="STRING" value="0085C3" priority="3" category="Global"/>
+      <key name="skin.progress.height" type="STRING" value="8" priority="3" category="Global"/>
+      <key name="text.color.header" type="STRING" value="4E4E4E" priority="3" category="Global"/>
+      <key name="text.color.normal" type="STRING" value="7C7C7C" priority="3" category="Global"/>
+      <key name="title.font.size" type="STRING" value="18 regular" priority="3" category="Global"/>
+      <key name="use.custom.fonts" type="BOOLEAN" value="true" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="staplespt" var="default" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\Staples EasyTech Diagnostics" priority="3" category="Global"/>
+    </module>
+    <module name="pcdrollbackhealer" cust="thirdwave" var="default" category="User Interface Module" description="A module to hold resources for the rollback utility of bundle builds.">
+      <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor Diagnostics" priority="3" category="Global"/>
+    </module>
+  </os>
+</main>

@@ -1,0 +1,12 @@
+<SysinfoFilter>
+	<!--
+		 This is an older (Version 1) profiler filter.  
+		 Each <Device capability="..."/> makes devices with that capability be included
+		 in profiling.  Each child <Property/> makes that property key be included
+		 in profiling for the devices selected by the parent <Device> capability.
+	-->
+    <Device capability="SystemRestorePoint">
+        <Property key="SystemRestorePoint_Description" name="Description" type="STRING" />
+        <Property key="SystemRestorePoint_CreationTime" name="Creation Time" type="STRING" />
+    </Device>
+</SysinfoFilter>

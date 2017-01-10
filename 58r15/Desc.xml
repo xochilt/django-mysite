@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppDrv>
+  <Type>APP</Type>
+  <Folder></Folder>
+  <Desc>Dell Update</Desc>
+  <LaunchProcess>DellUpdate.1.7.1007.0.msi</LaunchProcess>
+  <CommandLine>/qn</CommandLine>
+  <ArchiveLimit>0</ArchiveLimit>
+  <ClearContent>N</ClearContent>
+  <Version>1.7.1007.0</Version>
+  <IcoLocation>dnd.ico</IcoLocation>
+</AppDrv>

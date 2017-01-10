@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SysinfoFilter version="2" version-description="Adding IncludeDevices section">
+
+	<!--
+		No device will be profiled unless you have at least ONE of its
+		capabilities listed in the <includeDevices/> tag.  This is regardless
+		of if you add it below as a <Device/> tag that is child to <SysinfoFilter/>
+	-->
+	<IncludeDevices>
+		<Device capability="CPU"/>
+		<Device capability="MemoryChip"/>
+		<Device capability="PCI"/>
+		<Device capability="Modem"/>
+		<Device capability="NetworkCard"/>
+		<Device capability="Optical"/>
+		<Device capability="HardDrive"/>
+		<Device capability="USBMassStorage"/>
+		<Device capability="Battery"/>
+		<Device capability="ATA"/>
+		<Device capability="SCSISPC"/>
+	</IncludeDevices>
+
+	<!-- 
+		 For each device capability, this section lists the property keys that will 
+		 be profiled.  A VideoCard with capabilities PCI|VideoCard will include all 
+		 property keys from both the PCI and VideoCard sections below.
+	 -->
+	<Device capability="PCI">
+		<Property key="PCIVendorIdReg" name="PCI Vendor ID" type="DISCRETEMEASUREMENT"/>
+		<Property key="PCIDeviceIdReg" name="PCI Device ID" type="DISCRETEMEASUREMENT"/>
+		<Property key="Driver" name="Driver" type="STRING"/>
+		<Property key="DriverProvider" name="Driver Provider" type="STRING"/>
+		<Property key="DriverVersion" name="Driver Version" type="STRING"/>
+	</Device>
+	<Device capability="CPU">
+		<Property key="Name" name="Name" type="STRING"/>
+		<Property key="Cores" name="Cores" type="STRING"/>
+		<Property key="Threads" name="Threads" type="STRING"/>
+		<Property key="RawSignature" name="Signature" type="STRING"/>
+		<Property key="Family" name="Family" type="STRING"/>
+		<Property key="Model" name="Model" type="STRING"/>
+		<Property key="DisplayFamily" name="Family" type="STRING"/>
+		<Property key="DisplayModel" name="Model" type="STRING"/>
+		<Property key="Stepping" name="Stepping" type="STRING"/>
+		<Property key="ExtendedFamily" name="Extended Family" type="STRING"/>
+		<Property key="ExtendedModel" name="Extended Model" type="STRING"/>
+		<Property key="Revision" name="Revision" type="STRING"/>
+		<Property key="Technology" name="Technology" type="STRING"/>
+		<Property key="L1DataCacheSummary" name="L1 Data Cache" type="STRING"/>
+		<Property key="L1InstCacheSummary" name="L1 Instruction Cache" type="STRING"/>
+		<Property key="L1TraceCacheSummary" name="L1 Trace Cache" type="STRING"/>
+		<Property key="L2CacheSummary" name="L2 Cache" type="STRING"/>
+		<Property key="L3CacheSummary" name="L3 Cache" type="STRING"/>
+	</Device>
+	<Device capability="ATA">
+		<Property key="ATAVendor" name="Model Number" type="STRING"/>
+		<Property key="ATAModelNumber" name="Model Number" type="STRING"/>
+		<Property key="ATASerialNumber" name="Serial Number" type="STRING"/>
+		<Property key="ATAFirmwareRev" name="Firmware Revision" type="STRING"/>
+		<Property key="ATABufferSize" name="Buffer Size" type="STRING"/>
+		<Property key="ATADiskSize" name="Size" type="STRING"/>
+	</Device>
+	<Device capability="SCSISPC">
+		<Property key="ModelNumber" name="Model Number" type="STRING"/>
+		<Property key="SerialNumber" name="Serial Number" type="STRING"/>
+		<Property key="FirmwareVersion" name="Firmware Revision" type="STRING"/>
+		<Property key="FirmwareDate" name="Firmware Date" type="STRING"/>
+	</Device>
+	<Device capability="SCSIMMC">
+		<Property key="Readable" name="Readable Media" type="STRING"/>
+		<Property key="Writable" name="Writable Media" type="STRING"/>
+	</Device>
+	<Device capability="NetworkCard">
+		<Property key="MacAddress" name="MAC Address" type="STRING"/>
+		<Property key="Driver" name="Driver" type="STRING"/>
+		<Property key="DriverVersion" name="Driver Version" type="STRING"/>
+		<Property key="AdapterType" name="Adapter Type" type="STRING"/>
+	</Device>
+	<Device capability="VideoCard">
+		<Property key="VideoCardMemory" name="Video Card Memory" type="DISCRETEMEASUREMENT"/>
+		<Property key="VideoCardDACType" name="Video Card DAC Type" type="STRING"/>
+		<Property key="VideoCardChipType" name="Video Card Chip Type" type="STRING"/>
+		<Property key="VideoCardBiosString" name="Video Card BIOS" type="STRING"/>
+	</Device>
+	<Device capability="MemoryChip">
+		<Property key="InformationSource" name="Information Source" type="STRING"/>
+		<Property key="MemoryModuleSize" name="Memory Size" type="DISCRETEMEASUREMENT"/>
+		<Property key="MemoryType" name="Memory Type" type="STRING"/>
+		<Property key="MemoryModuleType" name="Module Type" type="STRING"/>
+		<Property key="MemoryManufacturer" name="Memory Manufacturer" type="STRING"/>
+		<Property key="MemoryManufactureDate" name="Memory Manufacture Date" type="STRING"/>
+		<Property key="MemoryPartNumber" name="Memory Part Number" type="STRING"/>
+		<Property key="MemorySerialNumber" name="Memory Serial Number" type="DISCRETEMEASUREMENT"/>
+		<Property key="MemoryRevisionCode" name="Memory Revision Code" type="DISCRETEMEASUREMENT"/>
+	</Device>
+	<Device capability="Modem">
+		<Property key="Model" name="Model" type="STRING"/>
+		<Property key="ComPort" name="Attached COM Port" type="STRING"/>
+	</Device>
+	<Device capability="Battery">
+		<Property key="BatteryName" name="Battery Name" type="STRING"/>
+		<Property key="BatteryManufacturerName" name="Battery Manufacturer Name" type="STRING"/>
+		<Property key="BatterySerialNumber" name="Battery Serial Number" type="STRING"/>
+		<Property key="BatteryChemistry" name="Battery Chemistry" type="STRING"/>
+		<Property key="BatteryfullChargedCapacity" name="Batteryfull Charged Capacity" type="STRING"/>
+		<Property key="BatteryDesignedCapacity" name="Battery Designed Capacity" type="NONDISCRETEMEASUREMENT"/>
+	</Device>
+</SysinfoFilter>

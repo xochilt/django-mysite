@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<GUIScheme version="5" name="PCDR_HUD">
+    <Imageset filename="PCDR_HUD.imageset" />
+    <WindowRendererSet filename="CEGUICoreWindowRendererSet" />
+</GUIScheme>
+

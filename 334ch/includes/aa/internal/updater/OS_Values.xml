@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfPair xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pair>
+    <Key>Platform</Key>
+    <Value>Windows</Value>
+  </pair>
+  <pair>
+    <Key>MajorVersion_5_1</Key>
+    <Value>XP</Value>
+  </pair>
+	<pair>
+		<Key>MajorVersion_5_2</Key>
+		<Value>XP</Value>
+	</pair>
+  <pair>
+    <Key>MajorVersion_6_0</Key>
+    <Value>Vista</Value>
+  </pair>
+  <pair>
+    <Key>MajorVersion_6_1</Key>
+    <Value>7</Value>
+  </pair>
+  <pair>
+    <Key>MajorVersion_6_2</Key>
+    <Value>8</Value>
+  </pair>
+  <pair>
+    <Key>MajorVersion_6_3</Key>
+    <Value>8.1</Value>
+  </pair>
+  <pair>
+    <Key>MajorVersion_10_0</Key>
+    <Value>10</Value>
+  </pair>
+  <pair>
+    <Key>Architecture_32</Key>
+    <Value>x86 32-bit</Value>
+  </pair>
+  <pair>
+    <Key>Architecture_64</Key>
+    <Value>x86 64-bit</Value>
+  </pair>
+</ArrayOfPair>

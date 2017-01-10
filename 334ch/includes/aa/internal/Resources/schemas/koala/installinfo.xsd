@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="installinfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="koala" type="koala" />
+        <xs:element name="build" type="build" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="koala">
+    <xs:sequence>
+      <xs:element name="majorver" type="version" />
+      <xs:element name="minorver" type="version" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="build">
+    <xs:sequence>
+      <xs:element name="fullver" type="dottedversion" />
+      <xs:element name="buildid" type="version" />
+      <xs:element name="revision" type="version" />
+      <xs:element name="product" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="version">
+    <xs:attribute name="value" type="xs:nonNegativeInteger" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="dottedversion">
+    <xs:attribute name="value" type="xs:string" use="required" />
+  </xs:complexType>
+  
+</xs:schema>

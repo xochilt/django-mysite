@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="user_optin" />
+        <xs:element ref="proxy" />
+        <xs:element ref="scheduled_tasks" />
+        <xs:element ref="scheduled_scan" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="user_optin">
+    <xs:complexType>
+      <xs:attribute name="type" type="user_optin_type" use="required" />
+      <xs:attribute name="value" type="xs:boolean" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="proxy">
+    <xs:annotation>
+      <xs:documentation>
+        <p>If the 'type' attribute is set to 'manual', the value of this input is expected to be base-64 encoded of the format defined by RFC 3986.</p>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" type="proxy_type" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="user_optin_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="uploads" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="proxy_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="default" />
+      <xs:enumeration value="direct" />
+      <xs:enumeration value="manual" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="scheduled_tasks">
+    <xs:annotation>
+      <xs:documentation>
+        <p>If a 'credentialed' user is specified as the 'type', the text of this element is expected to be base-64 encoded and match the "username:password" portion of RFC 3986.</p>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" type="user_type" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="user_type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SYSTEM">
+        <xs:annotation>
+          <xs:documentation>
+            <p>This is the only value expected as uppercase, to match the standard SYSTEM user.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="installer">
+        <xs:annotation>
+          <xs:documentation>
+            <p>This represents the user who installed the application.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="credentialed">
+        <xs:annotation>
+          <xs:documentation>
+            <p>This represents a user who may or may not be logged in at the time the scheduled task is invoked. The user also may or may not be a local or domain user.</p>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="scheduled_scan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice>
+          <xs:element name="random_monthly_scan" />
+          <xs:element ref="weekly_scan" />
+          <xs:element ref="monthly_scan" />
+          <xs:element ref="quarterly_scan" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="disabled" type="xs:boolean" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="weekly_scan">
+    <xs:complexType>
+      <xs:attribute name="day_of_week" type="day_of_week" use="required" />
+      <xs:attribute name="hour_of_day" type="hour_of_day" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="monthly_scan">
+    <xs:complexType>
+      <xs:attribute name="day" type="day_of_month" use="required" />
+      <xs:attribute name="hour_of_day" type="hour_of_day" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="day_of_week">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="sunday" />
+      <xs:enumeration value="monday" />
+      <xs:enumeration value="tuesday" />
+      <xs:enumeration value="wednesday" />
+      <xs:enumeration value="thursday" />
+      <xs:enumeration value="friday" />
+      <xs:enumeration value="saturday" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="hour_of_day">
+    <xs:annotation>
+      <xs:documentation>
+        <p>24-hour representation of the hour of the day. A value of 0 represents midnight.</p>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="23"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="day_of_month">
+    <xs:annotation>
+      <xs:documentation>
+        <p>A value of 1-28 represents the numbered day of the month.</p>
+        <p>A value of 29 represents the last day of any given month.</p>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="29" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="quarterly_scan">
+    <xs:complexType>
+      <xs:attribute name="day" type="day_of_quarter" use="required" />
+      <xs:attribute name="hour_of_day" type="hour_of_day" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="day_of_quarter">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="90"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

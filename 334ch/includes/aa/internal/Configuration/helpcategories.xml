@@ -1,0 +1,118 @@
+<!--
+A configuration file for categorizing PC-Doctor devices in a UI
+
+a category is associated to a p5p file for "command" and "icon"
+
+Device Matching rules:
+1. match by device type
+2. match by device capability (best match)
+
+-->
+<device-categories>
+
+	<category key="audio" icon="audio">
+		<module key="pcdraudio"/>
+		<module key="pcdrmicrophone"/>
+		<module key="pcdrsound"/>
+	</category>
+
+	<category key="storage" icon="storage">
+		<module key="pcdrharddrive"/>
+		<module key="pcdrharddrive2"/>
+		<module key="pcdrssd"/>
+		<module key="pcdrscsi2"/>
+		<module key="pcdrfloppy"/>
+		<module key="pcdrfloppy2"/>
+		<module key="pcdrsmart"/>
+		<module key="pcdrsmart2"/>
+		<module key="pcdrbddrive"/>
+		<module key="pcdrbddrive2"/>
+		<module key="pcdrbdre"/>
+		<module key="pcdrbdr"/>
+		<module key="pcdrcardreader"/>
+		<module key="pcdrcddrive"/>
+		<module key="pcdrcddrive2"/>
+		<module key="pcdrcdr"/>
+		<module key="pcdrcdrw"/>
+		<module key="pcdrdvddrive"/>
+		<module key="pcdrdvddrive2"/>
+		<module key="pcdrdvdminusr"/>
+		<module key="pcdrdvdminusrdl"/>
+		<module key="pcdrdvdminusrw"/>
+		<module key="pcdrdvdplusr"/>
+		<module key="pcdrdvdplusrdl"/>
+		<module key="pcdrdvdplusrw"/>
+		<module key="pcdrdvdramdrive"/>
+		<module key="pcdrdvdramdrive2"/>
+		<module key="pcdrhddvddrive"/>
+		<module key="pcdrhddvddrive2"/>
+		<module key="pcdrlsdrive"/>
+		<module key="pcdrobistdl"/>
+		<module key="pcdrtapedrive"/>
+		<module key="pcdrzipdrive"/>
+		<module key="pcdrcardreader"/>
+		<module key="pcdrremovablestorage"/>
+	</category>
+
+	<category key="video" icon="video">
+		<module key="pcdr2d3dvideo"/>
+		<module key="pcdrcuda"/>
+		<module key="pcdravi"/>
+		<module key="pcdrtvcard"/>
+		<module key="pcdrmonitor"/>
+		<module key="pcdrtouchscrn"/>
+		<module key="pcdrvideoports"/>
+		<module key="pcdrwebcam"/>
+		<module key="pcdralienfx"/>
+	</category>
+
+	<category key="otherDevices" icon="other">
+		<module key="pcdrjoystick"/>
+		<module key="pcdrkeyboard"/>
+		<module key="pcdrmouse"/>
+		<module key="pcdrpccard"/>
+		<module key="pcdrprinter"/>
+		<module key="pcdrdigitizer"/>
+	</category>
+
+	<category key="communications" icon="communications">
+		<module key="pcdrantenna"/>
+		<module key="pcdrbluetooth"/>
+		<module key="pcdrinfrared"/>
+		<module key="pcdrnal"/>
+		<module key="pcdrmobilebroadband"/>
+		<module key="pcdrmodem"/>
+		<module key="pcdrnetwork"/>
+		<module key="pcdrnfc"/>
+	</category>
+
+	<category key="system" icon="system">
+		<category key="MotherboardScriptGroup" icon="motherboard">
+		</category>
+		<module key="pcdrieee1394"/>
+		<module key="pcdrcmos"/>
+		<module key="pcdrcpu"/>
+		<module key="pcdrmemory"/>
+		<module key="pcdrparallelport"/>
+		<module key="pcdrpci"/>
+		<module key="pcdrpciexpress"/>
+		<module key="pcdrpowerstate"/>
+		<module key="pcdrreadyboost"/>
+		<module key="pcdrbattery"/>
+		<module key="pcdrserialport"/>
+		<module key="pcdrsmbios"/>
+		<module key="pcdrsystemboard"/>
+		<module key="pcdrusb"/>
+		<module key="pcdrusbports"/>
+		<module key="pcdrlenovobattery"/>
+		<module key="pcdrlid"/>
+	</category>
+
+	<category key="sensors" icon="sensor">
+		<module key="pcdrfingerprintreader"/>
+		<module key="pcdrgps"/>
+		<module key="pcdrsensors"/>
+	</category>
+
+
+</device-categories>

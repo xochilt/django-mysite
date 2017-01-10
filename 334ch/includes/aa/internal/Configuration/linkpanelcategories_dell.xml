@@ -1,0 +1,281 @@
+<!--
+A configuration file for categorizing PC-Doctor devices in a UI
+
+a category is associated to a p5p file for "command" and "icon"
+
+Device Matching rules:
+1. match by device type
+2. match by device capability (best match)
+
+-->
+<device-categories>
+
+	<category key="audio" icon="audio">
+
+		<device type="MIDI"/>
+		<device type="Microphone"/>
+		<device type="SoundCard"/>
+		<device type="Speaker"/>
+
+		<tool key="volume-mixer" icon="sndvol32" exec-command="sndvol.exe">
+			<exec command="applauncher.exe" arguments="sndvol.exe" os="Windows 7 x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="sndvol.exe" os="Windows Vista x86 64-bit"/>
+			<exec command="sndvol.exe" os="Windows Vista"/>
+			<exec command="sndvol.exe" os="Windows 7"/>
+            <exec os="Windows XP"/>
+		</tool>
+		<tool key="mixer-tool" icon="sndvol32">
+			<exec command="applauncher.exe" arguments="sndvol32.exe" os="Windows XP x86 64-bit"/>
+			<exec command="sndvol32.exe" os="Windows XP"/>
+		</tool>
+
+	</category>
+
+
+	<category key="storage" icon="storage">
+
+		<device capability="HardDrive"/>
+		<device capability="Optical"/>
+		<device type="FloppyDrive"/>
+		<device type="TapeDrive"/>
+		<device type="RemovableStorage"/>
+		<device type="LSDRIVE"/>
+		<device type="ZipDrive"/>
+		<device type="CardReader"/>
+
+
+		<tool key="disk-cleanup" icon="cleanmgr" exec-command="cleanmgr.exe">
+			<exec command="applauncher.exe" arguments="cleanmgr.exe" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="disk-defragmenter" icon="dfrg" exec-command="dfrgui.exe">
+			<exec command="applauncher.exe" arguments="dfrgui.exe" os="Windows 7 x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="mmc.exe dfrg.msc" os="Windows XP x86 64-bit"/>
+			<exec command="dfrg.msc" os="Windows XP"/>
+            <exec os="Windows 8"/>
+            <exec os="Windows 8.1"/>
+			<exec os="Windows 10"/>
+		</tool>
+		<tool key="optimize-drives" icon="dfrg">
+            <exec command="dfrgui.exe" os="Windows 8"/>
+            <exec command="dfrgui.exe" os="Windows 8.1"/>
+			<exec command="dfrgui.exe" os="Windows 10"/>
+		</tool>
+		<tool key="system-restore" icon="windows_system_restore" exec-command="applauncher.exe" exec-arguments="rstrui.exe">
+			<exec command="applauncher.exe" arguments="%WINDIR%\system32\Restore\rstrui.exe" os="Windows XP x86 64-bit"/>
+			<exec command="%WINDIR%\system32\Restore\rstrui.exe" os="Windows XP"/>
+			<exec os="Windows Server 2003"/>
+		</tool>
+		<tool key="backup-restore" icon="windows_backup_restore" exec-command="sdclt.exe">
+			<exec command="applauncher.exe" arguments="sdclt.exe" os="Windows Vista x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="sdclt.exe" os="Windows 7 x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="ntbackup.exe" os="Windows XP x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="ntbackup.exe" os="Windows XP"/>
+            <exec os="Windows 8"/>
+            <exec os="Windows 8.1"/>
+            <exec os="Windows 10"/>
+        </tool>
+		<tool key="restore-win7-backups" icon="windows_backup_restore">
+			<exec command="sdclt.exe" os="Windows 8"/>
+        </tool>
+		<tool key="restore-win8-recovery" icon="windows_backup_restore">
+			<exec command="applauncher.exe" arguments="control /name Microsoft.Recovery" os="Windows 8.1"/>
+			<exec command="applauncher.exe" arguments="control /name Microsoft.Recovery" os="Windows 10"/>
+        </tool>
+		<tool key="windows-file-history" icon="windows_file_history">
+		    <exec os="Windows XP"/>
+			<exec os="Windows Vista"/>
+			<exec os="Windows 7"/>
+			<exec command="applauncher.exe" arguments="control /name Microsoft.FileHistory" os="Windows 8.1"/>
+			<exec command="applauncher.exe" arguments="control /name Microsoft.FileHistory" os="Windows 8"/>
+			<exec command="applauncher.exe" arguments="control /name Microsoft.FileHistory" os="Windows 10"/>
+        </tool>
+	</category>
+
+
+	<category key="video" icon="video">
+
+		<device capability="AVI"/>
+		<device capability="VideoCard"/>
+		<device type="Monitor"/>
+		<device capability="VideoCapture"/>
+		<device capability="TouchScreen"/>
+		<device type="AmbientLight"/>
+		<device type="Camera"/>
+		<device type="PhysicsCard"/>
+		<device type="VideoPort"/>
+
+
+		<tool key="display-control-panel" icon="display">
+			<exec command="applauncher.exe" arguments="control.exe desktop" os="Windows XP x86 64-bit"/>
+			<exec command="control.exe" arguments="desktop" os="Windows XP"/>
+		</tool>
+		<tool key="personalization" icon="display" exec-command="control.exe" exec-arguments="desktop">
+			<exec os="Windows XP"/>
+		</tool>
+		<tool key="directx-diagnostic" icon="dxdiag" exec-command="dxdiag.exe">
+			<exec command="applauncher.exe" arguments="dxdiag.exe" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="digitizer" icon="digitizer" exec-command="tabcal.exe">
+			<exec command="applauncher.exe" arguments="tabcal.exe" os="Windows Vista x86 64-bit"/>
+			<exec os="Windows XP"/>
+		</tool>
+		<tool key="color-management" icon="color_mgmt" exec-command="colorcpl.exe">
+			<exec os="Windows XP"/>
+		</tool>
+	</category>
+	
+	<category key="sensors" icon="sensor">
+		<device capability="Sensor"/>
+		<device type="GPS"/>
+		<device capability="NearFieldCommunicationDevice"/>
+	</category>
+
+	<category key="otherDevices" icon="other">
+
+		<device capability="Printer"/>
+		<device capability="Mouse"/>
+		<device capability="Keyboard"/>
+		<device type="Scanner"/>
+		<device type="HID"/>
+		<device type="Digitizer"/>
+		<device type="Joystick"/>
+		<device type="PCCard"/>
+		<device type="Other"/>
+		<device type="BiometricDevice"/>
+		<device type="PcmciaBus"/>
+		<device type="PcmciaController"/>
+		<device capability="FingerprintReader"/>
+
+
+		<tool key="printer-control-panel" icon="cp_printer">
+			<exec command="applauncher.exe" arguments="control.exe printers" os="Windows XP x86 64-bit"/>
+			<exec command="control.exe" arguments="printers" os="Windows XP"/>
+			<exec command="applauncher.exe" arguments="control.exe printers" os="Windows Vista x86 64-bit"/>
+			<exec command="control.exe" arguments="printers" os="Windows Vista"/>
+		</tool>
+		<tool key="devices-printers-control-panel" exec-command="control.exe" exec-arguments="printers" icon="cp_printer" >
+			<exec os="Windows XP"/>
+			<exec os="Windows Vista"/>
+		</tool>
+		<tool key="mouse-control-panel" icon="cp_mouse" exec-command="control.exe" exec-arguments="mouse">
+			<exec command="applauncher.exe" arguments="control.exe mouse" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="keyboard-control-panel" icon="cp_keyboard" exec-command="control.exe" exec-arguments="keyboard">
+			<exec command="applauncher.exe" arguments="control.exe keyboard" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="joystick-control-panel" icon="controller" exec-command="control.exe" exec-arguments="joy.cpl">
+			<exec command="applauncher.exe" arguments="control.exe joy.cpl" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="pen-control-panel" icon="edit_settings" exec-command="applauncher.exe" exec-arguments="control.exe tabletpc.cpl">
+			<exec os="Windows XP"/>
+		</tool>
+
+	</category>
+
+
+	<category key="communications" icon="communications">
+
+		<device capability="Modem"/>
+		<device capability="NetworkCard" only-match-here="true"/>
+		<device type="ISDNAdapter"/>
+		<device type="DSLAdapter"/>
+		<device type="CommunicationsController"/>
+		<device type="BluetoothPort"/>
+		<device type="InfraredPort"/>
+
+
+		<tool key="telephone-control-panel" icon="cp_modem" exec-command="control.exe" exec-arguments="telephony">
+			<exec command="applauncher.exe" arguments="control.exe telephony" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="network-control-panel" icon="cp_network" exec-command="control.exe" exec-arguments="netconnections">
+			<exec command="applauncher.exe" arguments="control.exe netconnections" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="network-sharing-center" icon="cp_network" exec-command="applauncher.exe" exec-arguments="explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\3\::{8E908FC9-BECC-40F6-915B-F4CA0E70D03D}">
+			<exec os="Windows XP"/>
+			<exec os="Windows Vista"/>
+		</tool>
+		<tool key="firewall-control-panel" icon="firewall" exec-command="control.exe" exec-arguments="firewall.cpl">
+			<exec command="applauncher.exe" arguments="control.exe firewall.cpl" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="internet-control-panel" icon="internetProperties" exec-command="control.exe" exec-arguments="inetcpl.cpl">
+			<exec command="applauncher.exe" arguments="control.exe inetcpl.cpl" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="shared-folder-wizard" icon="folder" exec-command="applauncher.exe" exec-arguments="shrpubw.exe">
+		</tool>
+
+	</category>
+
+
+	<category key="system" icon="system">
+
+		<device type="Battery"/>
+		<device type="CPU"/>
+		<device type="Memory"/>
+		<device type="ReadyBoost"/>
+		<device type="USB"/>
+		<device capability="StandbyHibernate"/>
+		<device type="USBPorts"/>
+		<device type="LidSensor" />
+
+		<category key="MotherboardScriptGroup" icon="motherboard">
+			<script file="scripts\motherboard.xml"/>
+		</category>
+
+
+		<tool key="device-manager" icon="cp_DManager" exec-command="applauncher.exe" exec-arguments="mmc.exe devmgmt.msc">
+			<exec command="devmgmt.msc" os="Windows XP"/>
+		</tool>
+		<tool key="default-programs" icon="default_programs" exec-command="control.exe" exec-arguments="/name Microsoft.DefaultPrograms">
+			<exec command="applauncher.exe" arguments="control.exe appwiz.cpl,,3" os="Windows XP x86 64-bit"/>
+			<exec command="control.exe" arguments="appwiz.cpl,,3" os="Windows XP"/>
+		</tool>
+		<tool key="control-panel" icon="control" exec-command="control.exe">
+			<exec command="applauncher.exe" arguments="control.exe" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="programs-control-panel" icon="installed_programs">
+			<exec command="applauncher.exe" arguments="control.exe appwiz.cpl" os="Windows XP x86 64-bit"/>
+			<exec command="control.exe" arguments="appwiz.cpl" os="Windows XP"/>
+		</tool>
+		<tool key="programs-features" icon="installed_programs" exec-command="control.exe" exec-arguments="appwiz.cpl">
+			<exec os="Windows XP"/>
+		</tool>
+		<tool key="power-control-panel" icon="power" exec-command="control.exe" exec-arguments="powercfg.cpl">
+			<exec command="applauncher.exe" arguments="control.exe powercfg.cpl" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="security-control-panel" icon="security_center">
+			<exec command="applauncher.exe" arguments="control.exe wscui.cpl" os="Windows Vista x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="control.exe wscui.cpl" os="Windows Vista"/>
+			<exec command="applauncher.exe" arguments="control.exe wscui.cpl" os="Windows XP"/>
+			<exec command="applauncher.exe" arguments="control.exe wscui.cpl" os="Windows XP x86 64-bit"/>
+		</tool>
+		<tool key="action-center-cpanel" icon="action_center" exec-command="applauncher.exe" exec-arguments="control.exe wscui.cpl">
+			<exec os="Windows XP"/>
+			<exec os="Windows Vista"/>
+			<exec os="Windows 10"/>
+		</tool>
+		<tool key="security-maintenance" icon="action_center" exec-command="applauncher.exe" exec-arguments="control.exe wscui.cpl">
+			<exec os="Windows XP"/>
+			<exec os="Windows Vista"/>
+			<exec os="Windows 7"/>
+			<exec os="Windows 8"/>
+			<exec os="Windows 8.1"/>
+		</tool>
+		<tool key="file-signature-verification" icon="file_sig_verification" exec-command="sigverif.exe">
+			<exec command="applauncher.exe" arguments="sigverif.exe" os="Windows x86 64-bit"/>
+		</tool>
+		<tool key="system-configuration" icon="msconfig" exec-command="applauncher.exe" exec-arguments="msconfig.exe">
+			<exec command="applauncher.exe" arguments="{windir}\PCHEALTH\HELPCTR\Binaries\msconfig.exe" os="Windows XP x86 64-bit"/>
+			<exec command="msconfig.exe" arguments="" os="Windows XP"/>
+		</tool>
+		<tool key="windows-update" icon="windows_update" exec-command="applauncher.exe" exec-arguments="control.exe /name Microsoft.WindowsUpdate">
+			<exec command="applauncher.exe" arguments="wupdmgr.exe" os="Windows XP x86 64-bit"/>
+			<exec command="applauncher.exe" arguments="wupdmgr.exe" os="Windows XP"/>
+		</tool>
+		<tool key="problem-steps-recorder" icon="problem_steps_recorder" exec-command="applauncher.exe" exec-arguments="psr.exe">
+			<exec os="Windows XP"/>
+			<exec os="Windows Vista"/>  
+		</tool>
+	</category>
+
+</device-categories>
+

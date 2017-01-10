@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="alerts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="alert" type="alert" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="alert">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="keyvalue" type="keyvalue" />
+    </xs:sequence>
+    <xs:attribute name="key" type="xs:string" use="required" />
+    <xs:attribute name="type" type="xs:string" use="required" />
+    <xs:attribute name="title" type="xs:string" use="required" />
+    <xs:attribute name="message" type="xs:string" use="required" />
+    <xs:attribute name="device" type="xs:string" use="required" />
+    <xs:attribute name="deviceindex" type="xs:string" use="required" />
+  </xs:complexType>
+  
+  <xs:complexType name="keyvalue">
+    <xs:attribute name="key" type="xs:string" use="required" />
+    <xs:attribute name="value" type="xs:string" use="required" />
+  </xs:complexType>
+
+</xs:schema>

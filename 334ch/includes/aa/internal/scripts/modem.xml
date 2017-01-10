@@ -1,0 +1,12 @@
+<Script name="modemTest">
+	<TestSet>
+		<Device capabilities="Modem"/>
+		<ExcludeTest key="DialToneTest"/>
+		<ExcludeTest key="SimpleConnectionTest"/>
+	</TestSet>
+	<TestSet>
+		<Device capabilities="Modem"/>
+		<Test key="DialToneTest"/>
+		<Test key="SimpleConnectionTest"/>
+	</TestSet>
+</Script>

@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <os name="windows">
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="ar" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="cs" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox pro Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="da" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox til Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="de" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox für Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="el" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox για Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="en" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="es" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox para Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="fi" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox Windowsille</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="fr" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox pour Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="he" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox עבור Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="hu" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="it" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox per Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="ja" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="ko" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">Windows용 PC-Doctor Toolbox</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="nb" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="nl" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox voor Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="pl" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox dla systemu Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="pt" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox para Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="pt-pt" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox para Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="ru" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox для Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="sv" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox för Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="tr" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">Windows için PC-Doctor Toolbox</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="zh-cn" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="bundleots" var="retail" lang="zh-tw" category="User Interface Module">
+      <string type="Other" comment="n/a">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Toolbox for Windows</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="ar" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">إصلاح {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">إنهاء</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">إلغاء الأمر</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">إصلاح</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">إعادة التشغيل</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">‏‏إعادة التثبيت</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">تلفت نسخة {title} المثبتة الخاصة بك. يرجى الانتظار أثناء قيامنا بإصلاحه من أجلك.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">لا يمكن إصلاح نسخة {title} المثبتة الخاصة بك حتى تقوم بإعادة تشغيل نظامك.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">لن تتمكن من استخدام {title} حتى يكتمل الإصلاح.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">لا يمكن إصلاح تثبيت {title}. يرجى الانتظار أثناء تحميل أداة التمهيد التي ستوجهك خلال إعادة تثبيت التطبيق.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">لن تتمكن من استخدام {title} حتى تكتمل إعادة التثبيت بنجاح.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">فشل تحميل أداة التمهيد. إذا استمرت هذه المشكلة، يمكنك الانتقال إلى {url} وإعادة تثبيت التطبيق يدوياً.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">حدث خطأ غير معروف.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">ناشر التحميل غير معروف.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">حدث خطأ في الإدخال والإخراج عند حفظ التحميل. تأكد من توافر مساحة كافية على القرص الصلب لديك.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">حدث خطأ غير معروف عند حفظ التحميل.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">لا يوجد إذن للتحميل من الخادم.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">لا يوجد اتصال إنترنت.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">لا توجد استجابة من الخادم.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">تثبيت {title} تالف ويحتاج إلى إصلاح قبل أن تتمكن من تشغيل التطبيق.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">لاحقاً</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">تحميل</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">لا يمكن إصلاح تثبيت {title}. يرجى تحميل أداة التمهيد لإعادة تثبيت التطبيق تلقائياً.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="cs" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Opravit</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor pro Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Ukončit</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Storno</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Opravit</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Restartování</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Přeinstalovat</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Vaše instalovaná verze {title} byla poškozena. Počkejte prosím, než ji pro vás opravíme.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Vaši instalovanou verzi {title} nelze opravit, dokud nerestartujete systém.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Aplikaci {title} nebudete moci používat, dokud nebude oprava dokončena.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Vaši instalaci {title} nelze opravit. Počkejte prosím, až stáhneme samozaváděcí pomocný program, který vás provede novou instalací aplikace.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">{title} nebudete moci používat, dokud nebude opětovná instalace úspěšně dokončena.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Nezdařilo se stáhnout samozaváděcí pomocný program. Bude-li tento problém pokračovat, můžete přejít na stránku {url} a aplikaci znovu instalovat ručně.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Došlo k neznámé chybě.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Autor stahovaného souboru je neznámý.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Při ukládání stahovaného souboru došlo k chybě vstupů/výstupů. Zkontrolujte, zda máte k dispozici dostatek volného místa na pevném disku.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Při ukládání stahovaného souboru došlo k neznámé chybě.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Chybí oprávnění ke stahování ze serveru.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Chybí připojení k internetu</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Server neodpovídá.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Vaše instalace {title} je porušená a před spuštěním aplikace je třeba ji opravit.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Později</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Stáhnout</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Vaši instalaci {title} nelze opravit. Prosím, stáhněte si pomocný zaváděcí program, který automaticky znovu nainstaluje vaši aplikaci.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="da" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Reparation</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor til Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Afslut</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Annuller</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Reparer</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Genstart</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Geninstaller</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Den installerede version af {title} er blevet beskadiget. Vent venligst mens vi reparerer den for dig.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Den installerede version af {title} kan ikke repareres før computeren er blevet genstartet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Du vil ikke kunne benytte {title} før reparationen er udført.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Din installation af {title} kunne ikke repareres. Vent venligst mens der hentes et selvstartsværktøj, som vil guide dig igennem en geninstallation af programmet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Du vil ikke kunne benytte {title} før geninstallationen er gennemført.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Kunne ikke downloade selvstartsværktøjet. Hvis problemet fortsætter, kan du gå ind på {url} og geninstallere programmet manuelt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Der opstod en ukendt fejl.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Udgiveren af denne fil er ukendt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Der opstod en I/O-fejl, da denne fil skulle gemmes. Sørg for, at der er tilstrækkelig plads på harddisken.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Der opstod en ukendt fejl, da filen skulle gemmes.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Ingen tilladelse til at downloade fra serveren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Ingen internetforbindelse.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Intet svar fra serveren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Din installation af {title} er i stykker og skal repareres, før du kan køre programmet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Senere</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Download</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Din installation af {title} kunne ikke repareres. Download bootstrap-værktøjet for at geninstallere programmet automatisk.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="de" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title}-Reparatur</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor für Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Beenden</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Abbrechen</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Repariert</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Neustart</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Neu installieren</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Ihre installierte Version von {title} ist beschädigt. Bitte warten Sie, während wir sie für Sie reparieren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Ihre installierte Version von {title} kann erst repariert werden, nachdem Sie einen Neustart durchgeführt haben.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Sie können {title} erst benutzen, nachdem die Reparatur abgeschlossen wurde.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Ihre Installation von {title} konnte nicht repariert werden. Bitte warten Sie, während das Bootstrap-Hilfsprogramm heruntergeladen wird, das Sie durch den Neustart der Anwendung führt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Sie können {title} erst benutzen, nachdem die Neuinstallation erfolgreich durchgeführt wurde.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Das Bootstrap-Hilfsprogramm konnte nicht heruntergeladen werden. Wenn Dieses Problem fortbesteht, können Sie zu {url} navigieren und die Anwendung manuell neu installieren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ein unbekannter Fehler ist aufgetreten.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Der Herausgeber des Downloads ist unbekannt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Beim Speichern des Downloads ist ein E/A-Fehler aufgetreten. Stellen Sie sicher, dass genügend Festplatten-Speicherplatz verfügbar ist.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Beim Speichern des Downloads ist ein unbekannter Fehler aufgetreten.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Keine Genehmigung zum Download vom Server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Keine Internetverbindung.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Keine Reaktion vom Server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Ihre Installation von {title} ist beschädigt und muss repariert werden, bevor Sie die Anwendung starten können.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Später</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Download</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Ihre {title}-Installation konnte nicht repariert werden. Bitte laden Sie die Bootstrap-Utility herunter, um die Anwendung automatisch neu zu installieren.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="el" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Επισκευή</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor για Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Έξοδος</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Άκυρο</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Επιδιόρθωση</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Επανεκκίνηση</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Επανεγκατάσταση</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Η εγκατεστημένη έκδοση του {title} είναι κατεστραμμένη. Περιμένετε μέχρι να την επιδιορθώσουμε.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Η εγκατεστημένη έκδοση του {title} δεν μπορεί να επιδιορθωθεί μέχρι να γίνει επανεκκίνηση του συστήματος.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Δεν θα μπορέσετε να χρησιμοποιήσετε το {title} μέχρι να ολοκληρωθεί η επιδιόρθωση.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Η εγκατάσταση του {title} δεν μπορεί να επιδιορθωθεί. Περιμένετε μέχρι να γίνει λήψη της εφαρμογής εκκίνησης που θα σάς καθοδηγήσει κατά την επανεγκατάσταση της εφαρμογής.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Δεν θα μπορέσετε να χρησιμοποιήσετε το {title} μέχρι να ολοκληρωθεί επιτυχώς η επανεγκατάσταση.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Αποτυχία λήψης της εφαρμογής εκκίνησης. Εάν αυτό το πρόβλημα εξακολουθήσει, μπορείτε να μεταβείτε στη διεύθυνση {url} και να εγκαταστήσετε πάλι την εφαρμογή χειροκίνητα.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Σημειώθηκε άγνωστο σφάλμα.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Δεν είνα γνωστός ο εκδότης της λήψης.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Κατά την αποθήκευση της λήψης σημειώθηκε σφάλμα εισόδου εξόδου. Βεβαιωθείτε ότι υπάρχει επαρκής ελεύθερος χώρος στο σκληρό δίσκο.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Σημειώθηκε άγνωστο σφάλμα κατά την αποθήκευση της λήψης.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Δεν δόθηκε άδεια λήψης από τον διακομιστή.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Απουσία σύνδεσης στο Internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Ο διακομιστής δεν ανταποκρίνεται.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Η εγκατάστασή {title} σας έχει απώλειες και πρέπει να επισκευαστεί πριν εκτελέσετε την εφαρμογή.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Αργότερα</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Λήψη</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Δεν ήταν δυνατή η επιδιόρθωση της εγκατάστασης του {title}. Κάντε λήψη του βοηθητικού προγράμματος εκκίνησης για να επανεγκαταστήσετε αυτόματα την εφαρμογή.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="en" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Repair</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Exit</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Cancel</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Repair</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reboot</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Reinstall</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Your installed version of {title} has been corrupted. Please wait while we repair this for you.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Your installed version of {title} cannot be repaired until you reboot the system.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">You will not be able to use {title} until the repair completes.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Your installation of {title} could not be repaired. Please wait while we download the bootstrap utility that will walk you through reinstalling the application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">You will not be able to use {title} until the reinstallation completes successfully.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Failed to download the bootstrap utility. If this problem continues, you can go to {url} and manually reinstall the application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">An unknown error occurred.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">The publisher of the download is unknown.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">An I/O error occurred when saving the download. Ensure that you have sufficient hard disk space available.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">An unknown error occurred when saving the download.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">No permission to download from the server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">No internet connection.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">No response from the server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Your {title} installation is corrupt and needs to be repaired before you can run the application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Later</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Download</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Your {title} installation could not be repaired. Please download the bootstrap utility to reinstall the application automatically.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="es" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Reparación de {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor para Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Salir</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Cancelar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Reparar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reiniciar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Reinstalar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">La versión instalada de {title} ha sido dañada. Por favor, espere mientras lo reparamos para usted.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">La versión instalada de {title} no puede ser reparada hasta que se reinicie el sistema.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Usted no podrá utilizar {title} hasta que la reparación se complete.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">La instalación de {title} no pudo ser reparada. Por favor, espere mientras nosotros descargamos la utilidad de inicio que le guiará a través de la reinstalación de la aplicación.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Usted no podrá utilizar {title} hasta que la reinstalación se 
+realice correctamente.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">No se ha podido descargar la utilidad de arranque. Si este problema continúa, usted puede ir a {url} y manualmente reinstalar la aplicación.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ocurrió un error desconocido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">El editor de la descarga es desconocido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Un error de E/S ocurrió al guardar la descarga. Asegúrese de que tiene suficiente espacio en disco disponible.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Ocurrió un error desconocido al guardar la descarga.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">No tiene permiso para descargar desde el servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">No hay conexión a internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">No hay respuesta del servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Su instalación de {title} está dañada y necesita ser reparada antes de poder ejecutar la aplicación.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Más tarde</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Transferir</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Su instalación de {title} no pudo ser reparada. Por favor descargue la utilidad de arranque para volver a instalar la aplicación de forma automática.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="fi" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title}-ohjelman korjaustoiminto</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor Windowsille</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Poistu</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Peruuta</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Korjaa</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Käynnistä uudelleen</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Asenna uudelleen</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Asennettu {title}-versio ei toimi. Ole hyvä ja odota sillä aikaa, kun korjaamme tilanteen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Asennettua {title}-versiota ei voida korjata ennen kuin olet käynnistänyt tietokoneen uudelleen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">{title} ei ole käytettävissä ennen kuin korjaustoiminto on suoritettu loppuun.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Asennettua {title}-ohjelmaa ei pystytty korjaamaan. Ole hyvä ja odota, kun lataamme käynnistysohjelman, joka opastaa sinua ohjelman uudelleen asentamisessa.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">{title} ei ole käytettävissä ennen kuin uudelleenasennus on suoritettu loppuun.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Käynnistysohjelman lataaminen ei onnistunut. Jos tämä ongelma ei ratkea, voit siirtyä osoitteeseen {url} ja asentaa ohjelman manuaalisesti.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Tapahtui tuntematon virhe.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Ladattavan tiedoston julkaisijaa ei tunneta.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Ladattavaa tiedostoa tallennettaessa tapahtui tiedonsiirtovirhe. Varmista, että kiintolevylläsi on tarpeeksi tyhjää tilaa.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Ladattavaa tiedostoa tallennettaessa tapahtui tuntematon virhe.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Sinulla ei ole lupaa tehdä palvelimelta latauksia.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Internet-yhteyttä ei löytynyt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Palvelin ei vastaa.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">{title} on asennettu virheellisesti, ja asennus on korjattava ennen kuin voit käyttää ohjelmaa.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Myöhemmin</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Lataa</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">{title}:n asennusta ei pystytty korjaamaan. Ole hyvä ja lataa käynnistysohjelma, joka asentaa ohjelman automaattisesti uudestaan.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="fr" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Réparation de {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor pour Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Quitter</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Annuler</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Réparer</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Redémarrer</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Réinstaller</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">La version installée de {title} est endommagée. Veuillez patienter pendant sa réparation.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">La version installée de {title} ne peut pas être réparée tant que vous ne redémarrez pas le système.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Vous ne pourrez pas utiliser {title} avant la fin de la réparation.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">L'installation de {title} n'a pas pu être réparée. Veuillez patienter pendant le téléchargement de l'utilitaire d'amorçage qui vous aidera à réinstaller l'application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Vous ne pourrez pas utiliser {title} avant la fin de la réinstallation.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Le téléchargement de l'utilitaire d'amorçage a échoué. Si ce problème persiste, consultez la page {url} et réinstallez manuellement l'application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Une erreur inconnue s'est produite.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">L'éditeur du téléchargement est inconnu.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Une erreur d'E/S s'est produite pendant l'enregistrement du téléchargement. Veillez à ce que l'espace disque disponible soit suffisant.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Une erreur inconnue s'est produite pendant l'enregistrement du téléchargement.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Vous n'êtes pas autorisé à télécharger depuis le serveur.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Pas de connexion Internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Pas de réponse du serveur.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">L'installation de {title} est corrompue et doit être réparée pour que vous puissiez exécuter l'application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Plus tard</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Télécharger</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">L'installation de {title} n'a pas pu être réparée. Téléchargez l'utilitaire d'amorçage pour réinstaller automatiquement l'application.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="he" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">תיקון {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor עבור Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">יציאה</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">ביטול</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">תיקון</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">אתחול מחדש</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">התקן מחדש</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">גרסת {title} שמותקנת נפגמה. אנא המתן בעת שהתיקון מתבצע.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">ניתן לתקן את גרסת {title} שמותקנת רק לאחר אתחול מחדש של המחשב.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">לא תוכל להשתמש ב-{title} עד להשלמת התיקון.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">אין אפשרות לתקן את התקנת {title}. אנא המתן בעת ההורדה של כלי העזר לאתחול שינחה אותך שלב אחר שלב להתקנה מחדש של היישום.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">לא תוכל להשתמש ב-{title} עד להשלמה בהצלחה של ההתקנה מחדש.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">הורדת כלי העזר לאתחול נכשלה. אם בעיה זו נמשכת, באפשרותך לעבור לכתובת {url} ולהתקין את היישום מחדש באופן ידני.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">אירעה שגיאה לא ידועה.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">מפרסם ההורדה אינו ידוע.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">אירעה שגיאת קלט/פלט בעת שמירת ההורדה. ודא שיש די שטח פנוי בדיסק הקשיח.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">אירעה שגיאה לא ידועה בעת שמירת ההורדה.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">אין הרשאה להורדה מהשרת.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">אין חיבור לאינטרנט.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">אין תגובה מהשרת.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">התקנת {title} פגומה ונדרש לתקנה לפני שתוכל להפעיל את היישום.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">אחר כך</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">הורדה</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">לא ניתן לתקן את התקנת {title}. אנא הורד את תוכנית השירות לאתחול כדי להתקין את היישום מחדש באופן אוטומטי.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="hu" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Javítás</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Kilépés</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Mégse</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Javítás</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reboot</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Újratelepítés</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">A(z) {title} telepített verziója hibás. Kérjük, várjon, amíg kijavítjuk.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">A(z) {title} telepített verziója nem javítható ki, amíg újra nem indítja a rendszert.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Nem fogja tudni használni a(z) {title} programot, amíg a javítás be nem fejeződik.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">A(z) {title} telepített verzióját nem lehetett kijavítani. Kérjük, várjon, amíg letöltjük a bootstrap segédprogramot, amely végigvezeti az alkalmazás újratelepítésén.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Nem fogja tudni használni a(z) {title} programot, amíg az újratelepítés be nem fejeződik.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">A bootstrap segédprogram letöltése nem sikerült. Ha a probléma nem szűnik meg, felkeresheti a(z) {url} címet, és manuálisan újratelepítheti az alkalmazást.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ismeretlen hiba történt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">A letöltés kiadója ismeretlen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">I/O-hiba történt a letöltés mentése közben. Ellenőrizze, hogy van-e elegendő lemezterület.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">A letöltés mentése közben ismeretlen hiba történt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Nincs engedélye letölteni a kiszolgálóról.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Nincs internetkapcsolat.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">A kiszolgáló nem válaszol.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">A(z) {title}-telepítés hibás, és ki kell javítani az alkalmazás futtatása előtt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Később</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Letöltés</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">A(z) {title} telepítést nem lehetett kijavítani. Töltse le a bootstrap segédprogramot az alkalmazás automatikus újratelepítéséhez.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="it" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Riparazione {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor per Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Uscire</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Annulla</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Riparare</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Riavvio</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Reinstalla</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">La versione installata di {title} è stata danneggiata. Per favore attendere mentre la ripariamo.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">La versione installata di {title} non può essere riparata se non dopo il riavvio del sistema.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">{title} non potrà essere usato se non dopo il completamento della riparazione.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Non è stato possibile ripristinare l'installazione di {title}. Attendere che venga scaricata l'utilità di bootstrap che vi guiderà nella reinstallazione dell'applicazione.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Non si potrà usare {title} fino a completamento della reinstallazione.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Download dell'utilità di bootstrap non riuscita. Se questo problema persiste, andare su {url} e reinstallare manualmente l'applicazione.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Si è verificato un errore sconosciuto.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">L'autore del download è sconosciuto.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Si è verificato un errore durante il salvataggio del download. Accertarsi che sia disponibile spazio a sufficienza sul disco rigido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Si è verificato un errore sconosciuto durante il salvataggio del download.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Non si è autorizzati a effettuare download dal server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Nessun collegamento a internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Nessuna risposta dal server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">L'installazione di {title} è danneggiata e dev'essere riparata prima di poter eseguire l'applicazione.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Più tardi</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Scarica</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Non è stato possibile riparare l'installazione di {title}. Scaricare l'utilità di bootstrap per reinstallare automaticamente l'applicazione.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="ja" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} の修復</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">終了</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">中止</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">修復</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">再起動</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">再インストール</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">{title} のインストールされたバージョンが破損しています。修復していますので、お待ちください。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">システムを再起動するまで、{title} のインストールされたバージョンを修復できません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">修復が完了するまで、{title} はご利用できません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">{title} のインストールを修復できませんでした。アプリケーションの再インストールを案内するブートストラップ ユーティリティをダウンロードしていますので、お待ちください。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">再インストールが完了するまで、{title} はご利用できません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">ブートストラップ ユーティリティをダウンロードできませんでした。この問題が引き続き発生する場合は、{url} にアクセスし、アプリケーションの再インストールを手動で実行してください。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">不明なエラーが発生しました。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">ダウンロードの発行元が不明です。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">ダウンロードの保存中に I/O エラーが発生しました。ハードディスクに十分な容量があることを確認してください。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">ダウンロードの保存中に不明なエラーが発生しました。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">サーバーからのダウンロードは許可されていません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">インターネット接続がありません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">サーバーからの応答がありません。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">{title} のインストールは破損したため、アプリケーションを実行する前に修復する必要があります。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">後で実行する</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">ダウンロード</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">{title} のインストールは修復できませんでした。ブートストラップ ユーティリティをダウンロードして、アプリケーションを自動的に再インストールしてください。</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="ko" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} 복구</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">Windows용 PC-Doctor</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">끝내기</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">취소</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">수정</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">다시 부팅</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">다시 설치</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">설치된 {title}의 버전이 손상되었습니다. 복구될때까지 조금만 기다려 주십시오.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">설치된 {title}의 버전은 시스템을 재부팅해야 복구될 수있습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">{title}은(는) 복구가 완료될 때까지 사용하실 수 없습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">설치된 {title}은(는) 복구될 수 없습니다. Bootstrap 유틸리티가 다시 설치될 때까지 기다려 주시면 어플리케이션 재설치를 안내해 드리겠습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">{title}은(는) 성공적으로 다시 설치될 때까지 사용하실 수 없습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Bootstrap 유틸리티를 설치를 실패하였습니다. 문제가 계속되면, {url}으(로) 가셔서 어플리케이션을 직접 재설치하실 수 있습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">알 수 없는 오류 발생</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">다운로드 발행인을 알 수 없습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">다운로드를 저장하는 중에 I/O 에러가 발생하였습니다. 충분한 하드 디스크 공간이 확보되었는지 확인하세요.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">다운로드를 저장하는 중에 알 수 없는 오류가 발생하였습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">서버로 부터 다운로드 할 수 있는 권한이 없습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">인터넷 연결이 되어있지 않습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">서버로 부터 응답이 없습니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">{title}설치가 손상되었고, 어플리케이션을 실행하기전에 복구되어야 합니다.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">나중에 시작</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">다운로드</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">{title} 설치가 복구될 수 없습니다. 어플리케이션을 자동으로 재설치 하시려면 부트스트랩 유틸리티를 다운로드 하세요.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="nb" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} reparasjon</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Avslutt</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Avbryt</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Reparer</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reboot</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Installer på nytt</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Din installerte versjon av {title} er korrupt. Vent mens vi reparerer den for deg.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Din installerte versjon av {title} kan ikke repareres før du har started systemet på nytt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Du kan ikke bruke {title} før du har startet systemet på nytt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Din installasjon av {title} kunne ikke repareres. Vent mens vi laster ned bootstrap-verktøyet som vil veilede deg gjennom installasjonen av programmet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Du kan ikke bruke {title} før det er installert på nytt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Kunne ikke laste ned bootstrap-verktøyet. Hvis problemet fortsetter, kan du åpne {url} og installere programmet på nytt manuelt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">En ukjent feil forekom.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Utgiver av nedlastingen er ukjent.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">En I/U-feil forekom i løpet av nedlastingen. Påse at du har tilstrekkelig harddiskplass.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">En ukjent feil forekom i løpet av nedlastingen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Ingen tillatelse til å laste ned fra serveren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Ingen Internett-tilkobling.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Ingen respons fra server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Installasjonen av {title} er skadet og må repareres før du kan kjøre programmet.installation is corrupt and needs to be repaired before you can run the application.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Senere</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Last ned</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Det var ikke mulig å reparere installasjonen av {title}. Last ned bootsrap-verktøyetfor å reinstallere programmet automatisk.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="nl" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Reparatie</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor voor Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Afsluiten</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Annuleren</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Herstellen</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Opnieuw starten</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Opnieuw installeren</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Uw geïnstalleerde versie van {title} is beschadigd. Wacht een moment terwijl wij dit voor u herstellen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Uw geïnstalleerde versie van {title} kan pas worden hersteld als u uw systeem opnieuw heeft opgestart.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">U kunt {title} pas gebruiken als het herstel is afgerond.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Uw installatie van {title} kon niet worden hersteld. Wacht een moment terwijl wij het bootstrap-hulpprogramma downloaden om u bij de herinstallatie te begeleiden.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">U kunt {title} pas gebruiken als de herinstallatie met succes is afgerond.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Het downloaden van het bootstrap-hulpprogramma is mislukt. Als dit probleem blijft optreden, kunt u naar {url} gaan en het programma handmatig opnieuw te installeren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Er is een onbekende fout opgetreden.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">De uitgever van deze download is onbekend.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Er is een I/O-fout optreden tijdens het opslaan van de download. Controleer of u voldoende vrije ruimte op de harde schijf hebt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Er is een onbekende fout opgetreden tijdens het opslaan van de download.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Geen toestemming om van de server te downloaden.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Geen internetverbinding.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Geen reactie van de server.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Uw {title} installatie is corrupt en moet worden hersteld voordat u de applicatie kunt uitvoeren.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Later</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Downloaden</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Uw {title} installatie kon niet worden gerepareerd. Download het uitvoerbaar bestand om de applicatie automatisch opnieuw te installeren.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="pl" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Naprawa {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor dla systemu Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Wyjście</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Anuluj</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Napraw</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Ponowny rozruch</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Zainstaluj ponownie</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Twoja zainstalowana wersja {title} została uszkodzona. Prosimy poczekać, naprawimy ją dla Ciebie.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Twoja zainstalowana wersja {title} nie może być naprawiona do czasu ponownego uruchomienia systemu.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Można używać {title} dopiero po zakończeniu naprawy.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Twoja instalacja {title} nie mogła być naprawiona. Prosimy poczekać, pobierzemy program ładujący, który poprowadzi Cię przez ponowną instalację aplikacji.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Nie można używać {title} do czasu pomyślnego zakończenia ponownej instalacji.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Nie udało się pobrać programu ładującego. Jeśli ten problem będzie nadal trwał, możesz przejść na stronę {url} i ponownie zainstalować aplikację w sposób ręczny.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Wystąpił nieznany błąd.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Nieznany jest wydawca programu do pobrania.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Wystąpił błąd I/O podczas zapisywania pobrania. Upewnij się, że masz wystarczająco dużo miejsca na dysku.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Wystąpił nieznany błąd podczas zapisywania pobrania.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Brak zezwolenia na pobranie z serwera.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Brak połączenia internetowego.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Brak reakcji ze strony serwera.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Instalacja aplikacji {title} jest uszkodzona i wymaga naprawy przed uruchomieniem.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Później</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Pobierz</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Nie można naprawić instalacji aplikacji {title}. Pobierz narzędzie samoładujące, aby automatycznie zainstalować aplikację ponownie.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="pt" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Reparo do {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor para Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Sair</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Cancelar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Recuperar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reinicializar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Reinstalar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">A versão instalada do {title} está corrompida. Aguarde enquanto a reparamos para você.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Não é possível reparar sua versão instalada do {title} até você reinicializar o sistema.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Você não vai conseguir usar o {title} até a conclusão dos reparos.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Não foi possível reparar sua instalação do {title}. Aguarde enquanto baixamos o utilitário bootstrap que vai orientá-lo durante a reinstalação do aplicativo.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Você só vai conseguir usar o {title} quando a reinstalação for concluída com sucesso.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Falha ao baixar o utilitário bootstrap. Se este problema continuar, você poderá visitar o {url} e reinstalar manualmente o aplicativo.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ocorreu um erro desconhecido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">O editor do download é desconhecido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Ocorreu um erro de E/s ao salvar o download. Garanta que você tenha espaço em disco disponível suficiente.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Ocorreu um erro ao salvar o download.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Sem permissão para fazer downloado do servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Sem conexão com a Internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Sem resposta do servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Sua instalação do {title} está corrompida e precisa ser reparada para você continuar executando o aplicativo.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Mais tarde</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Fazer o download</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Não foi possível reparar sua instalação do {title}. Faça download do utilitário bootstrap para reinstalar o aplicativo automaticamente.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="pt-pt" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">Reparar {title}</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor para Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Sair</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Cancelar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Reparação</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reiniciar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Reinstalar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">A sua versão instalada do {title} foi corrompida. Por favor, aguarde enquanto o reparamos para si.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Não é possível reparar a sua versão instalada do {title} antes de reiniciar o sistema.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Não será capaz de usar o {title} até que a reparação termine.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Não foi possível reparar a sua instalação do {title}. Por favor, aguarde enquanto transferimos o utilitário de arranque do sistema que o acompanhará na reinstalação da aplicação.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Não será capaz de usar o {title} até que a reinstalação termine com sucesso.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Falhou a transferência do utilitário de arranque do sistema. Se este problema persistir, poderá ir a {url} e reinstalar manualmente a aplicação.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ocorreu um erro desconhecido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">O editor da transferência é desconhecido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Ocorreu um erro de E/S ao guardar a transferência. Assegure-se de que tem espaço suficiente disponível no disco rígido.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Ocorreu um erro desconhecido ao gravar a transferência.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Sem permissão para transferir a partir do servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Sem ligação à Internet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Sem resposta do servidor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">A instalação do seu {title} está corrompida e precisa de ser reparada antes de poder executar a aplicação.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Mais tarde</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Transferir</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">A sua instalação do {title} não pode ser reparada. Por favor, transfira o utilitário de arranque para reinstalar a aplicação automaticamente.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="ru" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Repair</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">Программа PC-Doctor для Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Выйти</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Отмена</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Восстановление</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Перезагрузка</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Переустановить</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Установленная версия {title} имеет повреждения. Просим подождать некоторое время, будет выполнено ее восстановление.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Установленная версия {title} не может быть восстановлена, пока система не будет перезагружена.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Вы не сможете использовать {title} до окончания процесса восстановления.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Установленная версия {title} не может быть восстановлена. Просим подождать некоторое время, пока будет загружена программа начального запуска, которая поможет вам выполнить повторную установку приложения.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Вы не сможете использовать {title}, пока не будет успешно закончена повторная установка.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Не удалось загрузить программу начального запуска. Если эта проблема будет продолжаться, вы можете посетить {url} и переустановить приложение вручную.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Произошла неизвестная ошибка.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Издатель данного загружаемого файла неизвестен.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">При сохранении загружаемого файла произошла ошибка ввода/вывода. Проверьте наличие достаточного пространства на диске.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">При сохранении загружаемого файла произошла неизвестная ошибка.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Отсутствует разрешение на загрузку с данного сервера.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Подключение к Интернет отсутствует.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Нет ответа от сервера.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">При установке {title} возникли неисправности, прежде чем запустить приложение, необходимо их устранить.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Позднее</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Загрузить</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Невозможно восстановить установленное приложение {title}. Загрузите начальный загрузочный файл для повторной автоматической установки приложения.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="sv" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} reparation</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor för Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Avsluta</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">Avbryt</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Reparera</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Reboot</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Installera om</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Din installerade version av {title} har skadats. Vänta medan vi reparerar den åt dig.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Din installerade version av {title} kan inte repareras förrän du startar om systemet.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Du kan inte använda {title} förrän reparationen är klar.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Det gick inte att reparera din installation av {title}. Vänta medan vi hämtar startprogramsfunktionen som vägleder dig igenom en ominstallation av applikationen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Du kan inte använda {title} förrän ominstallationen är klar.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Det gick inte att hämta startprogramfunktionen. Om problemet kvarstår kan du gå till {url} och installera om applikationen manuellt.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Ett okänt fel uppstod.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Okänd utgivare av hämtningen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Ett I/O-fel uppstod när hämtningen sparaes. Kontrollera att du har tillräckligt med tillgängligt utrymme på hårddisken.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Ett okänt fel uppstod när hämtningen sparades.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Ingen behörighet att hämta från servern.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">Ingen internetanslutning.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Inget svar från servern.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">Din {title} installation är skadad och måste repareras innan du kan köra applikationen.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Senare</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Ladda ned</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">Det gick inte att reparera din {title}-installation. Ladda ner startprogramfunktionen för att installera om applikationen automatiskt.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="tr" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} Onarımı</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">Windows için PC-Doctor</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">Çıkış</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">İptal</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">Onar</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">Yeniden Başlat</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">Yeniden Yükle</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">Yüklü olan {title} sürümünüz bozulmuş. Bunu sizin için onarırken lütfen bekleyin.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">Yüklü olan {title} sürümünüz, sistemi yeniden başlatana kadar onarılamaz.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">Onarım tamamlanana kadar {title} uygulamasını kullanamazsınız.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">Yüklemiş olduğunuz {title} uygulaması onarılamıyor. Uygulamayı yeniden yüklerken size adım adım yardımcı olacak önyükleme yardımcı programını karşıdan yüklemek için lütfen bekleyin.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">Yeniden yükleme işlemi başarıyla tamamlanana kadar {title} uygulamasını kullanamazsınız.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">Önyükleme yardımcı programı karşıdan yüklenemedi. Bu sorun devam ederse, {url} sayfasına gidip, uygulamayı elle yeniden yükleyebilirsiniz.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">Bilinmeyen bir hata oluştu.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">Karşıdan yüklemeyi yayınlayan bilinmiyor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">Karşıdan yüklemeyi kaydederken G/Ç hatası oluştu. Kullanılabilir sabit disk alanınızın yeterli olduğundan emin olun.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">Karşıdan yüklemeyi kaydederken bilinmeyen bir hata oluştu.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">Sunucudan yükleme izni yok.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">İnternet bağlantısı yok</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">Sunucudan yanıt yok.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">{title} kurulumunuz bozulmuş ve uygulamayı çalıştırabilmeniz için onarılması gerekiyor.</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">Daha Sonra</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">Karşıdan yükle</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">{title} kurulumunuz onarılamadı. Uygulamayı otomatik olarak yeniden yüklemek için lütfen önyükleme yardımcı programını karşıdan yükleyin.</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="zh-cn" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} 修复</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">退出</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">取消</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">修理</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">重新启动</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">重新安装</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">您所安装的{title}版本损坏，我们会为您修复，请稍候。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">您所安装的{title}版本需要重新启动系统才能修复。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">完成修复之前，您将不能使用{title}。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">您安装的 {title} 无法修复。我们会为您下载启动程序，帮您重新安装该应用程序，请稍候。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">在成功完成重新安装之前，您将无法使用{title}。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">启动程序下载失败。 如果这个问题持续，您可以前往 {url} ，重新手动安装该应用程序。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">发生未知错误。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">该下载的发行者为未知。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">保存下载时发生输入/输出错误。请确保您有足够的可用硬盘空间。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">保存下载时发生未知错误。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">没有权限从该服务器上下载。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">没有 Internet 连接。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">服务器没有响应。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">您的 {title} 安装已损坏，需要将其修理才可以运行该应用程序。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">以后</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">下载</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">您的{title}安装无法修复。请下载引导实用程序，自动重新安装应用程序。</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="default" var="default" lang="zh-tw" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="utility.title" type="-n/a-" english_only="false">{title} 修復</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">PC-Doctor for Windows</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.exit" type="-n/a-" english_only="false">退出</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.cancel" type="-n/a-" english_only="false">取消</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.repair" type="-n/a-" english_only="false">修復</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reboot" type="-n/a-" english_only="false">重新開機</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.reinstall" type="-n/a-" english_only="false">重新安裝</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.rollback.in.progress" type="-n/a-" english_only="false">您所安裝的{title}版本損壞，我們會為您修復，請稍候。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.reboot.required" type="-n/a-" english_only="false">您所安裝的{title}版本需要重新啟動系統才能修復。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.canceled" type="-n/a-" english_only="false">完成修復之前，您将不能使用{title}。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.in.progress" type="-n/a-" english_only="false">您安裝的 {title} 無法修復。我們會為您下載啟動程式，幫您重新安裝該應用程式，請稍候。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.canceled" type="-n/a-" english_only="false">在成功完成重新安裝之前，您将無法使用{title}。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.error" type="-n/a-" english_only="false">啟動程式下載失敗。如果這個問題持續，您可以前往 {url} ，重新手動安裝該應用程式。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.unknown" type="-n/a-" english_only="false">發生不明錯誤。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.signing" type="-n/a-" english_only="false">該下載的發行者為未知。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.io" type="-n/a-" english_only="false">儲存下載時發生輸入/輸出錯誤。請確保您有足夠的可用硬碟空間。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.save" type="-n/a-" english_only="false">儲存下载时發生不明錯誤。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.security" type="-n/a-" english_only="false">沒有權限從該伺服器上下載。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.internet" type="-n/a-" english_only="false">沒有網際網路連線。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="error.reason.no.response" type="-n/a-" english_only="false">伺服器沒有回應。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.repair.required" type="-n/a-" english_only="false">您的 {title} 安裝已損壞，需要將其修理才可以執行該應用程式。</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.later" type="-n/a-" english_only="false">以後</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="button.download" type="-n/a-" english_only="false">下載</substring>
+      </string>
+      <string type="Other" comment="">
+        <substring name="message.download.required" type="-n/a-" english_only="false">您的{title}安裝無法修復。請下載載入公用程式，自動重新安裝應用程式。</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="dell" var="aa" lang="en" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">Alien Autopsy</substring>
+      </string>
+    </module>
+    <module name="pcdrollbackhealer" cust="dell" var="default" lang="en" category="User Interface Module">
+      <string type="Other" comment="">
+        <substring name="title" type="-n/a-" english_only="false">SupportAssist</substring>
+      </string>
+    </module>
+  </os>
+</main>

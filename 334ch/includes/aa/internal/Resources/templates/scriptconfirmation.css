@@ -1,0 +1,23 @@
+body{
+	font-family: Arial;
+	font-size: smaller;
+}
+
+#deviceheader {
+	font-size: normal;
+	font-weight: bold;
+}
+
+#testrow0 {
+	background-color: #f0f0f0;
+	border: solid;
+	border-color: #f0f0f0;
+}
+
+#testrow1 {
+/*	background-color: #eeeeee; */
+	border: solid;
+	border-color: white;
+}
+
+

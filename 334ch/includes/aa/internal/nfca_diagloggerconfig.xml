@@ -1,0 +1,167 @@
+
+<pcd:DiagLog enabled="true">
+    <Application enabled="false">
+        <Start enabled="false"/>
+        <Stop enabled="false"/>
+    </Application>
+
+    <SysInfo enabled="true">
+        <DeviceEnumerationCompleted enabled="false">
+            <Module enabled="false"/>
+            <NumOfDevicesEnumerated enabled="false"/>
+            <Duration  enabled="false"/>
+        </DeviceEnumerationCompleted>
+
+        <TestEnumerationCompleted enabled="false">
+            <Module enabled="false"/>
+            <NumOfTestsEnumerated enabled="false"/>
+            <Duration  enabled="false"/>
+        </TestEnumerationCompleted>    
+    
+        <System enabled="false"/>
+        <OS enabled="false"/>
+        <BIOS enabled="false"/>
+        <PCDVersion enabled="false"/>
+        
+        <Device enabled="true">
+            <LocationUID enabled="false"/>
+            <DeviceUID enabled="false"/>
+            <Name enabled="true"/>
+            <Description enabled="true"/>
+            <GUID enabled="true"/>
+            <OS_Locator enabled="true"/>
+            <HW_Locator enabled="true"/>
+            <DeviceType enabled="true"/>
+            <BusType enabled="true"/>
+            <Capability enabled="true"/>
+            <FriendlyGUID  enabled="false"/>
+            <ChilBusID enabled="false"/>
+            <Property enabled="true">
+                <Description enabled="true"/>
+                <SourceModule enabled="false"/>
+                <DataType enabled="true"/>
+                <Key enabled="true"/>
+                <Value enabled="true"/>
+            </Property>
+            <Test  enabled="false">
+                <Description enabled="false"/>
+                <GUID enabled="false"/>
+                <ModuleGUID enabled="false"/>
+                <Interactive enabled="false"/>
+                <SupportedCapability  enabled="false"/>
+                <FriendlyGUID  enabled="false"/>
+            </Test>            
+         </Device>
+
+        <AllModules enabled="true">
+            <Module  enabled="true">
+                <BuildDate enabled="false"/>
+                <Company enabled="false"/>
+                <Path enabled="false"/>
+                <SupportedCapabilities enabled="true"/>
+                <Test  enabled="true">
+                    <Description enabled="true"/>
+                    <GUID enabled="true"/>
+                    <ModuleGUID enabled="true"/>
+                    <Interactive enabled="false"/>
+                    <SupportedCapability enabled="true"/>
+                    <FriendlyGUID  enabled="false"/>
+                </Test>
+            </Module>
+        </AllModules>
+        
+    </SysInfo>
+
+    <DiagInfo enabled="true">
+    
+		<Tests enabled="true">
+			<MaxTimePerPass enabled="false"/>
+			<MinTimePerTest enabled="false"/>
+			<MaxTimePerTest enabled="false"/>
+			<Description enabled="false"/>
+			<MultiPassTestRun enabled="false">
+				<Test enabled="false">
+					<Description enabled="false"/>
+					<GUID enabled="false"/>
+					<ModuleGUID enabled="false"/>
+					<Interactive enabled="false"/>
+					<SupportedCapability enabled="false"/>
+					<FriendlyGUID  enabled="false"/>
+				</Test>
+				<Device enabled="false">
+					<Name enabled="false"/>
+					<Description enabled="false"/>                
+					<GUID enabled="false"/>
+					<OS_Locator enabled="false"/>
+					<HW_Locator enabled="false"/>
+					<DeviceType  enabled="false"/>
+					<FriendlyGUID  enabled="false"/>
+				</Device>
+			</MultiPassTestRun>
+			<Start enabled="true"/>
+			<Pass  enabled="true"/>
+			<Finished enabled="true"/>
+			<MaxTimeExceeded enabled="true"/>
+			<Aborted enabled="true"/>
+			<Aborting enabled="true"/>				
+			<NumOfSucceededTestRuns enabled="false"/>
+			<Result enabled="true"/>
+			<PercentComplete  enabled="false"/>
+			<ErrorCount enabled="false"/>
+			<ElapsedTime  enabled="false"/>
+		</Tests>
+	
+		<TestRun enabled="true">
+			<GUID enabled="false"/>
+			<MaxTime  enabled="false"/>
+			<Test enabled="true">
+				<Description enabled="false"/>
+				<GUID enabled="true"/>
+				<ModuleGUID enabled="false"/>
+				<Interactive enabled="false"/>
+				<SupportedCapability enabled="false"/>
+				<FriendlyGUID  enabled="false"/>
+			</Test>	
+			<Device enabled="true">
+				<Name enabled="false"/>
+				<Description enabled="false"/>
+				<GUID enabled="false"/>
+				<OS_Locator enabled="false"/>
+				<HW_Locator enabled="false"/>
+				<DeviceType  enabled="false"/>
+				<FriendlyGUID  enabled="false"/>
+			</Device>	
+			<EstimatedTimeLeft  enabled="false"/>
+			<Start enabled="true"/>
+			<PercentComplete enabled="true"/>
+			<TestResult enabled="true"/>
+			<ErrorCount enabled="false"/>
+			<ElapsedTime enabled="false"/>
+			<Parameter enabled="false">	
+				<Key enabled="false"/>	
+				<Description enabled="false"/>
+				<ValueSource enabled="false"/>	
+				<Value enabled="false"/>	
+			</Parameter>				
+			<MessageBox enabled="true">
+				<Time enabled="true"/>
+				<Title enabled="true"/>
+				<Message enabled="true"/>
+				<Timeout enabled="true"/>
+				<Input enabled="true"/>
+				<Return enabled="true"/>
+			</MessageBox>		
+			<TestRunEvent enabled="true">	
+				<Time  enabled="false"/>	
+				<Message enabled="true"/>	
+			</TestRunEvent>
+			<ProgressMessage enabled="true">	
+				<Time  enabled="false"/>	
+				<Message enabled="true"/>	
+			</ProgressMessage>			
+			<Finished enabled="true"/>
+			<Aborted enabled="true"/>
+			<Aborting enabled="false"/>			
+		</TestRun>
+    </DiagInfo>
+</pcd:DiagLog>

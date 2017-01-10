@@ -1,0 +1,8 @@
+<pcd:logger>
+	<logger name="Root" priority="Error" >
+		<appender type="console" name="ConsoleErr" out="err" priority="Disabled"/>
+		<appender type="file" name="EngineLogFile" priority="Debug" usepid="true" file="logs/engine.log" overwrite="true" showthread="true"/>
+	</logger>
+	<logger name="Verbose" priority="Error"/>
+	<logger name="Localization" priority="Error"/>
+</pcd:logger>

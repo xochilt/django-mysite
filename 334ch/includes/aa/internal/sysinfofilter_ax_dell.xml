@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<SysinfoFilter>
+	<IncludeDevices>
+		<Device capability="CPU"/>
+		<Device capability="DrivePartition"/>
+		<Device capability="DVD"/>
+		<Device capability="DVDMINUSRW"/>
+		<Device capability="HardDrive"/>
+		<Device capability="HDAudioController"/>
+		<Device capability="IEEE1394Controller"/>
+		<Device capability="Keyboard"/>
+		<Device capability="Monitor"/>
+		<Device capability="Mouse"/>
+		<Device capability="MassStorageController"/>
+		<Device capability="OEMInfo"/>
+		<Device capability="OperatingSystem"/>
+		<Device capability="SMBIOS_Struct"/>
+		<Device capability="SMBusController"/>
+		<Device capability="SSD"/>
+		<Device capability="SoundCard"/>
+		<Device capability="USBController"/>
+		<Device capability="USBComposite"/>
+		<Device capability="Battery"/>		
+	</IncludeDevices>
+	<Device capability="CPU">
+		<Property key="Name" type="STRING"/>
+	</Device>
+	<Device capability="DrivePartition">
+		<Property key="DriveLetter" type="STRING"/>
+	</Device>
+	<Device capability="DVD"/>
+	<Device capability="DVDMINUSRW"/>
+	<Device capability="HardDrive"/>
+	<Device capability="HDAudioController"/>
+	<Device capability="IEEE1394Controller"/>
+	<Device capability="Keyboard"/>
+	<Device capability="Monitor"/>
+	<Device capability="Mouse"/>
+	<Device capability="MassStorageController"/>
+	<Device capability="OEMInfo">
+		<Property key="OEMServiceTag" type="STRING"/>
+	</Device>
+	<Device capability="OperatingSystem">
+		<Property key="OSName" type="STRING"/>
+	</Device>
+	<Device capability="SMBIOS_Struct">
+		<Property key="t1_product" type="STRING"/>
+		<Property key="t1_serial" type="STRING"/>
+		<Property key="t2_serial" type="STRING"/>
+		<Property key="t3_serial" type="STRING"/>
+	</Device>
+	<Device capability="SMBusController"/>
+	<Device capability="SSD"/>
+	<Device capability="SoundCard"/>
+	<Device capability="System">
+		<Property key="t1_manufacturer" type="STRING"/>
+		<Property key="t1_product" type="STRING"/>
+		<Property key="t1_serial" type="STRING"/>
+	</Device>
+	<Device capability="USBController"/>
+	<Device capability="USBComposite"/>
+	<Device capability="Battery">
+		<Property key="BatteryName"/>
+		<Property key="BatteryManufacturerName"/>
+		<Property key="BatteryManufactureDate"/>
+		<Property key="BatteryFirstUsedDate"/>
+		<Property key="BatteryChemistry"/>
+		<Property key="BatteryBarCodingNumber"/>
+		<Property key="Battery_ePPID"/>
+		<Property key="BatterySerialNumber"/>
+		<Property key="BatteryDesignedCapacityPercentage"/>
+		<Property key="BatteryCurrentChargePercentage"/>
+		<Property key="BatteryCurrentCharge"/>
+		<Property key="BatteryfullChargedCapacity"/>
+		<Property key="BatteryDesignedCapacity"/>
+		<Property key="BatteryVoltage"/>
+		<Property key="BatteryTemperature"/>
+		<Property key="BatteryCycleCount"/>
+	</Device>
+</SysinfoFilter>

@@ -1,0 +1,7 @@
+<Script name="AbstractTestConfirmationPage.fullVideoTest">
+	<TestSet>       
+		<Test key="TLPipelineStressTest"/>      
+		<Test key="TLPipelineWireframeStressTest"/>
+		<Test key="MultiRenderingDX9Test"/>      
+	</TestSet>
+</Script>

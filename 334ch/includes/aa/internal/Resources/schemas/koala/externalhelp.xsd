@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="helpstructure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="helptopic" type="HelpTopic"/>
+      </xs:sequence>
+      <xs:attribute name="topics_dir" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- The 'HelpTopic' type defines nested helptopic elements -->
+  <xs:complexType name="HelpTopic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="helptopic" type="HelpTopic" />
+    </xs:sequence>
+    <xs:attribute name="file" type="xs:string" use="required" />
+  </xs:complexType>
+  
+</xs:schema>

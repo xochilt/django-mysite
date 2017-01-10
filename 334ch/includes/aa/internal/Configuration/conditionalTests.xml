@@ -1,0 +1,419 @@
+<ConditionalTests>
+
+	<!-- Device Specific Conditional Tests -->
+
+	<!-- MEMORY -->
+	<ScriptGroup device="Memory" type="radiobutton">
+		<ScriptContainer name="AbstractTestConfirmationPage.memoryTest" file="scripts/memory.xml" checked="true" />
+		<ScriptContainer name="AbstractTestConfirmationPage.memoryStressTest" file="scripts/memory_stress.xml" />
+	</ScriptGroup>
+
+
+	<!-- CPU -->
+	<ScriptGroup device="CPU" type="radiobutton">
+		<ScriptContainer name="AbstractTestConfirmationPage.cpuTest" file="scripts/cpu.xml" checked="true" />
+		<ScriptContainer name="AbstractTestConfirmationPage.cpuStressTest" file="scripts/cpu_stress.xml" locktodevice="false" />
+	</ScriptGroup>
+
+
+	<!-- MODEM -->
+	<ScriptGroup device="Modem" type="checkbox">
+		<ScriptContainer name="modemTest" file="scripts/modem.xml" checked="true" />
+	</ScriptGroup>
+
+
+	<!-- WEBCAM -->
+	<ScriptGroup device="Camera" type="checkbox">
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="Camera"/>
+					<Test key="CaptureToScreenTest"/>
+					<Test key="CaptureToFileTest"/>
+					<Test key="EdgeDetectionTest"/>
+					<Test key="LuminanceDepthTest"/>
+					<Test key="RGBChannelTest"/>
+					<Test key="RGBColorDepthTest"/>
+					<Test key="RGBLineAmplifierTest"/>
+					<Test key="RGBLineDriverTest"/>
+					<Test key="RGBPixelTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+	</ScriptGroup>
+
+	<!-- VIDEOCAPTURE -->
+	<ScriptGroup device="VideoCapture" type="checkbox">
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="TVSignalTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="CaptureToScreenTest" module="pcdrtvcard"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture" module="pcdrtvcard"/>
+					<Test key="CaptureToFileTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="FMRadioTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="DigitalTVSignalTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="ClearQAMTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer global="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="VideoCapture"/>
+					<Test key="DriverCommunicationTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+	</ScriptGroup>
+
+
+	<!-- VIDEOCARD -->
+	<ScriptGroup device="VideoCard" type="radiobutton">
+		<ScriptContainer name="AbstractTestConfirmationPage.shortVideoTest" file="scripts/video.xml" checked="true" />
+		<ScriptContainer name="AbstractTestConfirmationPage.fullVideoTest" file="scripts/video_stress.xml" />
+		<ScriptContainer name="AbstractTestConfirmationPage.cuda">
+			<Script>
+				<TestSet>       
+					<Test module="pcdrcuda" />
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+	</ScriptGroup>
+
+
+	<!-- OPTICAL -->
+	<ScriptGroup device="Optical" type="checkbox" showcheckall="true" checked="true">
+		<ScriptContainer name="AbstractTestConfirmationPage.obistdlCheckBox" checked="true">
+			<Script>
+				<TestSet>
+					<Device capabilities="Optical"/>
+					<Test key="DRAMTest" module="pcdrobistdl"/>
+					<Test key="FlashROMTest" module="pcdrobistdl"/>
+					<Test key="MainICTest" module="pcdrobistdl"/>
+					<Test key="OpuTest" module="pcdrobistdl"/>
+					<Test key="SpindleTest" module="pcdrobistdl"/>
+					<Test key="TrayOutTest" module="pcdrobistdl"/>
+					<Test key="TrayInTest" module="pcdrobistdl"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<!-- Readable media tests -->
+		<ScriptGroup name="ReadableGroupTitle">
+
+			<ScriptContainer name="AbstractTestConfirmationPage.cdDataCheckBox" checked="true">
+				<Script>
+					<TestSet>
+						<Device capabilities="CDROM"/>
+						<Test key="LinearSeekTest" module="pcdrcddrive2"/>
+						<Test key="RandomSeekTest" module="pcdrcddrive2"/>
+						<Test key="FunnelSeekTest" module="pcdrcddrive2"/>
+						<Test key="LinearReadCompareTest" module="pcdrcddrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>       
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.cdMusicCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="CDROM"/>
+						<Test key="CDAudioTest" module="pcdrcddrive"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdMovieCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="DVD"/>
+						<Test key="LinearSeekTest" module="pcdrdvddrive2"/>
+						<Test key="RandomSeekTest" module="pcdrdvddrive2"/>
+						<Test key="FunnelSeekTest" module="pcdrdvddrive2"/>
+						<Test key="LinearReadCompareTest" module="pcdrdvddrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdRamCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDRAM"/>
+						<Test key="RandomSeekTest" module="pcdrdvdramdrive2"/>
+						<Test key="FunnelSeekTest" module="pcdrdvdramdrive2"/>
+						<Test key="LinearSeekTest" module="pcdrdvdramdrive2"/>
+						<Test key="LinearReadCompareTest" module="pcdrdvdramdrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.hdDvdCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="HDDVDROM"/>
+						<Test key="LinearSeekTest" module="pcdrhddvddrive2"/>
+						<Test key="RandomSeekTest" module="pcdrhddvddrive2"/>
+						<Test key="FunnelSeekTest" module="pcdrhddvddrive2"/>
+						<Test key="LinearReadCompareTest" module="pcdrhddvddrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.bluRayCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="BDROM"/>
+						<Test key="LinearSeekTest" module="pcdrbddrive2"/>
+						<Test key="RandomSeekTest" module="pcdrbddrive2"/>
+						<Test key="FunnelSeekTest" module="pcdrbddrive2"/>
+						<Test key="LinearReadCompareTest" module="pcdrbddrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+		</ScriptGroup>
+
+		<!-- Writeable media tests -->
+		<ScriptGroup name="WritableGroupTitle">
+
+			<ScriptContainer name="AbstractTestConfirmationPage.cdRCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="CDR"/>
+						<Test key="ReadWriteTest" module="pcdrcdr"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>       
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdPlusRCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDPLUSR"/>
+						<Test key="ReadWriteTest" module="pcdrdvdplusr"/>		  
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>   
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdMinusRCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDMINUSR"/>
+						<Test key="ReadWriteTest" module="pcdrdvdminusr"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>   
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdPlusRDLCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDPLUSRDL"/>
+						<Test key="ReadWriteTest" module="pcdrdvdplusrdl"/> 
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>    
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdMinusRDLCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDMINUSRDL"/>
+						<Test key="ReadWriteTest" module="pcdrdvdminusrdl"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>  
+
+		</ScriptGroup>
+
+		<!-- ReWriteable media tests -->
+		<ScriptGroup name="RewritableGroupTitle">
+
+			<ScriptContainer name="AbstractTestConfirmationPage.cdRWCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="CDRW"/>
+						<Test key="ReadWriteTest" module="pcdrcdrw"/>
+						<Test key="DriverFilterTest" module="pcdrcdrw"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>    
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdPlusRWCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDPLUSRW"/>
+						<Test key="ReadWriteTest" module="pcdrdvdplusrw"/>		  
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdMinusRWCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDMINUSRW"/>
+						<Test key="ReadWriteTest" module="pcdrdvdminusrw"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>  
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdPlusRWDLCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDPLUSRWDL"/>
+						<Test key="ReadWriteTest" module="pcdrdvdplusrwdl"/>  
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdMinusRWDLCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDMINUSRWDL"/>
+						<Test key="ReadWriteTest" module="pcdrdvdminusrwdl"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>     
+
+			<ScriptContainer name="AbstractTestConfirmationPage.dvdRamWritableCheckBox">    
+				<Script>
+					<TestSet>
+						<Device capabilities="DVDRAM"/>
+						<Test key="PatternTest" module="pcdrdvdramdrive2"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+			
+			<ScriptContainer name="AbstractTestConfirmationPage.bluRayRCheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="BDR"/>
+						<Test key="ReadWriteTest" module="pcdrbdr"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+			<ScriptContainer name="AbstractTestConfirmationPage.bluRayRECheckBox">
+				<Script>
+					<TestSet>
+						<Device capabilities="BDRE"/>
+						<Test key="ReadWriteTest" module="pcdrbdre"/>
+						<Parameter key="PromptUserForMedia" value="true"/>
+					</TestSet>
+				</Script>
+			</ScriptContainer>
+
+		</ScriptGroup>
+
+	</ScriptGroup>
+
+
+	<ScriptGroup device="HardDrive" type="radiobutton">
+
+		<ScriptContainer name="AbstractTestConfirmationPage.shortHardDriveRadioButton" file="scripts/harddrive_short.xml" checked="true"/>
+		<ScriptContainer name="AbstractTestConfirmationPage.fullHardDriveRadioButton" file="scripts/harddrive_long.xml" />
+		<ScriptContainer name="AbstractTestConfirmationPage.SMARTConveyenceRadioButton">
+			<Script>
+				<TestSet>
+					<Device capabilities="HardDrive"/>
+					<Test key="SMARTConveyanceSelfTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+	</ScriptGroup>
+
+
+	<ScriptGroup device="StandbyHibernate" type="checkbox">
+
+		<ScriptContainer checked="true">
+			<Script>
+				<TestSet>
+					<Test key="standbyTest"/>
+				</TestSet>
+			</Script>
+		</ScriptContainer>
+
+		<ScriptContainer>
+			<Script>
+				<TestSet>
+					<Test key="hibernationTest"/>
+				</TestSet>
+			</Script>			
+		</ScriptContainer>
+
+	</ScriptGroup>
+
+
+	<!-- Script specificop conditional tests -->
+	<ScriptGroup key="systemTestKey" type="radiobutton">
+		<ScriptContainer key="systemTestKey" file="scripts/system.xml" checked="true" locktodevice="false" />
+		<ScriptContainer key="systemStressTestKey" file="scripts/stresstest.xml" checked="false" locktodevice="false" />
+	</ScriptGroup>
+
+	<!-- Script specificop conditional tests -->
+	<ScriptGroup key="motherboardTestKey">
+		<ScriptContainer key="motherboardTestKey" file="scripts/motherboard.xml" locktodevice="false" />
+	</ScriptGroup>
+
+</ConditionalTests>
+

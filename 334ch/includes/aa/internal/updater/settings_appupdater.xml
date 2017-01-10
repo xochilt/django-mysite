@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<main>
+    <os name="windows">
+        <module name="appupdater" cust="default" var="default" category="Updater" description="The appupdater is a stand alone program that performs application updates for other programs such as the pcdr5cuiw32.exe.">
+            <key name="balloon.tip.timeout" type="STRING" value="10" priority="3" category="Global" />
+            <key name="billboard.animate.timer" type="STRING" value="15000" priority="3" category="Global" />
+            <key name="body.background.billboard.image" type="STRING" value="app_updater_learn_more_body.png" priority="3" category="Global" />
+            <key name="body.background.image" type="STRING" value="app_updater_body.png" priority="3" category="Global" />
+            <key name="button.close.down.image" type="STRING" value="close_hover.png" priority="3" category="Parameter" />
+            <key name="button.close.focus.image" type="STRING" value="close_normal.png" priority="3" category="Global" />
+            <key name="button.close.hover.image" type="STRING" value="close_hover.png" priority="3" category="Global" />
+            <key name="button.close.normal.image" type="STRING" value="close_normal.png" priority="3" category="Global" />
+            <key name="button.minimize.down.image" type="STRING" value="minimize_hover.png" priority="3" category="Global" />
+            <key name="button.minimize.focus.image" type="STRING" value="minimize_normal.png" priority="3" category="Global" />
+            <key name="button.minimize.hover.image" type="STRING" value="minimize_hover.png" priority="3" category="Global" />
+            <key name="button.minimize.normal.image" type="STRING" value="minimize_normal.png" priority="3" category="Global" />
+            <key name="button.smart.disabled.image" type="STRING" value="app_updater_smartbutton_normal.png" priority="3" category="Global" />
+            <key name="button.smart.down.image" type="STRING" value="app_updater_smartbutton_normal.png" priority="3" category="Parameter" />
+            <key name="button.smart.focus.image" type="STRING" value="app_updater_smartbutton_normal.png" priority="3" category="Parameter" />
+            <key name="button.smart.hover.image" type="STRING" value="app_updater_smartbutton_normal.png" priority="3" category="Parameter" />
+            <key name="button.smart.normal.image" type="STRING" value="app_updater_smartbutton_normal.png" priority="3" category="Parameter" />
+            <key name="check.dot.net.dependency" type="BOOLEAN" value="true" priority="3" category="Parameter" />
+            <key name="color.button" type="STRING" value="Black" priority="3" category="Global" />
+            <key name="color.button.pressed" type="STRING" value="Black" priority="3" category="Global" />
+            <key name="color.label" type="STRING" value="Black" priority="3" category="Global" />
+            <key name="color.label.title" type="STRING" value="Black" priority="3" category="Global" />
+            <key name="color.url" type="STRING" value="Black" priority="3" category="Global" />
+            <key name="counter.display.download.failure" type="STRING" value="4" priority="3" category="Global" />
+            <key name="custom.font.file" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="days.delete.orphan.downloads" type="STRING" value="30" priority="3" category="Global" />
+            <key name="disable.appupdater.for.domain.user" type="STRING" value="false" priority="3" category="Global" />
+            <key name="flash.icon.1" type="STRING" value="flash.icon1.ico" priority="3" category="Global" />
+            <key name="flash.icon.2" type="STRING" value="flash.icon2.ico" priority="3" category="Global" />
+            <key name="footer.background.billboard.image" type="STRING" value="app_updater_learn_more_footer.png" priority="3" category="Global" />
+            <key name="footer.background.image" type="STRING" value="app_updater_footer.png" priority="3" category="Global" />
+            <key name="header.background.image" type="STRING" value="app_updater_header.png" priority="3" category="Global" />
+            <key name="largefile.webclient.use.nocache.header" type="STRING" value="false" priority="3" category="Global" />
+            <key name="log.level" type="STRING" value="info" priority="3" category="Global" />
+            <key name="mainform.logo.image" type="STRING" value="app_updater_icon.png" priority="3" category="Global" />
+            <key name="modulus.download.failure" type="STRING" value="5" priority="3" category="Global" />
+            <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor for Windows" priority="3" category="Global" />
+            <key name="skin.class" type="STRING" value="LegacySkin" priority="3" category="Global" />
+            <key name="skin.custom.font.header" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="skin.custom.font.normal" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="skin.custom.progress" type="BOOLEAN" value="false" priority="3" category="Global" />
+            <key name="skin.custom.progress.background" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="skin.custom.progress.forecolor" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="skin.fonts.header" type="STRING" value="Segoe UI, Verdana, Arial" priority="3" category="Global" />
+            <key name="skin.fonts.normal" type="STRING" value="Segoe UI, Verdana, Arial" priority="3" category="Global" />
+            <key name="skin.fonts.normal.zh-cn" type="STRING" value="SimSun" priority="3" category="Global" />
+            <key name="skin.fonts.normal.zh-tw" type="STRING" value="SimSun" priority="3" category="Global" />
+            <key name="skin.style.button" type="STRING" value="8 regular" priority="3" category="Global" />
+            <key name="skin.style.infolink" type="STRING" value="8 regular" priority="3" category="Global" />
+            <key name="skin.style.prompt" type="STRING" value="8 bold" priority="3" category="Global" />
+            <key name="skin.style.status" type="STRING" value="8 regular" priority="3" category="Global" />
+            <key name="skin.style.title" type="STRING" value="14 bold" priority="3" category="Global" />
+            <key name="systemtray.download.icon" type="STRING" value="download" priority="3" category="Global" />
+            <key name="systemtray.install.icon" type="STRING" value="install" priority="3" category="Global" />
+            <key name="table.anglebracket.image" type="STRING" value="app_updater_angle_bracket.png" priority="3" category="Global" />
+            <key name="table.background.image" type="STRING" value="app_updater_table_bg.png" priority="3" category="Global" />
+            <key name="url.footer" type="STRING" value="www.pc-doctor.com" priority="3" category="Global" />
+            <key name="url.master.record" type="STRING" value="" priority="3" category="Global" />
+            <key name="url.plugin.master.record" type="STRING" value="" priority="3" category="Global" />
+            <key name="url.public.key" type="STRING" value="null" priority="3" category="Global" />
+            <key name="use.custom.font" type="BOOLEAN" value="false" priority="3" category="Global" />
+            <key name="version.check.internetexplorer.seven" type="STRING" value="false" priority="3" category="Global" />
+            <key name="watch.file.size.timeout" type="STRING" value="30" priority="3" category="Global" />
+            <key name="webclient.use.nocache.header" type="STRING" value="true" priority="3" category="Global" />
+        </module>
+        <module name="appupdater" cust="dell" var="aa" category="Updater" description="The appupdater is a stand alone program that performs application updates for other programs such as the pcdr5cuiw32.exe.">
+            <key name="url.master.record" type="STRING" value="http://content.dellsupportcenter.com/updates/master/master_{bdid}_aa.xml" priority="3" category="Global" />
+            <key name="url.plugin.master.record" type="STRING" value="http://content.dellsupportcenter.com/updates/master/master_ax_{pluginVersion}_aa.xml" priority="3" category="Global" />
+        </module>
+        <module name="appupdater" cust="dell" var="default" category="Updater" description="The appupdater is a stand alone program that performs application updates for other programs such as the pcdr5cuiw32.exe.">
+            <key name="button.check.checked.image" type="STRING" value="checkbox_checked_normal.png" priority="3" category="Global" />
+            <key name="button.check.unchecked.image" type="STRING" value="checkbox_normal.png" priority="3" category="Global" />
+            <key name="button.close.down.image" type="STRING" value="close_down.png" priority="3" category="Parameter" />
+            <key name="button.close.focus.image" type="STRING" value="close_focus.png" priority="3" category="Global" />
+            <key name="button.minimize.down.image" type="STRING" value="minimize_down.png" priority="3" category="Global" />
+            <key name="button.minimize.focus.image" type="STRING" value="minimize_focus.png" priority="3" category="Global" />
+            <key name="button.smart.disabled.image" type="STRING" value="app_updater_smartbutton_disabled.png" priority="3" category="Global" />
+            <key name="button.smart.down.image" type="STRING" value="app_updater_smartbutton_down.png" priority="3" category="Parameter" />
+            <key name="button.smart.focus.image" type="STRING" value="app_updater_smartbutton_focus.png" priority="3" category="Parameter" />
+            <key name="button.smart.hover.image" type="STRING" value="app_updater_smartbutton_hover.png" priority="3" category="Parameter" />
+            <key name="color.button" type="STRING" value="White" priority="3" category="Global" />
+            <key name="color.button.pressed" type="STRING" value="0085C3" priority="3" category="Global" />
+            <key name="color.label" type="STRING" value="7C7C7C" priority="3" category="Global" />
+            <key name="color.label.title" type="STRING" value="4E4E4E" priority="3" category="Global" />
+            <key name="color.url" type="STRING" value="0085C3" priority="3" category="Global" />
+            <key name="registry.baseDirectory" type="STRING" value="Software\PC-Doctor\PC-Doctor for Windows" priority="3" category="Global" />
+            <key name="skin.class" type="STRING" value="DellSkin" priority="3" category="Global" />
+            <key name="skin.custom.font.header" type="STRING" value="MuseoForDell-Regular.ttf" priority="3" category="Global" />
+            <key name="skin.custom.font.normal" type="STRING" value="MuseoSansForDell-Regular.ttf" priority="3" category="Global" />
+            <key name="skin.custom.progress" type="BOOLEAN" value="true" priority="3" category="Global" />
+            <key name="skin.custom.progress.background" type="STRING" value="E1E3E3" priority="3" category="Global" />
+            <key name="skin.custom.progress.forecolor" type="STRING" value="0085C3" priority="3" category="Global" />
+            <key name="skin.style.button" type="STRING" value="11 regular" priority="3" category="Global" />
+            <key name="skin.style.infolink" type="STRING" value="11 regular" priority="3" category="Global" />
+            <key name="skin.style.prompt" type="STRING" value="11 regular" priority="3" category="Global" />
+            <key name="skin.style.status" type="STRING" value="10 regular" priority="3" category="Global" />
+            <key name="skin.style.title" type="STRING" value="18 regular" priority="3" category="Global" />
+            <key name="table.background.image" type="STRING" value="NULL" priority="3" category="Global" />
+            <key name="url.master.record" type="STRING" value="http://content.dellsupportcenter.com/updates/master/master_dsc.xml" priority="3" category="Global" />
+            <key name="url.public.key" type="STRING" value="http://content.dellsupportcenter.com/mstr/current.xml" priority="3" category="Global" />
+            <key name="use.custom.font" type="BOOLEAN" value="true" priority="3" category="Global" />
+        </module>
+    </os>
+</main>

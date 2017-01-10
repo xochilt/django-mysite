@@ -1,0 +1,561 @@
+<?xml version="1.0" ?>
+<!--
+/*
+ * Copyright (c) 2001-2012 PC-Doctor, Inc.
+ * 10345 Professional Circle, Suite 183, Reno, NV 89521 USA
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of PC-Doctor, Inc. ("Confidential Information"). You shall not disclose such
+ * confidential information and shall use it only in accordance with the terms of the license agreement you entered into with PC-Doctor.
+ */
+-->
+
+<sysinfo>
+
+	<section title="SystemInformation.summaryTitle" image="harddrive.png">
+		<device type="OperatingSystem" showSubHeader="false">
+			<property key="SystemName"/>
+		</device>
+		<device type="System" showSubHeader="false">
+			<property key="t1_product"/>
+			<property key="t1_serial" />
+		</device>
+
+		<device type="BIOS" showSubHeader="false">
+			<property key="t0_ver"/>
+		</device>
+
+		<device type="OperatingSystem" showSubHeader="true">
+			<property key="OSName"/>
+		</device>
+
+		<device type="HardDrive" showSubHeader="true" titlePrefix="SystemInformation.hardDrivePrefix">
+			<property key="ATAVendor"/>
+			<property key="ATAModelNumber"/>
+			<property key="ATASerialNumber"/>
+			<property key="ATADiskSizeMarket"/>
+
+			<!-- We might want to add a size capacity here but we don't have the base 10 calculated size as a property yet -->
+			<property key="ModelNumber"/>
+			<property key="SerialNumber"/>
+		</device>
+
+		<device type="Optical" showSubHeader="true" titlePrefix="SystemInformation.opticalDrivePrefix">
+			<property key="ATAVendor"/>
+			<property key="ATAModelNumber"/>
+			<property key="ATASerialNumber"/>
+			<property key="ModelNumber"/>
+			<property key="SerialNumber"/>
+			<property key="DriveLetter"/>
+			<property key="Readable"/>
+			<property key="Writable"/>
+		</device>
+
+		<device type="RemovableStorage" showSubHeader="true" titlePrefix="SystemInformation.removableDrivePrefix">
+			<property key="ModelNumber" />
+			<property key="TotalCapacity" />
+			<property key="VolumeFreeSpace" />
+		</device>
+
+		<device type="NetworkCard" showSubHeader="true" title="MiniSysInfo.Network">
+			<property key="Description" />
+			<property key="IPAddress" />
+			<property key="AdapterConnectionStatus" />
+		</device>
+
+		<device type="Modem" showSubHeader="true" title="SystemInformation.modemPrefix">
+			<property key="Name"/>
+			<property key="Model"/>
+		</device>
+
+		<device type="CPU" showSubHeader="true" title="MiniSysInfo.CPU">
+			<property key="Name"/>
+		</device>
+
+		<device type="Memory" showSubHeader="true">
+			<property key="TotalPhysicalMemory"/>
+			<property key="MaxPhysicalMemory"/>
+		</device>
+
+		<device type="Battery" showSubHeader="true" titlePrefix="SystemInformation.batteryPrefix">
+			<property key="BatteryName"/>
+			<property key="Battery_ePPID"/>
+			<property key="BatteryChemistry"/>
+			<property key="BatteryBarCodingNumber"/>
+			<property key="BatterySerialNumber"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.testResultsTitle" type="results" />
+
+	<section title="SystemInformation.systemEventsTitle" type="history" />
+
+	<!-- Hard drive info -->
+	<section title="SystemInformation.hardDrivesTitle" image="harddrive.png">
+		<device type="HardDrive" showSubHeader="true">
+			<property key="CsmiDrive_Controller"/>
+			<property key="CsmiDrive_ControllerPort"/>
+
+			<!-- ATA Information. -->
+			<property key="ATAVendor"/>
+			<property key="ATAModelNumber"/>
+			<property key="ATASerialNumber"/>
+			<property key="ATAFirmwareRev"/>
+			<property key="ATADiskSize"/>
+			<property key="ATADiskSizeMarket"/>
+
+			<property key="ATABufferSize"/>
+			<property key="ATASectorInfo">
+				<property key="ATAPhysicalSectorSize"/>
+				<property key="ATALogicalSectorSize"/>
+				<property key="ATALogicalSectorCount"/>
+			</property>
+			<property key="ATAVersionMajor"/>
+			<!-- Verbose only: <property key="ATAVersionMinor"/> -->
+			<property key="ATATransportMajor"/>
+			<!-- Verbose only: <property key="ATATransportMinor"/> -->
+
+
+			<!-- PATA -->
+			<property key="ATAParallelDeviceId"/>
+			<!-- SATA -->
+			<property key="ATASATACurSpeed"/>
+
+			<!-- ATA - Cool properties -->
+			<property key="ATANominalFormFactor"/>
+			<property key="ATARotationRate"/>
+			<property key="ATATotalDataRd"/>
+			<property key="ATATotalDataWr"/>
+
+
+			<property key="ATATemperatureInfo">
+				<property key="ATATemperature"/>
+
+				<!-- ATA - SCT -->
+				<property key="ATASCTTempMin"/>
+				<property key="ATASCTTempMax"/>
+				<property key="ATASCTTempLifeMin"/>
+				<property key="ATASCTTempLifeMax"/>
+				<property key="ATASCTTempMaxOpLimit"/>
+				<property key="ATASCTTempOverLimit"/>
+				<property key="ATASCTTempMinOpLimit"/>
+				<property key="ATASCTTempUnderLimit"/>
+			</property>
+
+			<!-- ATA - SMART Attributes -->
+			<property key="ATASMARTAttribs">
+				<property key="ATAPowerCycles"/>
+				<property key="ATAPowerOnHours"/>
+				<property key="ATALoadCycleCnt"/>
+				<property key="ATAReallocCnt"/>
+				<property key="ATACurPendingCnt"/>
+				<property key="ATAOffUncorrectCnt"/>
+				<property key="ATACalibRetryCnt"/>
+				<property key="ATAUDMA_CRCErrs"/>
+				<property key="ATATempLifeMax"/>
+				<property key="ATATempLifeMin"/>
+				<property key="ATAStartStopCount"/>
+			</property>
+
+			<!-- Security Information Group -->
+			<property key="ATASecurityInfo">
+				<property key="ATASecurityStatus"/>
+				<property key="ATASecurityMasterPass"/>
+				<property key="ATASecurityEraseTime"/>
+				<property key="ATASecurityPassAttemptCtr"/>
+			</property>
+
+			<!-- Non-ATA information -->
+			<property key="ModelNumber"/>
+			<property key="SerialNumber"/>
+			<property key="FirmwareVersion"/>
+			<property key="TotalCapacity"/>
+			<property key="BufferSize"/>
+			<property key="DriveTemperature"/>
+			<property key="DriveTemperatureThreshold"/>
+			<property key="Controller"/>
+
+			<property key="CsmiRaid_RaidSetIndex"/>
+			<property key="CsmiRaid_DriveCount"/>
+			<property key="CsmiRaid_RaidStatus"/>
+			<property key="CsmiRaid_RaidType"/>
+			<property key="CsmiRaid_RaidSetCapacity"/>
+			<property key="CsmiRaid_StripeSize"/>
+			<property key="CsmiRaid_Controller"/>
+
+			<device type="DrivePartition" showSubHeader="true">
+				<property key="DriveLetter"/>
+				<property key="VolumeName"/>
+				<property key="VolumeSerialNumber"/>
+				<property key="FileSystem"/>
+				<property key="VolumeCapacity"/>
+				<property key="VolumeFreeSpace"/>
+				<property key="VolumeUsedSpace"/>
+			</device>
+		</device>
+	</section>
+
+	<!-- Optical drive info -->
+	<section title="SystemInformation.opticalDrivesTitle" image="optical-drive.png">
+		<device type="CDROM" showSubHeader="true">
+			<property key="ATAVendor"/>
+			<property key="ATAModelNumber"/>
+			<property key="ATASerialNumber"/>
+			<property key="ModelNumber"/>
+			<property key="SerialNumber"/>
+			<property key="FirmwareVersion"/>
+			<property key="ATAFirmwareRev"/>
+			<property key="ATAVersionMajor"/>
+			<property key="ATAVersionMinor"/>
+			<property key="DriveLetter"/>
+			<property key="TotalCapacity"/>
+			<property key="Readable"/>
+			<property key="Writable"/>
+			<property key="WriteStrategy"/>
+		</device>
+	</section>
+
+	<!-- Network info -->
+	<section title="SystemInformation.communicationsTitle" image="network.png">
+		<device type="NetworkCard" showSubHeader="true" titlePrefix="SystemInformation.networkCardPrefix">
+			<property key="MacAddress"/>
+			<property key="AdapterConnectionStatus"/>
+			<property key="AdapterSpeed"/>
+			<property key="IPAddress"/>
+			<property key="IPMask"/>
+			<property key="Gateway"/>
+			<property key="DHCPServer"/>
+			<property key="AdapterDhcpEnabled"/>
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+		</device>
+		<device type="Modem" showSubHeader="true" titlePrefix="SystemInformation.modemPrefix">
+			<property key="Model"/>
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+		</device>
+		<device type="BluetoothPort" showSubHeader="true" titlePrefix="SystemInformation.bluetoothPortPrefix">
+			<property key="BthPortStrAddress"/>
+			<property key="BthPortService"/>
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+		</device>
+	</section>
+
+	<!-- CPU info -->
+	<section title="SystemInformation.processorsTitle" image="motherboard.png">
+		<device type="CPU" showSubHeader="true">
+			<property key="Name"/>
+			<property key="Cores"/>
+			<property key="Threads"/>
+			<property key="RawSignature"/>
+			<property key="DisplayFamily"/>
+			<property key="DisplayModel"/>
+			<property key="Revision"/>
+			<property key="Technology"/>
+			<property key="Temperature"/>
+			<property key="PerformanceCore0Group">
+				<property key="MaxQualifiedSpeed"/>
+				<property key="MaxTurboBoostSpeed"/>
+				<property key="MaxTurboCoreSpeed"/>
+				<property key="CurrentSpeed"/>
+				<property key="Multiplier"/>
+				<property key="MaxTurboBoostRatio"/>
+				<property key="MaxTurboCoreRatio"/>
+				<property key="CpuFSBSpeed"/>
+				<property key="CpuBusSpeed"/>
+			</property>
+			<property key="Features"/>
+			<property key="CacheSummaryGroup">
+				<property key="L1DataCacheSummary"/>
+				<property key="L1InstCacheSummary"/>
+				<property key="L1TraceCacheSummary"/>
+				<property key="L2CacheSummary"/>
+				<property key="L3CacheSummary"/>
+			</property>
+			<device type="CPUCore" showSubHeader="true">
+				<property key="Temperature"/>
+				<property key="Threads"/>
+			</device>
+			<device type="CPUCache" showSubHeader="true">
+				<property key="CacheQuantity"/>
+				<property key="CacheLevel"/>
+				<property key="CacheType"/>
+				<property key="CacheSize"/>
+				<property key="CacheAssociativity"/>
+				<property key="CacheLineSize"/>
+			</device>
+		 </device>
+	</section>
+
+	<!-- Memory Info -->
+	<section title="SystemInformation.memoryTitle" image="memory.png">
+		<device type="Memory" showSubHeader="true">
+			<property key="TotalPhysicalMemory"/>
+			<property key="AvailablePhysicalMemory"/>
+			<property key="MaxPhysicalMemory"/>
+			<property key="TotalVirtualMemory"/>
+			<property key="AvailableVirtualMemory"/>
+			<property key="PageFileLocation"/>
+			<property key="PageFileSize"/>
+
+			<device type="Software" showSubHeader="true" isChildDevice="true">
+				<property key="PageFiles_TotalSize"/>
+				<property key="PageFiles_RecommendedTotalSize"/>
+				<device type="Software" showSubHeader="true" isChildDevice="true">
+					<property key="PageFile_Location"/>
+					<property key="PageFile_Size"/>
+				</device>
+			</device>
+
+			<!-- Child Devices -->
+			<device type="MemoryChip" showSubHeader="true" isChildDevice="false">
+				<property key="InformationSource"/>
+				<property key="MemoryModuleSize"/>
+				<property key="MemoryType"/>
+				<property key="MemoryManufacturer"/>
+				<property key="MemoryManufactureDate"/>
+				<property key="MemoryPartNumber"/>
+				<property key="MemorySerialNumber"/>
+				<property key="MemoryRevisionCode"/>
+			</device>
+		</device>
+	</section>
+
+	<!-- Battery info -->
+	<section title="SystemInformation.batteriesTitle" image="battery.png">
+		<device type="Battery" showSubHeader="true">
+			<property key="BatteryName"/>
+			<property key="Battery_ePPID"/>
+			<property key="BatteryManufacturerName"/>
+			<property key="BatteryManufactureDate"/>
+			<property key="BatteryFirstUsedDate"/>
+			<property key="BatteryChemistry"/>
+			<property key="BatteryBarCodingNumber"/>
+			<property key="BatterySerialNumber"/>
+			<property key="BatteryDesignedCapacityPercentage"/>
+			<property key="BatteryCurrentChargePercentage"/>
+			<property key="BatteryCurrentCharge"/>
+			<property key="BatteryfullChargedCapacity"/>
+			<property key="BatteryDesignedCapacity"/>
+			<property key="BatteryVoltage"/>
+			<property key="BatteryTemperature"/>
+			<property key="BatteryCycleCount"/>
+		</device>
+	</section>
+
+	<!-- Motherboard Info -->
+	<section title="SystemInformation.motherboardTitle" image="motherboard.png">
+		<device type="System">
+			<!-- Child devices. -->
+			<device type="SystemBoard" showSubHeader="true">
+				<property key="t2_manufacturer"/>
+				<property key="t2_product"/>
+				<property key="Chipset"/>
+				<property key="SouthBridge"/>
+			</device>
+			<device type="SMBIOS_Struct" showSubHeader="true" isChildDevice="false">
+				<property key="t0_vendor"/>
+				<property key="t0_date"/>
+				<property key="t0_ver"/>
+				<property key="t0_sz"/>
+			</device>
+			<device type="SMBIOS" showSubHeader="true">
+				<property key="smbios2_version"/>
+			</device>
+			<device type="Other" showSubHeader="true">
+				<device type="ThermalZone" showSubHeader="true" isChildDevice="true">
+					<property key="TZ_CurrentTemperature"/>
+				</device>
+			</device>
+		</device>
+	</section>
+
+	<!-- Multimedia -->
+	<section title="SystemInformation.multimediaTitle" image="video-strip.png">
+		<device type="VideoCard" showSubHeader="true" titlePrefix="SystemInformation.videoCardPrefix">
+			<property key="WinManufacturer"/>
+			<property key="VideoCardChipType"/>
+			<property key="VideoCardMemory"/>
+			<property key="VideoCardBiosString"/>
+			<property key="OEMName"/>
+			<property key="OEMVendorName"/>
+			<property key="OEMProductName"/>
+			<property key="OEMSoftwareRev"/>
+			<property key="TotalMemory"/>
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+			<property key="BoardTemperature"/>
+			<property key="FanSpeed"/>
+			<device type="GPU" showSubHeader="true">
+				<property key="GPUTemperature"/>
+			</device>
+		</device>
+
+		<device type="Monitor" showSubHeader="true" titlePrefix="SystemInformation.displayPrefix">
+			<property key="VideoCardMode"/>
+			<property key="PreferredMode"/>
+			<property key="MonitorManufacturer"/>
+			<property key="MonitorSerialNumber"/>
+			<property key="MonitorManufactureDate"/>
+			<property key="MonitorSignalType"/>
+			<property key="MaximumResolution"/>
+		</device>
+
+		<device type="VideoCapture" showSubHeader="true" titlePrefix="SystemInformation.videoCapturePrefix">
+			<property key="DeviceDriverIdentifier"/>
+			<property key="DeviceDriverFileName"/>
+			<property key="SupportedVideoStandards"/>
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+		</device>
+
+		<device type="SoundCard" showSubHeader="true" titlePrefix="SystemInformation.soundCardPrefix">
+			<property key="DriverProvider"/>
+			<property key="DriverVersion"/>
+		</device>
+	</section>
+
+	<!-- printers -->
+	<section title="SystemInformation.printerTitle" image="printer.png">
+		<device type="Printer" showSubHeader="true">
+			<property key="Model" />
+			<property key="PrinterPath" />
+			<property key="IsDefaultPrinter" />
+		</device>
+	</section>
+
+	<!-- Input devices -->
+	<section title="SystemInformation.inputDevicesTitle" image="ergonomic-keyboard.png">
+		<device type="Keyboard" showSubHeader="true" titlePrefix="SystemInformation.keyboardPrefix">
+			<property key="Manufacturer"/>
+			<property key="ResourcesIO"/>
+			<property key="ResourcesIRQ"/>
+			<property key="Driver"/>
+			<property key="DriverVersion"/>
+		</device>
+
+		<device type="Mouse" showSubHeader="true" titlePrefix="SystemInformation.mousePrefix">
+			<property key="Manufacturer"/>
+			<property key="DriverProvider"/>
+			<property key="DeviceVersion"/>
+			<property key="Driver"/>
+			<property key="DriverVersion"/>
+		</device>
+	</section>
+
+	<!-- usb -->
+	<section title="SystemInformation.usbDevices" image="usb.png">
+		<device type="USB" showSubHeader="true">
+			<property key="DeviceManufacturer" />
+			<property key="DeviceIDGroup_SerialNumber" />
+			<property key="DeviceVersion" />
+			<property key="USBVersion" />
+			<property key="USBDeviceSpeed" />
+			<property key="Driver" />
+			<property key="DriverProvider" />
+			<property key="DriverVersion" />
+		</device>
+	</section>
+
+	<!-- OS Info -->
+	<section title="SystemInformation.operatingSystemTitle" image="windows.png">
+		<device type="OperatingSystem" >
+			<property key="OSName"/>
+			<property key="ServicePack"/>
+			<property key="BuildNumber"/>
+			<property key="DirectXVersion"/>
+			<property key="WinDir"/>
+			<property key="SystemDir"/>
+			<property key="MaxOSMemory"/>
+			<property key="SystemName"/>
+			<property key="UserName"/>
+
+			<property key="WinSAT_WindowsExperienceIndex">
+				<property key="WinSAT_BaseScore"/>
+				<property key="WinSAT_CPU"/>
+				<property key="WinSAT_Memory"/>
+				<property key="WinSAT_Graphics"/>
+				<property key="WinSAT_3DGraphics"/>
+				<property key="WinSAT_PrimaryHardDisk"/>
+				<property key="WinSAT_State"/>
+				<property key="WinSAT_DateTime"/>
+			</property>
+		</device>
+
+		<device type="WindowsUpdate" showSubHeader="true" isChildDevice="false">
+			<property key="AutoUpdateOption"/>
+			<property key="LastSync"/>
+		</device>
+
+		<!--<device type="WindowsBackup" showSubHeader="true">
+			<property key="AutoBackup" />
+			<property key="LastWindowsBackupTime" />
+			<property key="NextWindowsBackupTime" />
+			<property key="WindowsBackupLocation" />
+		</device>-->
+
+		<device type="SystemRestorePoints" showSubHeader="true">
+			<property key="SystemRestorePoints_SystemRestoreEnabled" />
+			<!--<property key="SystemRestorePoints_LastRestorePointTime" />-->
+		</device>
+	</section>
+
+	<section title="SystemInformation.securityTitle" image="security_center.png">
+		<device type="Firewall" showSubHeader="true" titlePrefix="SystemInformation.firewallPrefix">
+			<property key="DisplayName"/>
+			<property key="ProgramEnabled"/>
+			<property key="ProgramUpToDate"/>
+			<property key="WindowsFirewallEnabled"/>
+		</device>
+
+		<device type="VirusScanner" showSubHeader="true" titlePrefix="SystemInformation.virusScannerPrefix">
+			<property key="CompanyName"/>
+			<property key="DisplayName"/>
+			<property key="VersionNumber"/>
+			<property key="ProgramEnabled"/>
+			<property key="ProgramUpToDate"/>
+			<property key="OnAccessScanningEnabled"/>
+			<property key="LastVirusScanDate"/>
+			<property key="LastVirusUpdateCheck"/>
+		</device>
+	</section>
+
+	<section title="Additionaltools.programs.title" image="installed_programs.png">
+		<device type="Software" isChildDevice="true" showSubHeader="true">
+			<property key="Publisher" />
+			<property key="Version" />
+		</device>
+	</section>
+
+	<section title="profilerlog.startupPrograms" image="installed_programs.png">
+		<device type="OperatingSystem" >
+			<property key="StartupProcessInfo" />
+		</device>
+	</section>
+
+	<section title="SystemInformation.broswersTitle" image="installed_programs.png">
+		<device type="WebBrowser" showSubHeader="true">
+			<property key="BrowserVersion" />
+			<property key="DefaultBrowser" />
+			<property key="SecuritySettingsGroup">
+				<property key="SecuritySetting_JavaScripts" />
+				<property key="SecuritySetting_PopUpBlocker" />
+				<property key="SecuritySetting_Cookies" />
+				<property key="SecuritySetting_ViewMixedContent" />
+				<property key="SecuritySetting_ClientCertificate" />
+				<property key="SecuritySetting_JavaPermissions"/>
+				<property key="SecuritySetting_ItemOrFileDownloads" />
+				<property key="SecuritySetting_PopUpsDisabledForPlugins" />
+				<property key="SecuritySetting_WarnEnteringSecure" />
+				<property key="SecuritySetting_WarnLeavingSecure" />
+				<property key="SecuritySetting_DownloadSignedActiveXControl" />
+				<property key="SecuritySetting_DownloadUnsignedActiveXControl" />
+				<property key="SecuritySetting_RunActiveXControlAndPlugins" />
+				<property key="SecuritySetting_AutomaticPromptingForActiveXControls" />
+				<property key="SecuritySetting_AllowMetaRefresh" />
+				<property key="SecuritySetting_ScriptActiveXControlsMarkedAsSafeForScripting" />
+			</property>
+		</device>
+	</section>
+</sysinfo>

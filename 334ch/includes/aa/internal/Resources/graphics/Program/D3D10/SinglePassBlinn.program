@@ -1,0 +1,263 @@
+vertex_program VSFlat hlsl
+{
+    source VsFlat.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+		param_named_auto wvp worldviewproj_matrix
+    }
+}
+
+vertex_program VSFlatInstanced hlsl
+{
+    source VsFlatInstanced.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+		param_named_auto viewProj viewproj_matrix
+    }
+}
+
+//Single-pass blinn vertex shader
+vertex_program VSTextured hlsl
+{
+    source VsTextured.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+		param_named_auto wvp worldviewproj_matrix
+		param_named_auto worldInv inverse_world_matrix
+    	param_named_auto cameraPos camera_position
+    }
+}
+
+vertex_program VSTexturedInstanced hlsl
+{
+    source VsTexturedInstanced.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+    	param_named_auto cameraPos camera_position
+		param_named_auto viewProj viewproj_matrix
+    }
+}
+//No color channel in the vertex declaration
+vertex_program asteroidVS hlsl
+{
+    source AsteroidVertexShader.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+    	param_named_auto wvp worldviewproj_matrix
+		param_named_auto worldInv inverse_world_matrix
+    	param_named_auto cameraPos camera_position
+    }
+}
+
+vertex_program asteroidVSInstanced hlsl
+{
+    source AsteroidVertexShaderInstanced.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+    	param_named_auto cameraPos camera_position
+		param_named_auto viewProj viewproj_matrix
+    }
+}
+
+vertex_program VSUntextured hlsl
+{
+    source VsUntextured.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+		param_named_auto wvp worldviewproj_matrix
+		param_named_auto worldInv inverse_world_matrix
+    	param_named_auto cameraPos camera_position
+    }
+}
+
+vertex_program VSUntexturedInstanced hlsl
+{
+    source VsUntexturedInstanced.hlsl
+    entry_point main
+    target vs_4_0
+	enable_backwards_compatibility yes
+    default_params
+    {
+		param_named_auto cameraPos camera_position
+		param_named_auto viewProj viewproj_matrix
+    }
+}
+
+fragment_program PSNormalMap hlsl
+{
+	source PSNormalMap.hlsl
+    entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto textureMatrix texture_matrix 0
+		param_named_auto worldInv inverse_world_matrix
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+		
+	}
+}
+
+//Instanced normal map takes the world inverse matrix transform to transform light vectors and position back
+//to object space
+fragment_program PSNormalMapInstanced hlsl
+{
+	source PSNormalMapInstanced.hlsl
+    entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto textureMatrix texture_matrix 0
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+		
+	}
+}
+
+//Single-pass blinn pixel shader, without normal maps
+fragment_program PSTextured hlsl
+{
+	source PSTextured.hlsl
+    entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto textureMatrix texture_matrix 0
+		param_named_auto worldInv inverse_world_matrix
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+	}
+}
+
+fragment_program PSTexturedInstanced hlsl
+{
+	source PSTexturedInstanced.hlsl
+    entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto textureMatrix texture_matrix 0
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+	}
+}
+
+fragment_program PSUntextured hlsl
+{
+	source PSUntextured.hlsl
+	entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto worldInv inverse_world_matrix
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+	}
+}
+
+fragment_program PSUntexturedInstanced hlsl
+{
+	source PSUntexturedInstanced.hlsl
+	entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto lightPos light_position_array 8
+		param_named_auto lightAttn light_attenuation_array 8
+		param_named_auto lightCount light_count
+		param_named_auto lightDiffuse light_diffuse_colour_array 8
+		param_named_auto lightSpecular light_specular_colour_array 8
+		param_named_auto specularPower surface_shininess
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+		param_named_auto surfaceSpecular surface_specular_colour
+		//param_named Ks float 0.4
+	}
+}
+
+fragment_program PSFlat hlsl
+{
+	source PSFlat.hlsl
+	entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+	}
+}
+
+fragment_program PSFlatInstanced hlsl
+{
+	source PSFlat.hlsl
+	entry_point main
+	target ps_4_0
+	enable_backwards_compatibility yes
+	default_params
+	{
+		param_named_auto surfaceDiffuse surface_diffuse_colour
+	}
+}

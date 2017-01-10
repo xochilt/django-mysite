@@ -1,0 +1,98 @@
+SimpleOverlay
+{
+	zorder 1
+	container Panel(mainPanel)
+	{
+		metrics_mode relative
+		// Center it horizontally, put it at the top
+        left 0
+        top 0
+        width 1
+        height 1
+        //HUD texture is 1024 x 768.
+        material Hud
+        transparent false
+        
+        //metrics_mode pixel
+        //width 1024
+        //height 768
+        
+		//element TextArea(displayDimensionPanel)
+		//{
+		//	metrics_mode relative
+		//	font_name StandardFont
+		//	char_height 0.0325
+		//	colour 1.0 1.0 1.0
+		//	left 0.06640625
+		//	top 0.0234375
+		//	width 0.174804
+		//	height 0.052083
+		//	alignment left
+		//	space_width 0.0325
+			
+			//metrics_mode pixel
+			//char_height 16
+			//left 68
+			//top 18
+			//width 179
+			//height 40
+			//space_width 5
+		//}
+		
+		//element TextArea(polyCountPanel)
+		//{
+		//	metrics_mode relative
+		//	font_name StandardFont
+		//	char_height 0.0325
+		//	colour 1.0 1.0 1.0
+		//	left 0.7988
+		//	top 0.0338
+		//	width 0.1718
+		//	height 0.0325
+		//	alignment left
+		//	space_width 0.0325
+		//}
+		
+		//element TextArea(fpsPanel)
+		//{
+		//	metrics_mode relative
+		//	font_name StandardFont
+		//	char_height 0.0325
+		//	colour 1.0 1.0 1.0
+		//	left 0.0468
+		//	top 0.9336
+		//	width 0.1777
+		//	height 0.0325
+		//	alignment left
+		//	space_width 0.0325
+		//}
+		
+		//element TextArea(deviceInfoPanel)
+		//{
+		//	metrics_mode relative
+		//	font_name StandardFont
+		//	char_height 0.0325
+		//	colour 1.0 1.0 1.0
+		//	left 0.3193
+		//	top 0.8568
+		//	width 0.3633
+		//	height 0.0911
+		//	alignment left
+		//	space_width 0.0325
+		//}
+		
+		//element TextArea(progressPanel)
+		//{
+		//	metrics_mode relative
+		//	font_name StandardFont
+		//	char_height 0.0325
+		//	colour 1.0 1.0 1.0
+		//	left 0.7715
+		//	top 0.9336
+		//	width 0.1777
+		//	height 0.0325
+		//	alignment left
+		//	space_width 0.0325
+		//}
+	}
+}

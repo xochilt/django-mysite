@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="DefaultWindow" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Property name="PixelAligned" value="false" />
+        <Window type="WindowsLook/StaticImage" name="Background" >
+            <Property name="Area" value="{{0,0},{0,1},{1,0},{1,1}}" />
+            <Property name="Image" value="PCDR_HUD/Background" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="true" />
+            <Property name="PixelAligned" value="false" />
+            <Property name="BackgroundEnabled" value="false" />
+            <Window type="WindowsLook/StaticText" name="GPUUsageCaption" >
+                <Property name="Area" value="{{0,0},{0.766667,0},{0.275521,0},{0.814816,0}}" />
+                <Property name="Text" value="--GPU Usage--" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FFFF9300 tr:FFFF9300 bl:FFFF9300 br:FFFF9300" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="529" />
+                <Property name="VertScrollPageSize" value="52" />
+                <Property name="HorzScrollDocumentSize" value="135" />
+                <Property name="VertScrollDocumentSize" value="20.5273" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="VideoCardInfo" >
+                <Property name="Area" value="{{0.662499,0},{0.640741,0},{0.998958,0},{0.765741,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="WordWrapRightAligned" />
+                <Property name="VertFormatting" value="BottomAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="646" />
+                <Property name="VertScrollPageSize" value="135" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="MemoryUsageCaption" >
+                <Property name="Area" value="{{0.0135417,0},{0.0833334,0},{0.145313,0},{0.144444,0}}" />
+                <Property name="Text" value="--Memory Usage--" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FFFF9300 tr:FFFF9300 bl:FFFF9300 br:FFFF9300" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="VertFormatting" value="TopAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="253" />
+                <Property name="VertScrollPageSize" value="66" />
+                <Property name="HorzScrollDocumentSize" value="174" />
+                <Property name="VertScrollDocumentSize" value="20.5273" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="PercentComplete" >
+                <Property name="Area" value="{{0.323438,0},{0.0037037,0},{0.676042,0},{0.0833333,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="WordWrapCentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="677" />
+                <Property name="VertScrollPageSize" value="86" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="MemoryUsage" >
+                <Property name="Area" value="{{0.0208333,0},{0.00925926,0},{0.139583,0},{0.0824074,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="VertFormatting" value="BottomAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="228" />
+                <Property name="VertScrollPageSize" value="79" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="FPSCaption" >
+                <Property name="Area" value="{{0.855729,0},{0.0842592,0},{0.9875,0},{0.14537,0}}" />
+                <Property name="Text" value="--FPS--" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FFFF9300 tr:FFFF9300 bl:FFFF9300 br:FFFF9300" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="VertFormatting" value="TopAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="253" />
+                <Property name="VertScrollPageSize" value="66" />
+                <Property name="HorzScrollDocumentSize" value="68" />
+                <Property name="VertScrollDocumentSize" value="20.5273" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="FPS" >
+                <Property name="Area" value="{{0.861458,0},{0.00925926,0},{0.980208,0},{0.0824074,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="AlwaysOnTop" value="true" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="VertFormatting" value="BottomAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="228" />
+                <Property name="VertScrollPageSize" value="79" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="ScreenResolutionCaption" >
+                <Property name="Area" value="{{0.322396,0},{0.87963,0},{0.676562,0},{0.928704,0}}" />
+                <Property name="Text" value="--Resolution--" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FFFF9300 tr:FFFF9300 bl:FFFF9300 br:FFFF9300" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="680" />
+                <Property name="VertScrollPageSize" value="53" />
+                <Property name="HorzScrollDocumentSize" value="136" />
+                <Property name="VertScrollDocumentSize" value="20.5273" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="ScreenResolution" >
+                <Property name="Area" value="{{0.29375,0},{0.92963,0},{0.705729,0},{1,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="791" />
+                <Property name="VertScrollPageSize" value="76" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="GPUTempCaption" >
+                <Property name="Area" value="{{0.726563,0},{0.769444,0},{0.998959,0},{0.817593,0}}" />
+                <Property name="Text" value="--GPU Temperature--" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FFFF9300 tr:FFFF9300 bl:FFFF9300 br:FFFF9300" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="PixelAligned" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="523" />
+                <Property name="VertScrollPageSize" value="52" />
+                <Property name="HorzScrollDocumentSize" value="200" />
+                <Property name="VertScrollDocumentSize" value="20.5273" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="GPUUsage" >
+                <Property name="Area" value="{{0,0},{0.815741,0},{0.275521,0},{0.997223,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="529" />
+                <Property name="VertScrollPageSize" value="196" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="GPUTemp" >
+                <Property name="Area" value="{{0.726563,0},{0.816667,0},{0.998958,0},{0.998148,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="523" />
+                <Property name="VertScrollPageSize" value="196" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+            <Window type="WindowsLook/StaticText" name="GPUClock" >
+                <Property name="Area" value="{{0,0},{0.640741,0},{0.336458,0},{0.764815,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TextColours" value="tl:FF4ECDD9 tr:FF4ECDD9 bl:FF4ECDD9 br:FF4ECDD9" />
+                <Property name="FrameEnabled" value="false" />
+                <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+                <Property name="VertFormatting" value="BottomAligned" />
+                <Property name="BackgroundEnabled" value="false" />
+                <Property name="HorzScrollPageSize" value="646" />
+                <Property name="VertScrollPageSize" value="134" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <Property name="VerticalScrollbar" value="true" />
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="MouseInputPropagationEnabled" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

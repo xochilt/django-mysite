@@ -1,0 +1,373 @@
+<!--
+A configuration file for categorizing PC-Doctor devices in a UI
+
+a category is associated to a p5p file for "command" and "icon"
+
+Device Matching rules:
+1. match by device type
+2. match by device capability (best match)
+
+-->
+<device-categories hash="false">
+
+    <category key="QuickTest">
+        <script file="scripts\ode_quick.xml" />
+    </category>
+
+    <category key="QuickTestNoVideo">
+        <script file="scripts\ode_quick_no_video.xml" />
+    </category>
+
+    <category key="Battery">
+        <script name="batteryTest">
+            <TestSet>
+                <Device capabilities="Battery"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="BluetoothPort">
+        <script name="bluetoothTest">
+            <TestSet>
+                <Device capabilities="BluetoothPort"/>
+                <Device capabilities="CommunicationsController"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="Camera">
+        <script name="cameraTest">
+            <TestSet>
+                <Device capabilities="Camera"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="CardReader">
+        <script name="cardReaderTest">
+            <TestSet>
+                <Device capabilities="CardReader"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="CPU">
+        <script file="scripts\cpu.xml" />
+    </category>
+
+    <category key="CPUStress">
+        <script file="scripts\cpu_stress.xml" />
+    </category>
+
+    <category key="DefaultScan">
+        <script file="scripts\backgroundmon.xml" />
+    </category>
+
+    <category key="FloppyDrive">
+        <script name="floppyDriveTest">
+            <TestSet>
+                <Device capabilities="FloppyDrive"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="GPS">
+        <script name="GPSTest">
+            <TestSet>
+                <Device capabilities="GPS"/>
+                <Device capabilities="CommunicationsController"/>
+            </TestSet>
+        </script>
+    </category>
+
+	<category key="Accelerometer">
+		<script name="Accelerometer">
+			<TestSet>
+				<Device capabilities="Accelerometer"/>
+			</TestSet>
+		</script>
+	</category>
+	
+	<category key="AmbientLight">
+		<script name="AmbientLight">
+			<TestSet>
+				<Device capabilities="AmbientLightSensor"/>
+			</TestSet>
+		</script>
+	</category>
+	
+	<category key="Gyrometer">
+		<script name="Gyrometer">
+			<TestSet>
+				<Device capabilities="Gyrometer"/>
+			</TestSet>
+		</script>
+	</category>
+	
+	<category key="Magnetometer">
+		<script name="Magnetometer">
+			<TestSet>
+				<Device capabilities="Magnetometer"/>
+			</TestSet>
+		</script>
+	</category>
+	
+	<category key="Sensor">
+		<script name="Sensor">
+			<TestSet>
+				<!-- adding only "sensor" capability is same as adding four categories for accelerometer, ambientlight, gyrometer, and accelerometer-->
+				<Device capabilities="Sensor"/>
+				<Device capabilities="GPS"/>
+			</TestSet>
+		</script>
+	</category>
+
+    <category key="HardDrive">
+        <script file="scripts\harddrive_short.xml" />
+    </category>
+
+    <category key="HardDriveStress">
+        <script file="scripts\harddrive_long.xml" />
+    </category>
+
+    <category key="InputDevices">
+        <script name="inputDeviceTest">
+			<TestSet>
+				<Device capabilities="Keyboard"/>
+				<Device capabilities="Mouse"/>
+				<Device capabilities="SynapticsTouchpad"/>
+			</TestSet>
+        </script>
+    </category>
+
+    <category key="Memory">
+        <script file="scripts/memory.xml"/>
+    </category>
+
+    <category key="MemoryStress">
+        <script file="scripts/memory_stress.xml"/>
+    </category>
+
+    <category key="Microphone">
+        <script name="microphoneTest">
+            <TestSet>
+                <Device capabilities="Microphone"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="Modem">
+        <script file="scripts/modem.xml" />
+    </category>
+
+    <category key="Monitor">
+        <script name="monitorTest">
+            <TestSet>
+                <Device capabilities="Monitor"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="Motherboard">
+        <script file="scripts/motherboard.xml"/>
+    </category>
+
+	<category key="Keyboard">
+		<script name="SystemInformation.keyboardPrefix">
+			<TestSet>
+				<Device capabilities="Keyboard"/>
+			</TestSet>
+		</script>
+	</category>
+
+	<category key="Mouse">
+		<script name="SystemInformation.mousePrefix">
+			<TestSet>
+				<Device capabilities="Mouse"/>
+				<Test key="MouseTest" module="pcdrmouse"/>
+				<Test key="TrackpadTest" module="pcdrmouse"/>
+				<Test key="TrackpointTest" module="pcdrmouse"/>
+			</TestSet>
+		</script>
+	</category>
+
+	<category key="Lid">
+		<script name="lidTest">
+			<TestSet>
+				<Device capabilities="LidSensor" />
+			</TestSet>
+		</script>
+	</category>
+
+    <category key="NetworkCard">
+        <script name="networkCardTest">
+            <TestSet>
+                <Device capabilities="NetworkCard"/>
+                <Device capabilities="CommunicationsController"/>
+            </TestSet>
+        </script>
+    </category>
+	
+    <category key="MobileBroadbandInterface">
+        <script name="MobileBroadbandInterface">
+            <TestSet>
+                <Device capabilities="MobileBroadbandInterface"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="Optical">
+        <script name="opticalTest">
+            <TestSet>
+		<Device capabilities="Optical"/>
+		<Test key="DRAMTest" module="pcdrobistdl"/>
+		<Test key="FlashROMTest" module="pcdrobistdl"/>
+		<Test key="MainICTest" module="pcdrobistdl"/>
+		<Test key="OpuTest" module="pcdrobistdl"/>
+		<Test key="SpindleTest" module="pcdrobistdl"/>
+		<Test key="TrayOutTest" module="pcdrobistdl"/>
+		<Test key="TrayInTest" module="pcdrobistdl"/>
+		<Device capabilities="CDROM"/>
+		<Test key="LinearSeekTest" module="pcdrcddrive2"/>
+		<Test key="RandomSeekTest" module="pcdrcddrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrcddrive2"/>
+		<Test key="LinearReadCompareTest" module="pcdrcddrive2"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="CDROM"/>
+		<Test key="CDAudioTest" module="pcdrcddrive"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVD"/>
+		<Test key="LinearSeekTest" module="pcdrdvddrive2"/>
+		<Test key="RandomSeekTest" module="pcdrdvddrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrdvddrive2"/>
+		<Test key="LinearReadCompareTest" module="pcdrdvddrive2"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDRAM"/>
+		<Test key="RandomSeekTest" module="pcdrdvdramdrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrdvdramdrive2"/>
+		<Test key="LinearSeekTest" module="pcdrdvdramdrive2"/>
+		<Test key="LinearReadCompareTest" module="pcdrdvdramdrive2"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="HDDVDROM"/>
+		<Test key="LinearSeekTest" module="pcdrhddvddrive2"/>
+		<Test key="RandomSeekTest" module="pcdrhddvddrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrhddvddrive2"/>
+		<Test key="LinearReadCompareTest" module="pcdrhddvddrive2"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="BDROM"/>
+		<Test key="LinearSeekTest" module="pcdrbddrive2"/>
+		<Test key="RandomSeekTest" module="pcdrbddrive2"/>
+		<Test key="FunnelSeekTest" module="pcdrbddrive2"/>
+		<Test key="LinearReadCompareTest" module="pcdrbddrive2"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="CDR"/>
+		<Test key="ReadWriteTest" module="pcdrcdr"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDPLUSR"/>
+		<Test key="ReadWriteTest" module="pcdrdvdplusr"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDMINUSR"/>
+		<Test key="ReadWriteTest" module="pcdrdvdminusr"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDPLUSRDL"/>
+		<Test key="ReadWriteTest" module="pcdrdvdplusrdl"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDMINUSRDL"/>
+		<Test key="ReadWriteTest" module="pcdrdvdminusrdl"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="CDRW"/>
+		<Test key="ReadWriteTest" module="pcdrcdrw"/>
+		<Test key="DriverFilterTest" module="pcdrcdrw"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDPLUSRW"/>
+		<Test key="ReadWriteTest" module="pcdrdvdplusrw"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDMINUSRW"/>
+		<Test key="ReadWriteTest" module="pcdrdvdminusrw"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDPLUSRWDL"/>
+		<Test key="ReadWriteTest" module="pcdrdvdplusrwdl"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDMINUSRWDL"/>
+		<Test key="ReadWriteTest" module="pcdrdvdminusrwdl"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="DVDRAM"/>
+		<Test key="PatternTest" module="pcdrdvdramdrive"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="BDR"/>
+		<Test key="ReadWriteTest" module="pcdrbdr"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+		<Device capabilities="BDRE"/>
+		<Test key="ReadWriteTest" module="pcdrbdre"/>
+		<Parameter key="PromptUserForMedia" value="true"/>
+	    </TestSet>
+        </script>
+    </category>
+
+    <category key="RemovableStorage">
+        <script name="removableStorageTest">
+            <TestSet>
+                <Device capabilities="RemovableStorage"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="SoundCard">
+        <script name="soundCardTest">
+            <TestSet>
+                <Device capabilities="SoundCard"/>
+            </TestSet>
+            <TestSet>
+                <Device capabilities="MIDI"/>
+            </TestSet>
+            <TestSet>
+                <Device capabilities="Speaker"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="System">
+        <script file="scripts/full.xml"/>
+    </category>
+
+    <category key="SystemStress">
+        <script file="scripts/stresstest.xml"/>
+    </category>
+
+    <category key="TouchScreen">
+        <script name="touchScreenTest">
+            <TestSet>
+                <Device capabilities="TouchScreen"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="USB">
+        <script name="usbTest">
+            <TestSet>
+                <Device capabilities="USB"/>
+            </TestSet>
+            <TestSet>
+                <Device capabilities="USBPorts"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="VideoCapture">
+        <script name="videoCaptureTest">
+            <TestSet>
+                <Device capabilities="VideoCapture"/>
+            </TestSet>
+        </script>
+    </category>
+
+    <category key="VideoCard">
+        <script file="scripts/video.xml"/>
+    </category>
+
+    <category key="VideoCardStress">
+        <script file="scripts/video_stress.xml"/>
+    </category>
+
+</device-categories>
+

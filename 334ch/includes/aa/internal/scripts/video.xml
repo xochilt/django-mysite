@@ -1,0 +1,26 @@
+<Script name="AbstractTestConfirmationPage.shortVideoTest">
+	<TestSet>
+		<device capabilities="VideoCard"/>
+		<ExcludeTest key="TLPipelineStressTest"/>
+		<ExcludeTest key="TLPipelineWireframeStressTest"/>
+		<ExcludeTest key="MultiRenderingDX9Test"/>
+		<ExcludeTest key="GraphicsBenchmark"/>
+
+		<!-- because the following doesn't work -->
+		<!-- <ExcludeTest module="pcdrcuda"/> -->
+
+		<ExcludeTest key="StandardMathematicalOperations" />
+		<ExcludeTest key="AdvancedMathematicalOperations" />
+		<ExcludeTest key="MemoryFaultTest" />
+		<ExcludeTest key="AddressFaultTest" />
+		<ExcludeTest key="OwnAddressTest" />
+		<ExcludeTest key="MovingInversionTest" />
+		<ExcludeTest key="PatternTest" />
+		<ExcludeTest key="BlockMoveTest" />
+		<ExcludeTest key="RandomNumberSequenceTest" />
+		<ExcludeTest key="ModuloXTest" />
+
+		<!-- END exclude cuda -->
+		
+	</TestSet>
+</Script>

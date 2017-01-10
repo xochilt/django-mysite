@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="systeminfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="latest" />
+        <xs:element minOccurs="0" ref="previous" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="filepointer">
+    <xs:attribute name="type" type="xs:string" use="required" />
+    <xs:attribute name="time" type="xs:unsignedInt" use="required" />
+    <xs:attribute name="file" type="xs:string" use="required" />
+    <xs:attribute name="filter" type="xs:string" use="optional" />
+  </xs:complexType>
+
+  <xs:element name="latest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="files" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="previous">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="files" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="files">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="cache" type="filepointer" />
+      </xs:sequence>
+      <xs:attribute name="time" type="xs:unsignedInt" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

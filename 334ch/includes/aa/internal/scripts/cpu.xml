@@ -1,0 +1,7 @@
+<Script name="AbstractTestConfirmationPage.cpuTest">
+	<TestSet>
+		<Device capabilities="CPU"/>
+		<ExcludeTest key="StressTest"/>
+		<ExcludeTest key="Benchmark"/>
+	</TestSet>
+</Script>

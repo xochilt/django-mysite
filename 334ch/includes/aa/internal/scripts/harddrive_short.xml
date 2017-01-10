@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<Script skipdevicesonresults="FAIL" name="shortHardDrive">
+	<TestSet>
+		<Device capabilities="HardDrive"/>
+		<Test key="SelfTest" module="pcdrscsi2"/>
+		<Test key="SMARTStatusTest"/>
+		<Test key="SMARTThresholdsTest"/>
+		<Test key="TargetedReadTest"/>
+		<Test key="RandomSeekTest"/>
+		<Test key="FunnelSeekTest"/>
+		<Test key="SelfTestBGShort" module="pcdrscsi2"/>
+		<Test key="SMARTShortSelfTest"/>
+
+		<!-- Linear Read Test Inner 5 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+5GB"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+
+		<!-- Linear Read Test Outer 5 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MAX-5GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="5"/>
+		</Test>
+
+		<!-- Linear Read Test Inner 15 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+15GB"/>
+			<Parameter key="SectorPercentToTest" value="20"/>
+		</Test>
+
+		<!-- Linear Read Test Outer 15 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MAX-15GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="20"/>
+		</Test>
+
+		<Test key="SMARTThresholdsTest"/>
+		<Test key="SSDWearLevelTest" module="pcdrssd"/>
+		<Test key="IntelSSDWearLevelTest" module="pcdrssd"/>
+	</TestSet>
+</Script>
+

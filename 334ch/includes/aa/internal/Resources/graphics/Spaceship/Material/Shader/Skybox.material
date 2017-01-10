@@ -1,0 +1,24 @@
+material Skybox
+{
+	technique
+	{
+		pass 
+		{
+			depth_write off
+
+			vertex_program_ref VSskyBox
+			{
+			}
+			
+			fragment_program_ref PSskyBox
+			{
+			}
+			
+			texture_unit
+			{
+				cubic_texture skybox.jpg skybox.jpg skybox.jpg skybox.jpg skybox.jpg skybox.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}

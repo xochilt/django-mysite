@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<Script name="systemStressTestKey">
+	<TestSet description="StressTest" isParallel="true" minTimePerTest="600">
+		<Test key="StressTest" module="pcdrcpu">
+			<Parameter key="TestRunTime" value="600"/>
+		</Test>
+		<Test key="AdvancedPatternTest" module="pcdrmemory2"/>
+		<Test key="RandomSeekTest" module="pcdrharddrive2">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+		<Test key="RandomSeekTest" module="pcdrssd">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+	</TestSet>
+	<TestSet description="Video1StressTest" isParallel="true">
+		<Device type="VideoCard">
+			<inventory-check>
+				<device type="VideoCard">
+					<or>
+						<not>
+							<property key="HybridGPUCategory"/>
+						</not>
+						<property key="HybridGPUCategory" value="discrete"/>
+					</or>
+				</device>
+			</inventory-check>
+		</Device>
+		<Test key="TLPipelineStressTest" module="pcdr2d3dvideo">
+			<Parameter key="AnimationLength" value="600000"/>
+		</Test>
+	</TestSet>
+</Script>

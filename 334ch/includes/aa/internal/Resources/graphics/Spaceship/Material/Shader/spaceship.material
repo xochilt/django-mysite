@@ -1,0 +1,758 @@
+material RedBeaconLights
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 0 1
+			diffuse 1 0 0 1
+			specular 0 0 0 1 10
+			vertex_program_ref VSFlat
+			{
+			}
+
+			fragment_program_ref PSFlat
+			{
+			}
+		}
+	}
+}
+
+material GreenBeaconLights
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 1 0 1
+			diffuse 0 1 0 1
+			specular 0 0 0 1 10
+			vertex_program_ref VSFlat
+			{
+			}
+
+			fragment_program_ref PSFlat
+			{
+			}
+
+		}
+
+	}
+
+}
+material Fighters_A
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.0972549 0.0972549 0.0972549 1 75
+
+			vertex_program_ref asteroidVS
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture fighter_a.jpg
+			}
+		}
+
+	}
+}
+
+material Fighters_B
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 1
+			diffuse 0.588 0.588 0.588 1
+			specular 0.225 0.225 0.225 1 50
+
+			vertex_program_ref asteroidVS
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+
+			texture_unit
+			{
+				texture fighter_b.jpg
+			}
+		}
+
+	}
+}
+
+material Asteroid
+{
+	technique
+	{
+		pass
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.045 0.045 0.045 1 25
+			
+			vertex_program_ref asteroidVS
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture asteroid_surface.jpg
+			}
+
+			texture_unit
+			{
+				texture asteroid_surface_NRM.jpg
+			}
+		}
+	}
+}
+
+material WingTipCaps
+{
+	technique BlinnHLSL50{
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.612 0.612 0.612 1 64
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			texture_unit
+			{
+				texture engine_mount_base.jpg
+			}
+		
+			texture_unit
+			{
+				texture engine_mount_base_NRM.jpg
+			}	
+			
+		}
+	}	
+}
+
+material HullBack
+{
+	technique BlinnHLSL50{
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture body_transition_ridge.jpg
+			}
+			
+			
+		}
+	}
+}
+
+material HullVents
+{
+	technique BlinnHLSL50
+	{
+		//Blinn pass on spot lights
+		pass BlinnPassSpotLights
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture engine_mount_base.jpg
+			}
+			
+			texture_unit
+			{
+				texture engine_mount_base_NRM.jpg
+			}
+			
+		}
+	}
+}
+
+material HullRidgesNose
+{
+	technique BlinnHLSL50
+	{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.027 0.027 0.027 1 1
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture hull_ridges.jpg
+			}
+		}
+	}
+}
+
+material Engine
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture engines.jpg
+			}
+			
+			texture_unit
+			{
+				texture engines_NRM.jpg
+			}
+			
+		}
+	}
+}
+
+material EngineRecess
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture engine_recess.jpg
+			}
+			
+			texture_unit
+			{
+				texture engine_recess_NRM.jpg
+			}
+			
+		}
+	}
+}
+
+
+
+material BottomHull
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.36 0.36 0.36 1 60
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture bottom_hull2.jpg
+				transform 5 0 0 0 0 5 0 0 0 0 1 0 0 0 0 1
+			}
+			
+			texture_unit
+			{
+				texture bottom_hull2_NRM.jpg
+				transform 5 0 0 0 0 5 0 0 0 0 1 0 0 0 0 1
+			}
+
+		}
+	}
+}
+
+
+
+material FrontTopHull
+{
+	technique BlinnHLSL50
+	{
+		//ambient pass reset the pixels in the existing render target				
+		pass BlinnPass
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+						
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture front_top_hull.jpg
+			}
+			
+			texture_unit
+			{
+				texture front_top_hull_NRM.jpg
+			}
+			
+		}
+	}
+}
+
+material FighterBayRoof
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture body_transition_ridge.jpg
+			}
+		}
+	}
+}
+
+
+
+material EngineGlow
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.063 0.063 0.063 1 1
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture engine_glow.jpg
+			}
+		}
+	}
+}
+
+material HullBulkheads
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.72 0.72 0.72 1 63
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture hull_bulkheads.jpg
+				transform 1.71143e-007 1 0 1.26881e-008 -5 5.96046e-008 0 1 0 0 1 0 0 0 0 1
+			}
+			
+			texture_unit
+			{
+				texture hull_bulkheads_NRM.jpg
+				transform 1.71143e-007 1 0 1.26881e-008 -5 5.96046e-008 0 1 0 0 1 0 0 0 0 1
+			}
+
+		}		
+	}
+}
+
+material HullRidges
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.72 0.72 0.72 1 63
+						
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture hull_ridges.jpg
+				transform 6 0 0 0 0 6 0 0 0 0 1 0 0 0 0 1
+			}
+		}
+	}
+}
+
+
+
+material WingMount
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			texture_unit
+			{
+				texture wing_mounts.jpg 
+			}
+			
+			texture_unit
+			{
+				texture wing_mounts_NRM.jpg 
+			}
+
+		}
+	}
+}
+
+material TailFins
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture tail_fins.jpg 
+			}
+			
+			texture_unit
+			{
+				texture tail_fins_NRM.jpg 
+			}
+
+		}
+	}
+}
+
+material EngineMountBase
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.252 0.252 0.252 1 46
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			texture_unit
+			{
+				texture engine_mount_base.jpg 
+			}
+			
+			texture_unit
+			{
+				texture engine_mount_base_NRM.jpg 
+			}
+
+		}
+	}
+}
+
+material EngineCaps
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass BlinnPassSpotLights
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture engine_cap.jpg
+			}
+		}
+	}
+}
+
+material FighterBay
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			texture_unit
+			{
+				texture plain_body.jpg
+			}
+			texture_unit
+			{
+				texture plain_body_NRM.jpg
+			}
+
+		}
+	}
+}
+
+material Antennas
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.45 0.45 0.45 1 70
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture antenna_metal.jpg //0
+				transform 2 0 0 0 0 3 0 0 0 0 1 0 0 0 0 1
+			}
+		}
+	}
+}
+
+material HullBulkheadCasing
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture body_transition_ridge.jpg
+			}
+		}
+	}
+}
+
+material HullTransitionRidge
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+			
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture body_transition_ridge.jpg 
+			}
+		}
+	}
+}
+
+material HullBulkheadInterior
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0 0 0 1 10
+						
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSTextured
+			{
+			}
+			
+			texture_unit
+			{
+				texture body_transition_ridge.jpg
+			}
+		}
+	}
+}
+
+material WingTips
+{
+	technique BlinnHLSL50{
+		//Blinn pass on spot lights
+		pass Blinn
+		{
+			diffuse 0.588 0.588 0.588 1
+			specular 0.54 0.54 0.54 1 65
+	
+			vertex_program_ref VSTextured
+			{
+			}
+			
+			fragment_program_ref PSNormalMap
+			{
+			}
+			
+			texture_unit
+			{
+				texture wing_tips.jpg
+			}
+			
+			texture_unit
+			{
+				texture wing_tips_NRM.jpg
+			}
+		}
+	}
+}

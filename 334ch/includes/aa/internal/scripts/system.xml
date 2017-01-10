@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<Script name="systemTestKey">
+
+	<TestSet>
+		<Device capabilities="IEEE1394Controller"/>
+			<Test key="BusResetTest"/>
+			<Test key="ConfigROMTest"/>
+	</TestSet>  
+
+	<TestSet>
+		<Device capabilities="CPU"/>
+		  <ExcludeTest key="StressTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="Memory"/>
+			<Test key="BitLowTest"/>                
+			<Test key="BitHighTest"/>
+			<Test key="NibbleMoveTest"/>
+			<Test key="CheckerboardTest"/>
+			<Test key="WalkingOnesLeftTest"/>
+			<Test key="WalkingOnesRightTest"/>
+			<Test key="AuxiliaryPatternTest"/>
+			<Test key="AddressTest"/>
+			<Test key="AdvancedPatternTest"/>
+			<Test key="Modulo20Test"/>
+			<Test key="MovingInversionTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="CMOS"/>    
+			<Test key="CheckSumTest"/>
+			<Test key="PatternTest"/> 
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="SystemBoard"/>
+			<Test key="RTCAccuracyTest"/>        
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="ParallelPort"/>
+			<Test key="InternalTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="PciBus"/>    
+			<Test key="ConfigTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="PCIExpress"/>
+			<Test key="StatusTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="PCIPCMCIABridge"/>
+			<Test key="PcmciaStatusTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="PCICardBusBridge"/>
+			<Test key="CardBusStatusTest"/>
+	</TestSet>
+
+	<TestSet>
+		<Device capabilities="SerialPort"/>
+			<Test key="InternalRegisterTest"/>                  
+	</TestSet>
+
+    <TestSet>
+        <Device capabilities="CDROM"/>                
+        <Test key="RandomSeekTest" module="pcdrcddrive2"/>        
+        <Parameter key="PromptUserForMedia" value="true"/>      
+    </TestSet>           
+
+    <TestSet>
+        <Device capabilities="HardDrive"/>
+        <Test key="RandomSeekTest"/>
+        <Test key="SMARTStatusTest" />
+        <Test key="SMARTShortSelfTest" />
+    </TestSet>
+
+    <TestSet description="Video Card Test">
+        <Device capabilities="VideoCard" />
+        <Test key="FixedTLPipelineWireframeTest" />
+    </TestSet>
+
+    <TestSet description="Network card Test">
+        <Device capabilities="NetworkCard" />
+        <Test key="NetworkLinkTest" />
+    </TestSet>
+
+	<TestSet>
+		<Device capabilities="Modem"/>
+		<Test key="DialToneTest"/>
+		<Test key="ModemLoopbackTest"/>
+	</TestSet>
+	
+	<TestSet>
+		<Device capabilities="PCI"/>
+		<Test key="CCUAndMemoryTest"/>
+		<Test key="GDDR3PinLevelTest"/>
+		<Test key="MaximumLoadTest"/>
+		<Test key="VPEInstructionTest"/>
+		<Test key="VPERegisterAndMemoryTest"/>
+		<Test key="VPETest"/>
+	</TestSet>
+</Script>

@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="tm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="global"/>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="click"/>
+          <xs:element ref="view"/>
+          <xs:element ref="trigger"/>
+          <xs:element ref="install"/>
+          <xs:element ref="uninstall"/>
+          <xs:element ref="upgrade"/>
+          <xs:element ref="appstart"/>
+          <xs:element ref="exception"/>
+          <xs:element ref="tmprofiler"/>
+          <xs:element ref="counters"/>
+          <xs:element ref="search"/>
+          <xs:element ref="SystemAlerts"/>
+          <xs:element ref="ScriptRun"/>
+          <xs:element ref="setting"/>
+          <xs:element ref="event"/>
+          <xs:element ref="monthlyscan"/>
+          <xs:element ref="info"/>
+          <xs:element ref="install_fail"/>
+          <xs:element ref="warranty"/>
+          <xs:element ref="driverinstalltrigger"/>
+          <xs:element ref="driverinstallview"/>
+          <xs:element ref="driverinstallclick"/>
+          <xs:element ref="softwarediagnosticrun"/>
+          <xs:element ref="fixsession"/>
+          <xs:element ref="driverinstallstart"/>
+          <xs:element ref="driverinstallcomplete"/>
+          <xs:element ref="driverinstallsetting"/>
+          <xs:element ref="bsod"/>
+          <xs:element ref="addon"/>
+          <xs:element ref="action"/>
+          <xs:element ref="string"/>
+          <xs:element ref="selfdispatchxml"/>
+          <xs:element ref="selfdispatchtrigger"/>
+          <xs:element ref="selfdispatchrequest"/>
+          <xs:element ref="msbitsdownload"/>
+          <xs:element ref="session"/>
+          <xs:element ref="addonsetting"/>
+          <xs:element ref="sysinfosnapshot"/>
+          <xs:element ref="SWDiagnosticRun"/>
+          <xs:element ref="FixActionRun"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:integer" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="string">
+    <xs:complexType>
+      <xs:attribute name="type" type="xs:token"/>
+      <xs:attribute name="content" type="xs:token"/>
+      <xs:attribute name="_t" type="xs:integer"/>
+      <xs:attribute name="_s" type="xs:integer"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="action">
+    <xs:complexType>
+      <xs:sequence>
+       <xs:element maxOccurs="1" minOccurs="0" name="info">
+         <xs:complexType>
+           <xs:attribute name="id" type="xs:token"/>
+           <xs:attribute name="significance" type="xs:token"/>
+         </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+      <xs:attribute name="basic" type="xs:token"/>
+      <xs:attribute name="type" type="xs:token"/>
+      <xs:attribute name="_t" type="xs:integer"/>
+      <xs:attribute name="_s" type="xs:integer"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addon">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:token"/>
+      <xs:attribute name="loaded" type="xs:token"/>
+      <xs:attribute name="previous" type="xs:token"/>
+      <xs:attribute name="_t" type="xs:integer"/>
+      <xs:attribute name="_s" type="xs:integer"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstallclick">
+    <xs:complexType>
+      <xs:attribute name="platformid" use="required"/>
+      <xs:attribute name="driverid" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="releasedate" use="required"/>
+      <xs:attribute name="url" use="required"/>
+      <xs:attribute name="criticality"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstallview">
+    <xs:complexType>
+      <xs:attribute name="platformid" use="required"/>
+      <xs:attribute name="driverid" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="releasedate" use="required"/>
+      <xs:attribute name="criticality"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="url"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstalltrigger">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="DriverInstallFile"/>
+      </xs:sequence>
+      <xs:attribute name="platformid" use="required"/>
+      <xs:attribute name="driverid" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="releasedate" use="required"/>
+      <xs:attribute name="criticality" use="required"/>
+      <xs:attribute name="mostcompatibledeviceid"/>
+      <xs:attribute name="devicecatalogscanversion"/>
+      <xs:attribute name="devicecatalogpnpid"/>
+      <xs:attribute name="drivercatalogdescription"/>
+      <xs:attribute name="drivercatalogtype"/>
+      <xs:attribute name="drivercatalogcategory"/>
+      <xs:attribute name="drivercatalogos"/>
+      <xs:attribute name="drivercatalogdevices"/>
+      <xs:attribute name="drivercatalogsrvs"/>
+      <xs:attribute name="drivercatalogimportancestring"/>
+      <xs:attribute name="url"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DriverInstallFile">
+    <xs:complexType>
+      <xs:attribute name="ID" type="xs:string" use="required"/>
+      <xs:attribute name="FileName" type="xs:string" use="required"/>
+      <xs:attribute name="Format" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Size" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstallstart">
+    <xs:complexType>
+      <xs:attribute name="platformid" use="required"/>
+      <xs:attribute name="driverid" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="releasedate" use="required"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="url"/>
+      <xs:attribute name="criticality"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstallcomplete">
+    <xs:complexType>
+      <xs:attribute name="platformid" use="required"/>
+      <xs:attribute name="driverid" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="releasedate" use="required"/>
+      <xs:attribute name="installstate" use="required"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="url"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="driverinstallsetting">
+    <xs:complexType>
+      <xs:attribute name="productcatalogname" type="xs:string"/>
+      <xs:attribute name="productcatalogid" type="xs:string"/>
+      <xs:attribute name="productcatalogimage" type="xs:string"/>
+      <xs:attribute name="productcatalogbiossysid" type="xs:string"/>
+      <xs:attribute name="productcatalogscanenabled" type="xs:string"/>
+      <xs:attribute name="productcatalogpath" type="xs:string"/>
+      <xs:attribute name="productcatalogparent" type="xs:string"/>
+      <xs:attribute name="scanenabled" type="xs:string"/>
+      <xs:attribute name="optinfromtoast" type="xs:string"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScriptRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="sysinfo"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="TestRun"/>
+      </xs:sequence>
+      <xs:attribute name="finishTime" type="nillableinteger" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" use="required">
+      </xs:attribute>
+      <xs:attribute name="scriptName" use="required">
+      </xs:attribute>
+      <xs:attribute name="startTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="nillableinteger" use="required">
+      </xs:attribute>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:anyAttribute processContents="lax">
+      </xs:anyAttribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Test">
+          <xs:complexType>
+            <xs:attribute name="module" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="name" type="xs:string" use="required">
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="Device"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="Event">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="message" type="xs:string">
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="startTime" type="xs:integer">
+      </xs:attribute>
+      <xs:attribute name="finishTime" type="nillableinteger">
+      </xs:attribute>
+      <xs:attribute name="duration" type="nillableinteger" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="errorCode" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Device">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Device"/>
+          <xs:element name="Capability" type="xs:NCName">
+          </xs:element>
+          <xs:element maxOccurs="unbounded" name="Property">
+            <xs:complexType>
+              <xs:simpleContent>
+                <xs:extension base="xs:string">
+                  <xs:attribute name="concept">
+                  </xs:attribute>
+                  <xs:attribute name="key" type="xs:string" use="required">
+                  </xs:attribute>
+                  <xs:attribute name="type" type="xs:NCName">
+                  </xs:attribute>
+                </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="pastfail">
+            <xs:complexType>
+              <xs:simpleContent>
+                <xs:extension base="xs:string">
+                  <xs:attribute name="source" type="xs:string" use="required"/>
+                  <xs:attribute name="module" type="xs:string"/>
+                  <xs:attribute name="test" type="xs:string"/>
+                  <xs:attribute name="date" type="xs:int" use="required"/>
+                </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+          </xs:element>          
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="name" use="required">
+      </xs:attribute>
+      <xs:attribute name="type" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="parent_id">
+      </xs:attribute>
+      <xs:attribute name="id">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sysinfosnapshot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="SnapshotDevice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice>
+                <xs:element maxOccurs="1" minOccurs="0" name="DeviceUID" type="xs:string">
+                </xs:element>
+                <xs:element maxOccurs="1" minOccurs="0" name="ModelUID" type="xs:string">
+                </xs:element>
+              </xs:choice>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="SnapshotProperty">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="SnapshotProperty"/>
+                  </xs:sequence>
+                  <xs:attribute name="key" type="xs:string" use="required">
+                  </xs:attribute>
+                  <xs:attribute name="name" type="xs:string" use="required">
+                  </xs:attribute>
+                  <xs:attribute name="value" type="xs:string" use="optional">
+                  </xs:attribute>
+                  <xs:attribute name="concept" type="xs:string" use="optional">
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="SnapshotDevice"/>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="name" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="caps" type="xs:string" use="optional">
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="enumError" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="factoryinstall" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="cachetimestamp" type="xs:integer">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setting">
+    <xs:complexType>
+      <xs:attribute name="key" type="xs:string" use="required">
+      </xs:attribute>
+        <xs:attribute name="value" type="xs:string" use="required">
+        </xs:attribute>
+      <xs:attribute name="previous" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="event">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="state" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="previous" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="last_change" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="monthlyscan">
+    <xs:complexType>
+      <xs:attribute name="value" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemAlerts">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="APPLICATION_CRASH"/>
+        <xs:element ref="DRIVER_ISSUE"/>
+        <xs:element ref="OS_CRASH"/>
+        <xs:element ref="OS_STARTUP_TIME"/>
+        <xs:element ref="OS_SHUTDOWN_TIME"/>
+        <xs:element ref="OS_HIBERNATE_TIME"/>
+        <xs:element ref="OS_SLEEP_TIME"/>
+      </xs:choice>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="APPLICATION_CRASH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ApplicationName"/>
+        <xs:element minOccurs="0" ref="ApplicationVersion"/>
+        <xs:element minOccurs="0" ref="ModuleName"/>
+        <xs:element minOccurs="0" ref="ModuleVersion"/>
+        <xs:element minOccurs="0" ref="ExceptionCode"/>
+        <xs:element minOccurs="0" ref="FaultOffset"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationName" type="xs:string">
+  </xs:element>
+  <xs:element name="ApplicationVersion" type="xs:string">
+  </xs:element>
+  <xs:element name="ModuleName" type="xs:string">
+  </xs:element>
+  <xs:element name="ModuleVersion" type="xs:string">
+  </xs:element>
+  <xs:element name="ExceptionCode" type="xs:string">
+  </xs:element>
+  <xs:element name="FaultOffset" type="xs:string">
+  </xs:element>
+  <xs:element name="DRIVER_ISSUE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DeviceID"/>
+        <xs:choice>
+          <xs:element ref="DriverProblemCode"/>
+          <xs:sequence>
+            <xs:element ref="DeviceProblemCode"/>
+            <xs:element ref="Driver"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="DriverProvider"/>
+        <xs:element minOccurs="0" ref="DriverVersion"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Driver" type="xs:string">
+  </xs:element>
+  <xs:element name="DeviceID" type="xs:string">
+  </xs:element>
+  <xs:element name="DriverProblemCode" type="xs:integer">
+  </xs:element>
+  <xs:element name="DeviceProblemCode" type="xs:integer">
+  </xs:element>
+  <xs:element name="DriverProvider" type="xs:string">
+  </xs:element>
+  <xs:element name="DriverVersion" type="xs:string">
+  </xs:element>
+  <xs:element name="OS_CRASH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ReportID"/>
+        <xs:element minOccurs="0" ref="Code"/>
+        <xs:element minOccurs="0" ref="FullCode"/>
+        <xs:element minOccurs="0" ref="Parameters"/>
+        <xs:element minOccurs="0" ref="DumpPath"/>
+        <xs:element minOccurs="0" ref="Cause"/>
+        <xs:element minOccurs="0" ref="BSODTimestamp"/>
+        <xs:element minOccurs="0" ref="ProbableCauseDevice"/>
+        <xs:element minOccurs="0" ref="ProbableCauseDriver"/>
+        <xs:element minOccurs="0" ref="ProbableCauseDriverTimestamp"/>
+        <xs:element minOccurs="0" ref="ProbableCauseDriverChecksum"/>
+        <xs:element minOccurs="0" ref="CurrentDriver"/>
+        <xs:element minOccurs="0" ref="CurrentDriverTimestamp"/>
+        <xs:element minOccurs="0" ref="CurrentDriverChecksum"/>
+        <xs:element minOccurs="0" ref="CurrentDriverVersion"/>
+        <xs:element minOccurs="0" ref="CurrentDriverCompanyName"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportID" type="xs:string">
+  </xs:element>
+  <xs:element name="FullCode" type="xs:string">
+  </xs:element>
+  <xs:element name="Code" type="xs:NMTOKEN">
+  </xs:element>
+  <xs:element name="Parameters" type="xs:string">
+  </xs:element>
+  <xs:element name="DumpPath" type="xs:string">
+  </xs:element>
+  <xs:element name="Cause">
+    <xs:complexType>
+      <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="driver" type="xs:string">
+        </xs:attribute>
+       <xs:attribute name="device" type="xs:string">
+       </xs:attribute>
+     </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="BSODTimestamp" type="xs:string">
+  </xs:element>
+  <xs:element name="ProbableCauseDevice" type="xs:string">
+  </xs:element>
+  <xs:element name="ProbableCauseDriver" type="xs:string">
+  </xs:element>
+  <xs:element name="ProbableCauseDriverTimestamp" type="xs:string">
+  </xs:element>
+  <xs:element name="ProbableCauseDriverChecksum" type="xs:string">
+  </xs:element>
+  <xs:element name="CurrentDriver" type="xs:string">
+  </xs:element>
+  <xs:element name="CurrentDriverTimestamp" type="xs:string">
+  </xs:element>
+  <xs:element name="CurrentDriverChecksum" type="xs:string">
+  </xs:element>
+  <xs:element name="CurrentDriverVersion" type="xs:string">
+  </xs:element>
+  <xs:element name="CurrentDriverCompanyName" type="xs:string">
+  </xs:element>
+  <xs:element name="OS_STARTUP_TIME">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OSBootTimeTotal" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSBootTimeToDesktop" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSBootTimeDesktopToIdle" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSBootNumApps" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSDriversTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSDevicesTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSServicesTime" type="xs:integer">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OS_SHUTDOWN_TIME">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OSShutdownTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSShutdownNotificationsTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSServicesTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSKernelTime" type="xs:integer">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OS_HIBERNATE_TIME">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OSSuspendTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSResumeTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSHibernateReadTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSHibernateWriteTime" type="xs:integer">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OS_SLEEP_TIME">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OSSuspendTime" type="xs:integer">
+        </xs:element>
+        <xs:element name="OSResumeTime" type="xs:integer">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="uid" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sysinfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="Device"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="global">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="geolocation">
+          <xs:complexType>
+            <xs:attribute name="country" type="xs:token"/>
+            <xs:attribute name="state" type="xs:token"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="bdid" type="xs:NMTOKEN" use="required">
+      </xs:attribute>
+      <xs:attribute name="customer" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="mtm">
+      </xs:attribute>
+      <xs:attribute name="os">
+      </xs:attribute>
+      <xs:attribute name="os_name">
+      </xs:attribute>
+      <xs:attribute name="systemid">
+      </xs:attribute>
+      <xs:attribute name="t0_ver">
+      </xs:attribute>
+      <xs:attribute name="t1_serial">
+      </xs:attribute>
+      <xs:attribute name="t2_serial">
+      </xs:attribute>
+      <xs:attribute name="variant" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="ppid">
+      </xs:attribute>
+      <xs:attribute name="warranty_end_date">
+      </xs:attribute>
+      <xs:attribute name="t208_sysid">
+      </xs:attribute>
+      <xs:anyAttribute processContents="lax">
+      </xs:anyAttribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="search">
+    <xs:complexType>
+      <xs:attribute name="input" type="xs:string" use="required"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="click">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element ref="url"/>
+          <xs:element ref="runapp"/>
+          <xs:element ref="fixaction"/>
+        </xs:choice>
+        <xs:element ref="ui"/>
+        <xs:element minOccurs="0" ref="parameters"/>
+        <xs:element minOccurs="0" ref="url"/>
+        <xs:element minOccurs="0" ref="runapp"/>
+        <xs:element minOccurs="0" ref="fixaction"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parameters">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="parameter"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parameter">
+    <xs:complexType>
+      <xs:attribute name="key" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="value" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ui">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="ui"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Alert"/>
+            <xs:enumeration value="Panel"/>
+            <xs:enumeration value="ImportantPanel"/>
+            <xs:enumeration value="ActionItem"/>
+            <xs:enumeration value="MainUI"/>
+            <xs:enumeration value="Button"/>
+            <xs:enumeration value="Page"/>
+            <xs:enumeration value="Link"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="view">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ui"/>
+        <xs:element minOccurs="0" ref="parameters"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trigger">
+    <xs:complexType>
+      <xs:attribute name="enable" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="previous" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="none"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="reason" type="xs:string" use="optional">
+      </xs:attribute>
+      <xs:attribute name="uuid" use="required"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="exception">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="dotnet"/>
+        <xs:element name="data" type="xs:string">
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="subtype" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="type" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="original" type="xs:integer">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="install">
+    <xs:complexType>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="mode" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="default"/>
+            <xs:enumeration value="factory"/>
+            <xs:enumeration value="one_to_many"/>
+            <xs:enumeration value="unknown"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="version" type="xs:NMTOKEN">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uninstall">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="previous_version"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:NMTOKEN">
+      </xs:attribute>
+      <xs:attribute name="mode" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="upgrade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="previous_version"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="version" type="xs:NMTOKEN">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="previous_version">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="previous_version"/>
+      </xs:sequence>
+      <xs:attribute name="bdid" type="xs:NMTOKEN">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tmprofiler">
+    <xs:complexType>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="attempts" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="compressed" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="duration" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="estimate" use="required">
+      </xs:attribute>
+      <xs:attribute name="max" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="records" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="retry" use="required">
+      </xs:attribute>
+      <xs:attribute name="start" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="uncompressed" type="xs:integer" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ui"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="data" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dotnet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="dotnet"/>
+      </xs:sequence>
+      <xs:attribute name="message" use="required">
+      </xs:attribute>
+      <xs:attribute name="source" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="stacktrace" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="dev"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="prop"/>
+      </xs:sequence>
+      <xs:attribute name="cap" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prop">
+    <xs:complexType mixed="true">
+      <xs:attribute name="key" type="xs:NCName" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url">
+    <xs:complexType>
+      <xs:attribute name="address" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="proxy" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="runapp">
+    <xs:complexType>
+      <xs:attribute name="command" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="arguments" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="appstart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="registry">
+          <xs:complexType>
+            <xs:attribute name="key" type="xs:token"/>
+            <xs:attribute name="value" type="xs:token"/>
+            <xs:attribute name="isint" type="xs:token"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+      <xs:attribute name="launcher" type="xs:NCName" use="required">
+      </xs:attribute>
+      <xs:attribute name="language" type="xs:NCName">
+      </xs:attribute>
+      <xs:attribute name="startpage" type="xs:NCName">
+      </xs:attribute>
+      <xs:attribute name="addon" type="xs:NCName">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="counters">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="toasterdismiss">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="toasterclick">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="toastertimeout">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="imstrayiconclick">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="imstrayicondismiss">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="imstrayicontimeout">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer"/>
+          </xs:simpleType>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="install_fail">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="rollback_fail">
+          </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="previous_version" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="file" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="reason" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rollback_fail">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="file"/>
+      </xs:sequence>
+      <xs:attribute name="reason" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="au_download_success" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="au_download_fail_reason" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="au_exit_code" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="file">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="reason" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="warranty">
+    <xs:complexType>
+      <xs:attribute name="end_date" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="ship_date" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="country" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="softwarediagnosticrun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="softwarediagnostic"/>
+      </xs:sequence>
+      <xs:attribute name="startTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="finishTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="sessionid" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="softwarediagnostic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="issues"/>
+        <xs:element minOccurs="0" ref="fixes"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="id" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="issues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="issue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="issue">
+    <xs:complexType>
+      <xs:attribute name="bsodkey" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="bugcheck" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="driver" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="driverversion" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="manufacturer" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="device" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="bugcheckparameters" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="reportid" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="key" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="timestamp" type="xs:integer" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fixes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="fix"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fixsession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="fix">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="issuekeys" type="xs:string" use="required">
+            </xs:attribute>
+            <xs:attribute name="timestamp" type="xs:integer" use="required">
+            </xs:attribute>
+            <xs:attribute name="status" type="xs:string" use="required">
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="sessionid" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fix">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:string"/>
+      <xs:attribute name="actionkey" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="issuekeys" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="timestamp" type="xs:integer">
+      </xs:attribute>
+      <xs:attribute name="status" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="previousstatus" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bsod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="bsodoccurrences"/>
+        <xs:element minOccurs="0" ref="tasks"/>
+      </xs:sequence>
+      <xs:attribute name="bsodkey" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="bugcheck" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="driver" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="driverversion" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="bugcheckparameters" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="device" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="manufacturer" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bsodoccurrences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="bsodoccurrence"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bsodoccurrence">
+    <xs:complexType>
+      <xs:attribute name="reportid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="timestamp" type="xs:integer" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="task"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="task">
+    <xs:complexType>
+      <xs:attribute name="actionkey" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="action" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="content" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="previousstatus" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="priority" type="xs:integer">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fixaction">
+    <xs:complexType>
+      <xs:attribute name="bsodkey" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="diagnosticid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="actiontype" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="previousstatus" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="type" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="actionkey" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="content" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selfdispatchxml">
+    <xs:complexType>
+      <xs:attribute name="xml_version" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="valid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="kill_switch" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="download_success" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="url" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="proxy" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selfdispatchtrigger">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="failures"/>
+      </xs:sequence>
+      <xs:attribute name="status" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="startTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="finishTime" type="xs:integer" use="optional">
+      </xs:attribute>
+      <xs:attribute name="scriptName" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="xml_version" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="request_size" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="bdid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="failures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="failed_test"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="failed_test">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:integer">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="msbitsdownload">
+    <xs:complexType>
+      <xs:attribute name="id" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="downloadpath" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="success" type="xs:boolean" use="required">
+      </xs:attribute>
+      <xs:attribute name="starttime" type="nillableinteger" use="required">
+      </xs:attribute>
+      <xs:attribute name="url" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selfdispatchrequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="response"/>
+      </xs:sequence>
+      <xs:attribute name="request_size" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="url" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="proxy" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="bdid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="errors"/>
+      </xs:sequence>
+      <xs:attribute name="status" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="url" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="time" type="xs:integer" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="errors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="error"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="error">
+    <xs:complexType>
+      <xs:attribute name="code" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="string" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="session">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="parameters"/>
+      </xs:sequence>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addonsetting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="parameters"/>
+      </xs:sequence>
+      <xs:attribute name="uuid" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="key" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="current" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="previous" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SWDiagnosticRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SWDiagnostics">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="1" ref="SWDiagnostic"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="startTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="finishTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="scriptkey" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="sessionId" type="xs:integer">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SWDiagnostic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="parameters">
+        </xs:element>
+        <xs:element name="SWDiagnosticIssues">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" ref="SWDiagnosticIssue"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SWDiagnosticFixActions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" ref="SWDiagnosticFixAction"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="key" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SWDiagnosticIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="parameters">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="key" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="status" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SWDiagnosticFixAction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="parameters"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="issuekeys" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="status" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FixActionRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ui">
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="startTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="finishTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="result" type="xs:string" use="required">
+      </xs:attribute>
+      <xs:attribute name="swDiagnosticRunFinishTime" type="xs:integer" use="required">
+      </xs:attribute>
+      <xs:attribute name="sessionId" type="xs:string">
+      </xs:attribute>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="factoryrule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rule" type="xs:string"/>
+        <xs:element name="log" type="xs:string"/>
+        <xs:element minOccurs="0" name="matchingdevices">
+          <xs:complexType>
+            <xs:sequence minOccurs="0">
+              <xs:choice maxOccurs="unbounded">
+                <xs:element name="system" type="xs:string"/>
+                <xs:element ref="Device"/>
+              </xs:choice>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="result" type="xs:string" use="required"/>
+      <xs:attribute name="_t" type="xs:integer" use="required"/>
+      <xs:attribute name="_s" type="xs:integer" use="required"/>
+      <xs:attribute name="_sid" type="xs:token"/>      
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="emptystring">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nillableinteger">
+    <xs:union memberTypes="xs:integer emptystring"/>
+  </xs:simpleType>
+</xs:schema>

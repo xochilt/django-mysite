@@ -1,0 +1,3 @@
+<Imageset autoScaled="true" imagefile="PCDR_HUD_4_3.png" name="PCDR_HUD_4_3" nativeHorzRes="1600" nativeVertRes="1200" version="2">
+    <Image autoScaled="vertical" height="1200" name="Background" width="1600" xPos="0" yPos="0" />
+</Imageset>

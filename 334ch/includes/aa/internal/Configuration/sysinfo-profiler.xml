@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!--
+/*
+ * Copyright (c) 2001-2012 PC-Doctor, Inc.
+ * 10345 Professional Circle, Suite 183, Reno, NV 89521 USA
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of PC-Doctor, Inc. ("Confidential Information"). You shall not disclose such
+ * confidential information and shall use it only in accordance with the terms of the license agreement you entered into with PC-Doctor.
+ */
+-->
+
+<sysinfo>
+	<!-- General System Info -->
+	<section title="SystemInformation.systemInformationTitle" image="minitower-computer">
+		<device type="System">
+			<property key="t1_manufacturer"  />
+			<property key="t1_product" />
+      			<device type="OEMInfo">
+        			<property key="OEMSerial" />
+      			</device>
+			<property key="CPUCount" />
+			<property key="TotalMemory" />
+			<property key="OpticalCount" />
+			<property key="HDDCount" />
+			<property key="VidCount" />
+			<property key="DIMMFCount" />
+			<property key="DIMMCount" />
+
+			<!-- Child device. -->
+			<device type="Software">
+				<property key="SystemName" />
+			</device>
+		</device>
+	</section>
+</sysinfo>

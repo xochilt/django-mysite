@@ -1,0 +1,13 @@
+<Script name="AbstractTestConfirmationPage.cpuStressTest">
+	<TestSet minTimePerTest="900" isParallel="true">
+		<Device capabilities="CPU"/>        
+		<Test key="StressTest">
+          <Parameter key="TestRunTime" value="900"/>
+        </Test>
+	</TestSet>
+
+	<TestSet minTimePerTest="900" isParallel="true">
+		<Device capabilities="Memory"/>        
+		<Test key="AdvancedPatternTest"/> 
+	</TestSet>
+</Script> 

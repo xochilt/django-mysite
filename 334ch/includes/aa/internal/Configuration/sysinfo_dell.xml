@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<!--
+/*
+ * Copyright (c) 2001-2012 PC-Doctor, Inc.
+ * 10345 Professional Circle, Suite 183, Reno, NV 89521 USA
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of PC-Doctor, Inc. ("Confidential Information"). You shall not disclose such
+ * confidential information and shall use it only in accordance with the terms of the license agreement you entered into with PC-Doctor.
+ */
+-->
+
+<sysinfo>
+	<!-- System Summary section -->
+	<section title="SystemInformation.summaryTitle" description="pccheckup.sysinfo.caption" image="harddrive.png" isUICompatible="false">
+		<device type="System" showSubHeader="false">
+			<property key="t1_product"/>
+		</device>
+
+			<property key="t0_ver"/>
+		<device type="BIOS" showSubHeader="false">
+		</device>
+
+		<device type="OEMInfo" showSubHeader="false">
+			<property key="OEMServiceTag"/>
+			<property key="OEMExpressServiceTag"/>
+		</device>
+	</section>
+	<!-- OS Info -->
+	<section title="SystemInformation.operatingSystemTitle" description="pccheckup.os.caption" image="windows.png">
+		<include blockid="SoftwareInfo_OsSysInfoFilter"/>
+	</section>
+
+	<section title="SystemInformation.securityTitle" description="pccheckup.security.caption" image="security_center.png">
+		<include blockid="SoftwareInfo_SecuritySysInfoFilter"/>
+	</section>
+
+	<!-- Motherboard Info -->
+	<section title="SystemInformation.motherboardTitle" description="pccheckup.motherboard.caption" image="motherboard.png">
+		<device type="System">
+			<!-- Child devices. -->
+			<device type="SystemBoard" showSubHeader="false">
+				<property key="t2_manufacturer"/>
+				<property key="t2_product"/>
+				<property key="Chipset"/>
+				<property key="SouthBridge"/>
+			</device>
+			<device type="OEMInfo" showSubHeader="false">
+				<property key="OEMePPID"/>
+			</device>
+			<device type="SMBIOS_Struct" showSubHeader="true" isChildDevice="false">
+				<property key="t0_vendor"/>
+				<property key="t0_date"/>
+				<property key="t0_ver"/>
+				<property key="t0_sz"/>
+			</device>
+			<device type="SMBIOS" showSubHeader="true">
+				<property key="smbios2_version"/>
+			</device>
+			<device type="Other" showSubHeader="true">
+				<device type="ThermalZone" showSubHeader="true" isChildDevice="true">
+					<property key="TZ_CurrentTemperature"/>
+				</device>
+			</device>
+		</device>
+		<device type="MassStorageController|PCI" showSubHeader="true">
+			<include blockid="PCIInfo_BasicControllerInfo"/>
+		</device>
+		<device type="USBController|PCI" showSubHeader="true">
+			<include blockid="PCIInfo_BasicControllerInfo"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.processorsTitle" description="pccheckup.cpu.caption" image="motherboard.png">
+		<device type="CPU" showSubHeader="true">
+			<include blockid="CpuInfo_Detailed_SysInfoFilter"/>
+		 </device>
+	</section>
+
+	<!-- Memory Info -->
+	<section title="SystemInformation.memoryTitle" description="pccheckup.memory.caption" image="memory.png">
+		<device type="Memory" showSubHeader="true">
+			<include blockid="MemInfo_UsageStats"/>
+			<device type="Software" showSubHeader="true" isChildDevice="true">
+				<property key="PageFiles_TotalSize"/>
+				<property key="PageFiles_RecommendedTotalSize"/>
+
+				<device type="Software" showSubHeader="true" isChildDevice="true">
+					<property key="PageFile_Location" detail="true"/>
+					<property key="PageFile_Size" detail="true"/>
+				</device>
+			</device>
+
+			<!-- Child Devices -->
+			<device type="MemoryChip" showSubHeader="true" isChildDevice="false">
+				<include blockid="MemInfo_DIMMProperties"/>
+			</device>
+
+		</device>
+	</section>
+
+	<section title="SystemInformation.batteriesTitle" description="pccheckup.battery.caption" image="battery.png">
+		<device type="Battery" showSubHeader="true">
+			<include blockid="BatteryInfo"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.communicationsTitle" description="pccheckup.network.caption" image="network.png">
+		<device type="NetworkCard" showSubHeader="true" titlePrefix="SystemInformation.networkCardPrefix">
+			<include blockid="NicInfo"/>
+		</device>
+		<device type="Modem" showSubHeader="true" titlePrefix="SystemInformation.modemPrefix">
+			<include blockid="PCIInfo_Basic"/>
+			<property key="Model"/>
+			<include blockid="DriverInfo_Basic"/>
+		</device>
+		<device type="BluetoothPort" showSubHeader="true" titlePrefix="SystemInformation.bluetoothPortPrefix">
+			<property key="BthPortStrAddress"/>
+			<property key="BthPortService"/>
+			<include blockid="DriverInfo_Basic"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.hardDrivesTitle" description="pccheckup.hdd.caption" image="harddrive.png">
+		<device type="HardDrive" showSubHeader="true">
+			<include blockid="AtaInfo_DetailedHDInfo"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.opticalDrivesTitle" description="pccheckup.optical.caption" image="optical-drive.png">
+		<device type="CDROM" showSubHeader="true">
+			<include blockid="StorageInfo_DetailedOptical"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.videoTitle" description="pccheckup.video.caption" image="video-strip.png">
+		<device type="VideoCard" showSubHeader="true" titlePrefix="SystemInformation.videoCardPrefix">
+			<include blockid="VideoCardInfo"/>
+		</device>
+
+		<device type="Monitor" showSubHeader="true" titlePrefix="SystemInformation.displayPrefix">
+			<include blockid="MonitorInfo"/>
+		</device>
+
+		<device type="VideoCapture" showSubHeader="true" titlePrefix="SystemInformation.videoCapturePrefix">
+			<include blockid="VideoCaptureInfo"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.audioTitle" description="pccheckup.sound.caption" image="video-strip.png">
+		<device type="SoundCard" showSubHeader="true" titlePrefix="SystemInformation.soundCardPrefix">
+			<include blockid="SoundCardInfo"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.usbTitle" description="pccheckup.usb.caption" image="usb.png">
+		<device type="USB" showSubHeader="true">
+			<include blockid="UsbInfo"/>
+		</device>
+		<device type="CardReader" showSubHeader="true">
+			<include blockid="StorageInfo_RemovableMediaDevice"/>
+		</device>
+	</section>
+
+	<section title="SystemInformation.inputDevicesTitle" description="pccheckup.input.caption" image="ergonomic-keyboard.png">
+		<device type="Keyboard" showSubHeader="true" titlePrefix="SystemInformation.keyboardPrefix">
+			<include blockid="KeyboardInfo"/>
+		</device>
+
+		<device type="Mouse" showSubHeader="true" titlePrefix="SystemInformation.mousePrefix">
+			<property key="Manufacturer"/>
+			<include blockid="DriverInfo_Basic"/>
+		</device>
+	</section>
+
+
+	<section title="SystemInformation.printerTitle" description="pccheckup.printers.caption" image="printer.png">
+		<device type="Printer" showSubHeader="true">
+			<include blockid="PrinterInfo"/>
+		</device>
+	</section>
+
+</sysinfo>

@@ -1,0 +1,17 @@
+material Hud
+{
+    technique
+    {
+        pass
+        {
+			//This allows the overlay render target to blend with the backbuffer behind it.
+			scene_blend alpha_blend
+		    texture_unit
+			{
+				//This blends the texture with the overlay rectangle render target
+				colour_op alpha_blend
+			    texture halo_4_hud.png
+			}
+        }
+    }
+}

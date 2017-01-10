@@ -1,0 +1,1062 @@
+<scene formatVersion="1.0" upAxis="y" unitsPerMeter="1000" minOgreVersion="1.7" ogreMaxVersion="2.3.6" author="OgreMax Scene Exporter (www.ogremax.com)" application="3DS Max">
+    <environment>
+        <colourAmbient r="0.333333" g="0.333333" b="0.333333" />
+        <colourBackground r="0" g="0" b="0" />
+        <clipping near="0" far="100000" />
+    </environment>
+    <nodes>
+		<node name="Direct001">
+			<position x="-34.3145" y="3448.77" z="15729.7" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="-0.996391" qy="-4.02198e-005" qz="0.000472117" qw="-0.0848829" />
+			<light name="Direct001" visible="true" type="directional" castShadows="true" power="0.3">
+				<colourDiffuse r="0.866667" g="0.803922" b="0.545098" />
+				<colourSpecular r="1" g="1" b="1" />
+				<lightAttenuation range="32000" constant="1" linear="0" quadric="0" />
+			</light>
+			<trackTarget nodeName="Direct001.Target">
+				<localDirection x="-0" y="-0" z="1" />
+			</trackTarget>
+		</node>
+		<node name="Direct001.Target">
+			<position x="-65.8502" y="-2262.54" z="-17547.8" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="0" qy="0" qz="0" qw="1" />
+		</node>
+		<node name="Direct002">
+			<position x="-25412.9" y="1349.5" z="-2050.18" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="-0.707302" qy="-0.000120072" qz="-0.706911" qw="0.000120072" />
+			<light name="Direct002" visible="true" type="directional" castShadows="false" power="0.18">
+				<colourDiffuse r="0.866667" g="0.803922" b="0.545098" />
+				<colourSpecular r="1" g="1" b="1" />
+				<lightAttenuation range="32000" constant="1" linear="0" quadric="0" />
+			</light>
+			<trackTarget nodeName="Direct002.Target">
+				<localDirection x="-0" y="-0" z="1" />
+			</trackTarget>
+		</node>
+		<node name="Direct002.Target">
+			<position x="9820.6" y="1361.48" z="-2069.67" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="0" qy="0" qz="0" qw="1" />
+		</node>
+		<node name="Direct003">
+			<position x="25238.9" y="1349.5" z="-2050.22" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="-0.707293" qy="0.000535875" qz="0.706921" qw="-0.000295402" />
+			<light name="Direct003" visible="true" type="directional" castShadows="false" power="0.18">
+				<colourDiffuse r="0.866667" g="0.803922" b="0.545098" />
+				<colourSpecular r="1" g="1" b="1" />
+				<lightAttenuation range="32000" constant="1" linear="0" quadric="0" />
+			</light>
+			<trackTarget nodeName="Direct003.Target">
+				<localDirection x="-0" y="-0" z="1" />
+			</trackTarget>
+		</node>
+		<node name="Direct003.Target">
+			<position x="-9994.57" y="1361.48" z="-2068.77" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="0" qy="1" qz="-4.37114e-008" qw="0.000539943" />
+		</node>
+
+		<node name="Direct004">
+			<position x="-34.3149" y="15583.7" z="7424.16" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="-0.861672" qy="-0.000808515" qz="0.00137286" qw="-0.507463" />
+			<light name="Direct004" visible="true" type="directional" castShadows="true" power="0.75">
+				<colourDiffuse r="0.866667" g="0.803922" b="0.545098" />
+				<colourSpecular r="1" g="1" b="1" />
+				<lightAttenuation range="32000" constant="1" linear="0" quadric="0" />
+			</light>
+			<trackTarget nodeName="Direct004.Target">
+				<localDirection x="-0" y="-0" z="1" />
+			</trackTarget>
+		</node>
+		<node name="Direct004.Target">
+			<position x="-65.8495" y="-2262.54" z="-2472.13" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="0" qy="0" qz="0" qw="1" />
+		</node>
+		<node name="Direct005">
+			<position x="-34.3149" y="-14708.3" z="7424.16" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="-0.90066" qy="0.000692302" qz="0.00143498" qw="0.434522" />
+			<light name="Direct005" visible="true" type="directional" castShadows="true" power="0.4">
+				<colourDiffuse r="0.866667" g="0.803922" b="0.545098" />
+				<colourSpecular r="1" g="1" b="1" />
+				<lightAttenuation range="32000" constant="1" linear="0" quadric="0" />
+			</light>
+			<trackTarget nodeName="Direct005.Target">
+				<localDirection x="-0" y="-0" z="1" />
+			</trackTarget>
+		</node>
+		<node name="Direct005.Target">
+			<position x="-65.8495" y="-2262.54" z="-2472.13" />
+			<scale x="1" y="1" z="1" />
+			<rotation qx="0" qy="0" qz="0" qw="1" />
+		</node>
+
+		<node name="spaceship1">
+			<position x="-1.12964" y="3.45162" z="39.2489" />
+			<scale x="3.34085" y="3.34085" z="3.34085" />
+			<rotation qx="-5.04012e-007" qy="4.90632e-008" qz="-3.55271e-014" qw="1" />
+			<entity name="spaceship1" castShadows="true" receiveShadows="true" meshFile="spaceship1.mesh">
+				<subentities>
+					<subentity index="0" materialName="FrontTopHull" />
+					<subentity index="1" materialName="EngineMountBase" />
+					<subentity index="2" materialName="BottomHull" />
+					<subentity index="3" materialName="HullBack" />
+					<subentity index="4" materialName="FighterBayRoof" />
+					<subentity index="5" materialName="FighterBay" />
+					<subentity index="6" materialName="WingMount" />
+					<subentity index="7" materialName="WingTips" />
+					<subentity index="8" materialName="TailFins" />
+					<subentity index="9" materialName="EngineCaps" />
+					<subentity index="10" materialName="Engine" />
+					<subentity index="11" materialName="HullBulkheadInterior" />
+					<subentity index="12" materialName="HullTransitionRidge" />
+					<subentity index="13" materialName="EngineRecess" />
+					<subentity index="14" materialName="EngineGlow" />
+					<subentity index="15" materialName="HullBulkheadCasing" />
+					<subentity index="16" materialName="HullRidges" />
+					<subentity index="17" materialName="HullRidges" />
+					<subentity index="18" materialName="HullRidgesNose" />
+					<subentity index="19" materialName="HullBulkheads" />
+					<subentity index="20" materialName="WingTipCaps" />
+					<subentity index="21" materialName="Antennas" />
+					<subentity index="22" materialName="GreenBeaconLights" />
+					<subentity index="23" materialName="RedBeaconLights" />
+					<subentity index="24" materialName="HullVents" />
+				</subentities>
+			</entity>
+		</node>
+
+		<node name="Camera001.Target">
+			<position x="34.0913" y="-474.096" z="-2164.37" />
+			<scale x="0.05" y="0.05" z="0.05" />
+			<rotation qx="-0.5" qy="-0.5" qz="0.5" qw="-0.5" />
+		</node>
+
+		<node name="Camera001">
+			<position x="4557.76" y="1531.77" z="3019.82" />
+			<scale x="1" y="0.999999" z="0.999999" />
+			<rotation qx="-0.0587534" qy="0.350395" qz="0.0220299" qw="0.934498" />
+			<camera name="Camera001" fov="0.898716">
+				<clipping near="1" far="20000" />
+			</camera>
+			<animations>
+				<animation name="Camera001" enable="true" loop="true" interpolationMode="linear" rotationInterpolationMode="spherical" length="45">
+					<keyframe time="0">
+						<translation x="4557.76" y="1531.77" z="3019.82" />
+						<rotation qx="-0.0587534" qy="0.350395" qz="0.0220299" qw="0.934498" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="0.25">
+						<translation x="4548.91" y="1457.76" z="2941.91" />
+						<rotation qx="-0.054235" qy="0.35355" qz="0.0205382" qw="0.933616" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="0.5">
+						<translation x="4522.96" y="1384.61" z="2867.24" />
+						<rotation qx="-0.0497732" qy="0.355721" qz="0.0189754" qw="0.933073" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="0.75">
+						<translation x="4480.79" y="1312.42" z="2795.67" />
+						<rotation qx="-0.045352" qy="0.356939" qz="0.0173529" qw="0.932865" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="1">
+						<translation x="4423.28" y="1241.27" z="2727.05" />
+						<rotation qx="-0.0409546" qy="0.357229" qz="0.0156811" qw="0.932987" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="1.25">
+						<translation x="4351.32" y="1171.24" z="2661.22" />
+						<rotation qx="-0.0365649" qy="0.356607" qz="0.0139692" qw="0.933434" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="1.5">
+						<translation x="4265.79" y="1102.42" z="2598.03" />
+						<rotation qx="-0.0321663" qy="0.355085" qz="0.0122263" qw="0.9342" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="1.75">
+						<translation x="4167.57" y="1034.9" z="2537.33" />
+						<rotation qx="-0.0277429" qy="0.352668" qz="0.0104611" qw="0.935279" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="2">
+						<translation x="4057.55" y="968.768" z="2478.97" />
+						<rotation qx="-0.0232793" qy="0.349355" qz="0.00868265" qw="0.936661" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="2.25">
+						<translation x="3936.62" y="904.104" z="2422.8" />
+						<rotation qx="-0.0187608" qy="0.345143" qz="0.00690065" qw="0.938337" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="2.5">
+						<translation x="3805.65" y="840.997" z="2368.66" />
+						<rotation qx="-0.0141739" qy="0.340021" qz="0.00512542" qw="0.940297" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="2.75">
+						<translation x="3665.53" y="779.533" z="2316.41" />
+						<rotation qx="-0.00950614" qy="0.333979" qz="0.00336842" qw="0.942527" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="3">
+						<translation x="3517.15" y="719.798" z="2265.89" />
+						<rotation qx="-0.00474697" qy="0.327002" qz="0.00164261" qw="0.94501" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="3.25">
+						<translation x="3361.39" y="661.879" z="2216.95" />
+						<rotation qx="0.000112027" qy="0.319076" qz="-3.77297e-005" qw="0.947729" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="3.5">
+						<translation x="3199.13" y="605.861" z="2169.44" />
+						<rotation qx="0.00507686" qy="0.310184" qz="-0.00165647" qw="0.950662" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="3.75">
+						<translation x="3031.26" y="551.831" z="2123.21" />
+						<rotation qx="0.0101494" qy="0.300314" qz="-0.00319573" qw="0.953781" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="4">
+						<translation x="2858.66" y="499.876" z="2078.1" />
+						<rotation qx="0.0153286" qy="0.289455" qz="-0.00463605" qw="0.957058" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="4.25">
+						<translation x="2682.22" y="450.081" z="2033.97" />
+						<rotation qx="0.0206074" qy="0.277602" qz="-0.0059562" qw="0.960457" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="4.5">
+						<translation x="2502.81" y="402.532" z="1990.66" />
+						<rotation qx="0.0259735" qy="0.26476" qz="-0.00713407" qw="0.963938" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="4.75">
+						<translation x="2321.33" y="357.317" z="1948.02" />
+						<rotation qx="0.0314088" qy="0.250941" qz="-0.0081469" qw="0.967458" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="5">
+						<translation x="2138.65" y="314.52" z="1905.9" />
+						<rotation qx="0.0368876" qy="0.236173" qz="-0.00897229" qw="0.970969" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="5.25">
+						<translation x="1955.67" y="274.229" z="1864.14" />
+						<rotation qx="0.042377" qy="0.220497" qz="-0.00958931" qw="0.97442" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="5.5">
+						<translation x="1773.26" y="236.529" z="1822.6" />
+						<rotation qx="0.0478371" qy="0.203974" qz="-0.00997953" qw="0.977756" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="5.75">
+						<translation x="1592.31" y="201.507" z="1781.13" />
+						<rotation qx="0.0532212" qy="0.186686" qz="-0.0101288" qw="0.980925" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="6">
+						<translation x="1413.71" y="169.25" z="1739.56" />
+						<rotation qx="0.0584766" qy="0.168733" qz="-0.0100287" qw="0.983875" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="6.25">
+						<translation x="1238.33" y="139.842" z="1697.76" />
+						<rotation qx="0.0635469" qy="0.150241" qz="-0.00967741" qw="0.986558" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="6.5">
+						<translation x="1067.06" y="113.371" z="1655.57" />
+						<rotation qx="0.0683733" qy="0.131353" qz="-0.00908153" qw="0.988933" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="6.75">
+						<translation x="900.788" y="89.9231" z="1612.83" />
+						<rotation qx="0.0728974" qy="0.112233" qz="-0.00825607" qw="0.99097" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="7">
+						<translation x="740.396" y="69.584" z="1569.4" />
+						<rotation qx="0.0770634" qy="0.0930628" qz="-0.00722487" qw="0.992647" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="7.25">
+						<translation x="586.767" y="52.4401" z="1525.12" />
+						<rotation qx="0.0808218" qy="0.0740331" qz="-0.00601985" qw="0.993957" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="7.5">
+						<translation x="440.785" y="38.5777" z="1479.84" />
+						<rotation qx="0.0841293" qy="0.0553439" qz="-0.00467989" qw="0.994906" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="7.75">
+						<translation x="303.334" y="28.083" z="1433.42" />
+						<rotation qx="0.0869527" qy="0.037198" qz="-0.00324904" qw="0.995512" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="8">
+						<translation x="175.299" y="21.0422" z="1385.69" />
+						<rotation qx="0.0892671" qy="0.019797" qz="-0.00177465" qw="0.995809" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="8.25">
+						<translation x="57.5639" y="17.5417" z="1336.51" />
+						<rotation qx="0.0910574" qy="0.0033384" qz="-0.000305256" qw="0.99584" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="8.5">
+						<translation x="-50.8178" y="18.5276" z="1286.19" />
+						<rotation qx="0.0921827" qy="-0.0122485" qz="0.00113402" qw="0.995666" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="8.75">
+						<translation x="-158.838" y="28.3489" z="1236.97" />
+						<rotation qx="0.0919474" qy="-0.0282066" qz="0.00260561" qw="0.995361" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="9">
+						<translation x="-267.611" y="47.0964" z="1189.08" />
+						<rotation qx="0.0902735" qy="-0.0446646" qz="0.00405267" qw="0.994907" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="9.25">
+						<translation x="-376.873" y="74.1776" z="1142.37" />
+						<rotation qx="0.0871991" qy="-0.0615479" qz="0.00539783" qw="0.994273" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="9.5">
+						<translation x="-486.361" y="109" z="1096.71" />
+						<rotation qx="0.0827769" qy="-0.0787747" qz="0.00656387" qw="0.993428" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="9.75">
+						<translation x="-595.809" y="150.971" z="1051.96" />
+						<rotation qx="0.0770755" qy="-0.096258" qz="0.00747642" qw="0.99234" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="10">
+						<translation x="-704.956" y="199.499" z="1007.99" />
+						<rotation qx="0.0701797" qy="-0.113906" qz="0.0080667" qw="0.990977" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="10.25">
+						<translation x="-813.536" y="253.99" z="964.65" />
+						<rotation qx="0.0621903" qy="-0.131627" qz="0.00827436" qw="0.989312" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="10.5">
+						<translation x="-921.286" y="313.853" z="921.815" />
+						<rotation qx="0.0532235" qy="-0.149325" qz="0.00804965" qw="0.987322" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="10.75">
+						<translation x="-1027.94" y="378.495" z="879.343" />
+						<rotation qx="0.0434079" qy="-0.16691" qz="0.00735564" qw="0.984989" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="11">
+						<translation x="-1133.24" y="447.324" z="837.099" />
+						<rotation qx="0.0328831" qy="-0.184295" qz="0.00616936" qw="0.982301" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="11.25">
+						<translation x="-1236.92" y="519.747" z="794.945" />
+						<rotation qx="0.0217946" qy="-0.201398" qz="0.00448237" qw="0.979257" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="11.5">
+						<translation x="-1338.71" y="595.171" z="752.743" />
+						<rotation qx="0.0102915" qy="-0.218146" qz="0.0023006" qw="0.975859" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="11.75">
+						<translation x="-1438.35" y="673.005" z="710.358" />
+						<rotation qx="-0.00147858" qy="-0.234477" qz="-0.000356607" qw="0.97212" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="12">
+						<translation x="-1535.58" y="752.655" z="667.652" />
+						<rotation qx="-0.013373" qy="-0.250337" qz="-0.00345816" qw="0.96806" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="12.25">
+						<translation x="-1630.13" y="833.53" z="624.488" />
+						<rotation qx="-0.0252573" qy="-0.265686" qz="-0.00696321" qw="0.963704" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="12.5">
+						<translation x="-1721.74" y="915.037" z="580.729" />
+						<rotation qx="-0.0370084" qy="-0.280492" qz="-0.0108234" qw="0.959082" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="12.75">
+						<translation x="-1810.15" y="996.583" z="536.238" />
+						<rotation qx="-0.0485163" qy="-0.294737" qz="-0.0149854" qw="0.954228" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="13">
+						<translation x="-1895.09" y="1077.58" z="490.879" />
+						<rotation qx="-0.059685" qy="-0.308411" qz="-0.0193931" qw="0.949181" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="13.25">
+						<translation x="-1976.29" y="1157.42" z="444.514" />
+						<rotation qx="-0.0704329" qy="-0.321517" qz="-0.0239894" qw="0.943976" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="13.5">
+						<translation x="-2053.5" y="1235.53" z="397.007" />
+						<rotation qx="-0.0806925" qy="-0.334064" qz="-0.0287183" qw="0.938651" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="13.75">
+						<translation x="-2126.45" y="1311.31" z="348.22" />
+						<rotation qx="-0.0904091" qy="-0.346067" qz="-0.0335258" qw="0.933241" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="14">
+						<translation x="-2194.88" y="1384.17" z="298.016" />
+						<rotation qx="-0.09954" qy="-0.357552" qz="-0.0383611" qw="0.927781" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="14.25">
+						<translation x="-2258.52" y="1453.51" z="246.259" />
+						<rotation qx="-0.108052" qy="-0.368544" qz="-0.0431767" qw="0.922299" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="14.5">
+						<translation x="-2317.11" y="1518.75" z="192.812" />
+						<rotation qx="-0.115919" qy="-0.379079" qz="-0.047929" qw="0.916823" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="14.75">
+						<translation x="-2370.38" y="1579.28" z="137.537" />
+						<rotation qx="-0.123123" qy="-0.389191" qz="-0.0525779" qw="0.911376" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="15">
+						<translation x="-2418.07" y="1634.52" z="80.298" />
+						<rotation qx="-0.129647" qy="-0.398919" qz="-0.057086" qw="0.905978" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="15.25">
+						<translation x="-2459.92" y="1683.88" z="20.9577" />
+						<rotation qx="-0.135478" qy="-0.408306" qz="-0.061419" qw="0.900644" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="15.5">
+						<translation x="-2495.67" y="1726.76" z="-40.6207" />
+						<rotation qx="-0.140603" qy="-0.417395" qz="-0.065544" qw="0.895386" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="15.75">
+						<translation x="-2525.04" y="1762.57" z="-104.574" />
+						<rotation qx="-0.145007" qy="-0.426233" qz="-0.0694291" qw="0.890212" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="16">
+						<translation x="-2547.78" y="1790.72" z="-171.04" />
+						<rotation qx="-0.148669" qy="-0.434867" qz="-0.0730418" qw="0.885129" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="16.25">
+						<translation x="-2563.62" y="1810.61" z="-240.154" />
+						<rotation qx="-0.151566" qy="-0.44335" qz="-0.0763479" qw="0.880136" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="16.5">
+						<translation x="-2572.3" y="1821.66" z="-312.055" />
+						<rotation qx="-0.153662" qy="-0.451735" qz="-0.0793098" qw="0.875233" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="16.75">
+						<translation x="-2573.97" y="1823.81" z="-387.322" />
+						<rotation qx="-0.154969" qy="-0.460159" qz="-0.0819323" qw="0.870359" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="17">
+						<translation x="-2573.97" y="1823.81" z="-471.506" />
+						<rotation qx="-0.15614" qy="-0.469664" qz="-0.0847998" qw="0.86478" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="17.25">
+						<translation x="-2573.97" y="1823.81" z="-565.419" />
+						<rotation qx="-0.157334" qy="-0.480526" qz="-0.0880906" qw="0.858243" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="17.5">
+						<translation x="-2573.97" y="1823.81" z="-668.011" />
+						<rotation qx="-0.158488" qy="-0.492696" qz="-0.0917895" qw="0.85071" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="17.75">
+						<translation x="-2573.97" y="1823.81" z="-778.232" />
+						<rotation qx="-0.159529" qy="-0.506114" qz="-0.095874" qw="0.842145" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="18">
+						<translation x="-2573.97" y="1823.81" z="-895.033" />
+						<rotation qx="-0.160381" qy="-0.5207" qz="-0.100311" qw="0.832518" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="18.25">
+						<translation x="-2573.97" y="1823.81" z="-1017.36" />
+						<rotation qx="-0.160967" qy="-0.536353" qz="-0.105054" qw="0.821815" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="18.5">
+						<translation x="-2573.97" y="1823.81" z="-1144.17" />
+						<rotation qx="-0.161207" qy="-0.552943" qz="-0.110042" qw="0.810035" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="18.75">
+						<translation x="-2573.97" y="1823.81" z="-1274.41" />
+						<rotation qx="-0.161031" qy="-0.570312" qz="-0.115199" qw="0.797209" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="19">
+						<translation x="-2573.97" y="1823.81" z="-1407.03" />
+						<rotation qx="-0.160382" qy="-0.588272" qz="-0.120435" qw="0.783396" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="19.25">
+						<translation x="-2573.97" y="1823.81" z="-1540.98" />
+						<rotation qx="-0.159218" qy="-0.60661" qz="-0.125646" qw="0.768691" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="19.5">
+						<translation x="-2573.97" y="1823.81" z="-1675.21" />
+						<rotation qx="-0.157524" qy="-0.625092" qz="-0.130726" qw="0.753231" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="19.75">
+						<translation x="-2573.97" y="1823.81" z="-1808.67" />
+						<rotation qx="-0.155312" qy="-0.643471" qz="-0.135568" qw="0.737187" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="20">
+						<translation x="-2573.97" y="1823.81" z="-1940.31" />
+						<rotation qx="-0.152623" qy="-0.6615" qz="-0.140074" qw="0.720765" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="20.25">
+						<translation x="-2573.97" y="1823.81" z="-2069.08" />
+						<rotation qx="-0.149526" qy="-0.678942" qz="-0.144163" qw="0.704199" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="20.5">
+						<translation x="-2573.97" y="1823.81" z="-2193.94" />
+						<rotation qx="-0.146111" qy="-0.695579" qz="-0.147777" qw="0.687738" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="20.75">
+						<translation x="-2573.97" y="1823.81" z="-2313.82" />
+						<rotation qx="-0.142485" qy="-0.711224" qz="-0.150884" qw="0.671635" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="21">
+						<translation x="-2573.97" y="1823.81" z="-2427.68" />
+						<rotation qx="-0.138762" qy="-0.725721" qz="-0.153477" qw="0.65614" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="21.25">
+						<translation x="-2573.97" y="1823.81" z="-2534.48" />
+						<rotation qx="-0.135057" qy="-0.73895" qz="-0.155576" qw="0.641489" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="21.5">
+						<translation x="-2573.97" y="1823.81" z="-2633.16" />
+						<rotation qx="-0.13148" qy="-0.750824" qz="-0.15722" qw="0.627899" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="21.75">
+						<translation x="-2573.85" y="1823.81" z="-2723.13" />
+						<rotation qx="-0.128118" qy="-0.761338" qz="-0.158475" qw="0.615497" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="22">
+						<translation x="-2571.97" y="1823.81" z="-2809.62" />
+						<rotation qx="-0.124869" qy="-0.771175" qz="-0.159556" qw="0.603521" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="22.25">
+						<translation x="-2567.54" y="1823.81" z="-2894.23" />
+						<rotation qx="-0.121706" qy="-0.780564" qz="-0.160548" qw="0.591719" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="22.5">
+						<translation x="-2560.24" y="1823.81" z="-2976.78" />
+						<rotation qx="0.118648" qy="0.78952" qz="0.161484" qw="-0.580089" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="22.75">
+						<translation x="-2549.74" y="1823.81" z="-3057.08" />
+						<rotation qx="0.11571" qy="0.798063" qz="0.162399" qw="-0.568623" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="23">
+						<translation x="-2535.73" y="1823.81" z="-3134.94" />
+						<rotation qx="0.112902" qy="0.806216" qz="0.163327" qw="-0.557308" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="23.25">
+						<translation x="-2517.87" y="1823.81" z="-3210.18" />
+						<rotation qx="0.110232" qy="0.814005" qz="0.164302" qw="-0.546122" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="23.5">
+						<translation x="-2495.84" y="1823.81" z="-3282.61" />
+						<rotation qx="0.107702" qy="0.821459" qz="0.165358" qw="-0.535035" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="23.75">
+						<translation x="-2469.32" y="1823.81" z="-3352.05" />
+						<rotation qx="0.105315" qy="0.828604" qz="0.16653" qw="-0.524015" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="24">
+						<translation x="-2437.97" y="1823.81" z="-3418.31" />
+						<rotation qx="0.103069" qy="0.835472" qz="0.167851" qw="-0.513019" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="24.25">
+						<translation x="-2401.49" y="1823.81" z="-3481.21" />
+						<rotation qx="0.10096" qy="0.842093" qz="0.169358" qw="-0.502001" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="24.5">
+						<translation x="-2359.53" y="1823.81" z="-3540.55" />
+						<rotation qx="0.0989837" qy="0.848496" qz="0.171087" qw="-0.490903" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="24.75">
+						<translation x="-2311.77" y="1823.81" z="-3596.16" />
+						<rotation qx="0.0971305" qy="0.854712" qz="0.173077" qw="-0.479664" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="25">
+						<translation x="-2257.9" y="1823.81" z="-3647.85" />
+						<rotation qx="0.0953896" qy="0.860772" qz="0.175368" qw="-0.468209" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="25.25">
+						<translation x="-2197.58" y="1823.81" z="-3695.43" />
+						<rotation qx="0.0937468" qy="0.866704" qz="0.178004" qw="-0.456454" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="25.5">
+						<translation x="-2130.49" y="1823.81" z="-3738.71" />
+						<rotation qx="0.0921838" qy="0.87254" qz="0.181035" qw="-0.4443" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="25.75">
+						<translation x="-2056.3" y="1823.81" z="-3777.52" />
+						<rotation qx="0.0906776" qy="0.878307" qz="0.184514" qw="-0.431635" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="26">
+						<translation x="-1974.69" y="1823.81" z="-3811.66" />
+						<rotation qx="0.0891978" qy="0.884035" qz="0.1885" qw="-0.418322" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="26.25">
+						<translation x="-1885.34" y="1823.81" z="-3840.95" />
+						<rotation qx="0.0877051" qy="0.88975" qz="0.193061" qw="-0.404203" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="26.5">
+						<translation x="-1787.92" y="1823.81" z="-3865.21" />
+						<rotation qx="0.0861477" qy="0.895478" qz="0.198269" qw="-0.389085" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="26.75">
+						<translation x="-1681.84" y="1823.71" z="-3884.49" />
+						<rotation qx="0.0844359" qy="0.90127" qz="0.204198" qw="-0.372675" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="27">
+						<translation x="-1563.83" y="1822.22" z="-3901.85" />
+						<rotation qx="0.0821881" qy="0.907523" qz="0.21078" qw="-0.353864" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="27.25">
+						<translation x="-1433.75" y="1819.02" z="-3918.3" />
+						<rotation qx="0.0791521" qy="0.914306" qz="0.21791" qw="-0.332107" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="27.5">
+						<translation x="-1292.6" y="1814.2" z="-3933.86" />
+						<rotation qx="0.0751307" qy="0.921531" qz="0.22545" qw="-0.307098" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="27.75">
+						<translation x="-1141.38" y="1807.84" z="-3948.54" />
+						<rotation qx="0.0699116" qy="0.92906" qz="0.233189" qw="-0.278538" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="28">
+						<translation x="-981.086" y="1800.03" z="-3962.38" />
+						<rotation qx="0.0632889" qy="0.936697" qz="0.240819" qw="-0.24617" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="28.25">
+						<translation x="-812.71" y="1790.85" z="-3975.4" />
+						<rotation qx="0.0550989" qy="0.944176" qz="0.247923" qw="-0.209835" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="28.5">
+						<translation x="-637.252" y="1780.41" z="-3987.63" />
+						<rotation qx="0.0452717" qy="0.951158" qz="0.253971" qw="-0.169549" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="28.75">
+						<translation x="-455.708" y="1768.77" z="-3999.08" />
+						<rotation qx="0.0338929" qy="0.957252" qz="0.258361" qw="-0.125576" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="29">
+						<translation x="-269.074" y="1756.04" z="-4009.78" />
+						<rotation qx="0.0212541" qy="0.962046" qz="0.260488" qw="-0.0784966" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="29.25">
+						<translation x="-78.3485" y="1742.3" z="-4019.76" />
+						<rotation qx="0.00786662" qy="0.965173" qz="0.259856" qw="-0.0292187" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="29.5">
+						<translation x="115.473" y="1727.63" z="-4029.04" />
+						<rotation qx="-0.00558808" qy="0.966378" qz="0.256198" qw="0.0210782" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="29.75">
+						<translation x="311.393" y="1712.12" z="-4037.64" />
+						<rotation qx="-0.018371" qy="0.965573" qz="0.249558" qw="0.0710797" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="30">
+						<translation x="508.415" y="1695.86" z="-4045.6" />
+						<rotation qx="-0.0298265" qy="0.962853" qz="0.240294" qw="0.119514" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="30.25">
+						<translation x="705.543" y="1678.95" z="-4052.93" />
+						<rotation qx="-0.039498" qy="0.958472" qz="0.229001" qw="0.165317" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="30.5">
+						<translation x="901.779" y="1661.45" z="-4059.66" />
+						<rotation qx="-0.0471768" qy="0.952786" qz="0.216382" qw="0.207731" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="30.75">
+						<translation x="1096.13" y="1643.47" z="-4065.81" />
+						<rotation qx="-0.0528823" qy="0.946184" qz="0.203126" qw="0.246332" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="31">
+						<translation x="1287.59" y="1625.09" z="-4071.41" />
+						<rotation qx="-0.0567976" qy="0.939038" qz="0.189816" qw="0.280983" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="31.25">
+						<translation x="1475.17" y="1606.4" z="-4076.48" />
+						<rotation qx="-0.0591944" qy="0.931668" qz="0.176894" qw="0.311767" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="31.5">
+						<translation x="1657.88" y="1587.48" z="-4081.04" />
+						<rotation qx="-0.0603714" qy="0.92433" qz="0.164657" qw="0.338905" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="31.75">
+						<translation x="1834.7" y="1568.43" z="-4085.13" />
+						<rotation qx="-0.0606125" qy="0.917215" qz="0.153282" qw="0.362695" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="32">
+						<translation x="2004.66" y="1549.32" z="-4088.76" />
+						<rotation qx="-0.0601658" qy="0.910456" qz="0.142852" qw="0.383461" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="32.25">
+						<translation x="2166.75" y="1530.25" z="-4091.96" />
+						<rotation qx="-0.0592363" qy="0.904145" qz="0.133387" qw="0.401523" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="32.5">
+						<translation x="2319.97" y="1511.31" z="-4094.76" />
+						<rotation qx="-0.0579868" qy="0.898336" qz="0.124866" qw="0.417179" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="32.75">
+						<translation x="2463.33" y="1492.58" z="-4097.17" />
+						<rotation qx="-0.0565431" qy="0.893062" qz="0.117245" qw="0.430693" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="33">
+						<translation x="2595.83" y="1474.14" z="-4099.23" />
+						<rotation qx="-0.0550005" qy="0.888339" qz="0.110467" qw="0.442296" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="33.25">
+						<translation x="2716.48" y="1456.1" z="-4100.95" />
+						<rotation qx="-0.0534303" qy="0.884172" qz="0.104475" qw="0.452183" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="33.5">
+						<translation x="2824.27" y="1438.53" z="-4102.36" />
+						<rotation qx="-0.0518849" qy="0.880563" qz="0.0992106" qw="0.460514" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="33.75">
+						<translation x="2918.22" y="1421.52" z="-4103.49" />
+						<rotation qx="-0.0504029" qy="0.877511" qz="0.094624" qw="0.467419" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="34">
+						<translation x="2997.32" y="1405.16" z="-4104.36" />
+						<rotation qx="-0.0490127" qy="0.875015" qz="0.0906703" qw="0.472997" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="34.25">
+						<translation x="3060.57" y="1389.53" z="-4104.99" />
+						<rotation qx="-0.0477349" qy="0.873078" qz="0.0873134" qw="0.477317" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="34.5">
+						<translation x="3106.99" y="1374.74" z="-4105.41" />
+						<rotation qx="-0.0465847" qy="0.87171" qz="0.0845262" qw="0.480424" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="34.75">
+						<translation x="3135.57" y="1360.85" z="-4105.65" />
+						<rotation qx="-0.0455738" qy="0.870924" qz="0.0822907" qw="0.482331" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="35">
+						<translation x="3145.32" y="1347.96" z="-4105.72" />
+						<rotation qx="-0.0447108" qy="0.870743" qz="0.0806001" qw="0.483023" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="35.25">
+						<translation x="3144.01" y="1335.42" z="-4099.53" />
+						<rotation qx="-0.0440128" qy="0.870565" qz="0.0792252" qw="0.483634" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="35.5">
+						<translation x="3140.2" y="1322.55" z="-4081.33" />
+						<rotation qx="-0.0434821" qy="0.869783" qz="0.0779316" qw="0.485297" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="35.75">
+						<translation x="3134.1" y="1309.42" z="-4051.73" />
+						<rotation qx="-0.043106" qy="0.868407" qz="0.0767108" qw="0.487983" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="36">
+						<translation x="3125.9" y="1296.1" z="-4011.33" />
+						<rotation qx="-0.0428745" qy="0.866435" qz="0.075554" qw="0.491674" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="36.25">
+						<translation x="3115.82" y="1282.64" z="-3960.72" />
+						<rotation qx="-0.042779" qy="0.86386" qz="0.074452" qw="0.49636" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="36.5">
+						<translation x="3104.06" y="1269.11" z="-3900.49" />
+						<rotation qx="-0.0428123" qy="0.860663" qz="0.0733952" qw="0.502035" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="36.75">
+						<translation x="3090.81" y="1255.58" z="-3831.24" />
+						<rotation qx="-0.0429684" qy="0.85682" qz="0.0723734" qw="0.508699" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="37">
+						<translation x="3076.28" y="1242.11" z="-3753.57" />
+						<rotation qx="-0.0432419" qy="0.8523" qz="0.0713756" qw="0.516354" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="37.25">
+						<translation x="3060.67" y="1228.76" z="-3668.07" />
+						<rotation qx="-0.0436271" qy="0.847064" qz="0.0703903" qw="0.525" />
+						<scale x="1" y="0.999998" z="1" />
+					</keyframe>
+					<keyframe time="37.5">
+						<translation x="3044.19" y="1215.6" z="-3575.34" />
+						<rotation qx="-0.0441182" qy="0.84107" qz="0.069405" qw="0.534638" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="37.75">
+						<translation x="3027.03" y="1202.69" z="-3475.97" />
+						<rotation qx="-0.0447091" qy="0.834273" qz="0.0684068" qw="0.545261" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="38">
+						<translation x="3009.4" y="1190.09" z="-3370.56" />
+						<rotation qx="-0.0453918" qy="0.826626" qz="0.0673821" qw="0.556856" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="38.25">
+						<translation x="2991.5" y="1177.87" z="-3259.7" />
+						<rotation qx="-0.0461574" qy="0.818083" qz="0.0663168" qw="0.569396" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="38.5">
+						<translation x="2973.53" y="1166.09" z="-3144" />
+						<rotation qx="-0.0469942" qy="0.808602" qz="0.065197" qw="0.582841" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="38.75">
+						<translation x="2955.7" y="1154.82" z="-3024.04" />
+						<rotation qx="-0.0478886" qy="0.798149" qz="0.0640098" qw="0.597132" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="39">
+						<translation x="2938.21" y="1144.12" z="-2900.42" />
+						<rotation qx="-0.0488249" qy="0.786705" qz="0.0627434" qw="0.612188" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="39.25">
+						<translation x="2921.25" y="1134.05" z="-2773.73" />
+						<rotation qx="-0.0497845" qy="0.774266" qz="0.0613889" qw="0.627906" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="39.5">
+						<translation x="2905.03" y="1124.68" z="-2644.58" />
+						<rotation qx="-0.0507476" qy="0.760852" qz="0.0599409" qw="0.644156" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="39.75">
+						<translation x="2889.76" y="1116.07" z="-2513.56" />
+						<rotation qx="-0.051693" qy="0.746511" qz="0.0583991" qw="0.660787" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="40">
+						<translation x="2875.64" y="1108.29" z="-2381.26" />
+						<rotation qx="-0.0526005" qy="0.731322" qz="0.0567684" qw="0.677627" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="40.25">
+						<translation x="2862.86" y="1101.4" z="-2248.28" />
+						<rotation qx="-0.0534514" qy="0.715398" qz="0.0550605" qw="0.69449" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="40.5">
+						<translation x="2851.64" y="1095.46" z="-2115.22" />
+						<rotation qx="-0.0542308" qy="0.698884" qz="0.053293" qw="0.711182" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="40.75">
+						<translation x="2842.16" y="1090.54" z="-1982.66" />
+						<rotation qx="-0.0549288" qy="0.681955" qz="0.0514894" qw="0.727509" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="41">
+						<translation x="2834.65" y="1086.69" z="-1851.21" />
+						<rotation qx="-0.055542" qy="0.664808" qz="0.0496776" qw="0.743289" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="41.25">
+						<translation x="2829.29" y="1084" z="-1721.46" />
+						<rotation qx="-0.0560738" qy="0.647655" qz="0.0478884" qw="0.758357" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="41.5">
+						<translation x="2826.29" y="1082.51" z="-1594.01" />
+						<rotation qx="-0.0565343" qy="0.630716" qz="0.0461535" qw="0.772574" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="41.75">
+						<translation x="2830.35" y="1082.22" z="-1466.95" />
+						<rotation qx="-0.0568433" qy="0.614027" qz="0.0444072" qw="0.785982" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="42">
+						<translation x="2896.37" y="1082.22" z="-1310.39" />
+						<rotation qx="-0.0558355" qy="0.596085" qz="0.0416087" qw="0.799896" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="42.25">
+						<translation x="3030.53" y="1082.22" z="-1121.56" />
+						<rotation qx="-0.0534777" qy="0.578113" qz="0.0380126" qw="0.813315" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="42.5">
+						<translation x="3220.06" y="1082.22" z="-908.255" />
+						<rotation qx="-0.0502949" qy="0.561636" qz="0.0342333" qw="0.825144" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="42.75">
+						<translation x="3452.18" y="1082.22" z="-678.274" />
+						<rotation qx="-0.0467897" qy="0.547448" qz="0.0306778" qw="0.834967" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="43">
+						<translation x="3714.12" y="1082.22" z="-439.41" />
+						<rotation qx="-0.043334" qy="0.535752" qz="0.0275461" qw="0.842813" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="43.25">
+						<translation x="3993.09" y="1082.22" z="-199.457" />
+						<rotation qx="-0.0401534" qy="0.526398" qz="0.0248981" qw="0.848925" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="43.5">
+						<translation x="4276.32" y="1082.22" z="33.7914" />
+						<rotation qx="-0.0373604" qy="0.519086" qz="0.0227193" qw="0.853603" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="43.75">
+						<translation x="4551.03" y="1082.22" z="252.54" />
+						<rotation qx="-0.034997" qy="0.513487" qz="0.0209659" qw="0.857127" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="44">
+						<translation x="4804.45" y="1082.22" z="448.995" />
+						<rotation qx="-0.0330677" qy="0.5093" qz="0.0195891" qw="0.85973" />
+						<scale x="1" y="0.999998" z="0.999999" />
+					</keyframe>
+					<keyframe time="44.25">
+						<translation x="5023.79" y="1082.22" z="615.361" />
+						<rotation qx="-0.0315627" qy="0.506282" qz="0.0185467" qw="0.861591" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="44.5">
+						<translation x="5196.29" y="1082.22" z="743.845" />
+						<rotation qx="-0.0304736" qy="0.504247" qz="0.0178089" qw="0.862838" />
+						<scale x="1" y="0.999999" z="0.999999" />
+					</keyframe>
+					<keyframe time="44.75">
+						<translation x="5309.15" y="1082.22" z="826.651" />
+						<rotation qx="-0.0298015" qy="0.50307" qz="0.017361" qw="0.863558" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+					<keyframe time="45">
+						<translation x="5349.61" y="1082.22" z="855.985" />
+						<rotation qx="-0.0295681" qy="0.502682" qz="0.017207" qw="0.863794" />
+						<scale x="1" y="0.999999" z="1" />
+					</keyframe>
+				</animation>
+			</animations>
+			<trackTarget nodeName="Camera001.Target">
+				<localDirection x="0" y="0" z="-1" />
+			</trackTarget>
+		</node>
+	</nodes>	
+</scene>

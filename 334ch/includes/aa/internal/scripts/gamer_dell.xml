@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<Script name="gamingTestKey">
+  <TestSet isParallel="false">
+    <device capabilities="VideoCard"/>
+    <ExcludeTest key="TLPipelineStressTest"/>
+    <ExcludeTest key="TLPipelineWireframeStressTest"/>
+    <ExcludeTest key="MultiRenderingDX9Test"/>
+    <ExcludeTest key="GraphicsBenchmark"/>
+    <ExcludeTest key="ThermalCycleTest"/>
+  </TestSet>
+  <TestSet isParallel="true">
+    <Test key="StressTest" module="pcdrcpu" />
+    <Test key="AdvancedPatternTest" module="pcdrmemory2" />
+    <Test key="MultiRenderingDX9Test" module="pcdr2d3dvideo" />
+  </TestSet>
+  <!-- Tests HardDrives and SSDs -->
+  <TestSet isParallel="true">
+    <Device capabilities="HardDrive"/>
+    <Test key="RandomSeekTest"/>
+  </TestSet>
+</Script> 

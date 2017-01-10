@@ -1,0 +1,866 @@
+<?xml version="1.0"?>
+<ArrayOfXmlToolScripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!--Device Manager-->
+	<xmlToolScripts>
+		<key>DeviceManager</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>%SystemRoot%\System32\mmc.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\devmgmt.msc</strAgument>	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DeviceManager</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>%SystemRoot%\System32\mmc.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\devmgmt.msc</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DeviceManager</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>mmc.exe devmgmt.msc</strAgument>
+	</xmlToolScripts>
+
+	<!--Remote Assistance-->
+	<xmlToolScripts>
+		<key>RemoteAssistance</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\rcimlby.exe -LaunchRA</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>RemoteAssistance</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\rcimlby.exe -LaunchRA</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>RemoteAssistance</key>
+		<OS>default</OS>
+		<strCommand>%SystemRoot%\System32\msra.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+
+	<!--Help Pane-->
+	<xmlToolScripts>
+		<key>HelpPane</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>helpctr.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>HelpPane</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>helpctr.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>HelpPane</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>vistahelppane.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>HelpPane</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>vistahelppane.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>HelpPane</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>helpctr.exe</strAgument>
+	</xmlToolScripts>
+
+	<!--Alert Device Managment -->
+	<xmlToolScripts>
+		<key>AlertDevMgmt</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>"rundll32.exe devmgr.dll,DeviceProperties_RunDLL /DeviceID"</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>AlertDevMgmt</key>
+		<OS>default</OS>
+		<strCommand>rundll32.exe</strCommand>
+		<strAgument>devmgr.dll,DeviceProperties_RunDLL /DeviceID</strAgument>
+	</xmlToolScripts>
+
+	<!--Network Setup Wizard -->
+	<xmlToolScripts>
+		<key>NetworkSetupWizard</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe netsetup.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!--Network Sharing Center-->
+	<xmlToolScripts>
+		<key>NetworkSharingCenter</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>explorer.exe shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\3\::{8E908FC9-BECC-40F6-915B-F4CA0E70D03D}</strAgument>
+	</xmlToolScripts>
+
+	<!--Network Connections-->
+	<xmlToolScripts>
+		<key>NetworkConnections</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe ncpa.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!--Advanced Firewall-->
+	<xmlToolScripts>
+		<key>WindowsAdvancedFirewall</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>mmc.exe wf.msc</strAgument>
+	</xmlToolScripts>
+	<!--Internet Properties-->
+	<xmlToolScripts>
+		<key>InternetProperties</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe inetcpl.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!--Phone and Modem Options-->
+	<xmlToolScripts>
+		<key>PhoneModemOptions</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe telephon.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!--Share Folder Wizard-->
+	<xmlToolScripts>
+		<key>ShareFolderWizard</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>shrpubw.exe</strAgument>
+	</xmlToolScripts>
+
+	<!--Firewall-->
+	<xmlToolScripts>
+		<key>WindowsFirewall</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>firewall.cpl</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>WindowsFirewall</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe firewall.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!-- User Account control panel -->
+	<xmlToolScripts>
+		<key>UserAccountControlPanel</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>nusrmgr.cpl</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>UserAccountControlPanel</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe nusrmgr.cpl</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>UserAccountControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.UserAccounts</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Experience control panel -->
+	<xmlToolScripts>
+		<key>WindowsExperienceControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.PerformanceInformationAndTools</strAgument>
+	</xmlToolScripts>
+
+	<!-- Microsoft System Restore Control Panel -->
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreControlPanel</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>sysdm.cpl,,4</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreControlPanel</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe sysdm.cpl,,4</strAgument>
+	</xmlToolScripts>
+		<xmlToolScripts>
+		<key>MicrosoftSystemRestoreControlPanel</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreControlPanel</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreControlPanel</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\SystemPropertiesProtection.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Microsoft System Restore Wizard -->
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreWizard</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>%windir%\system32\Restore\rstrui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreWizard</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\Restore\rstrui.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreWizard</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreWizard</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreWizard</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>rstrui.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Microsoft System Restore Create Restore Point -->
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreCreateRestorePoint</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>%windir%\system32\Restore\rstrui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreCreateRestorePoint</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\Restore\rstrui.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreCreateRestorePoint</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreCreateRestorePoint</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>%windir%\system32\SystemPropertiesProtection.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MicrosoftSystemRestoreCreateRestorePoint</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\SystemPropertiesProtection.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Printers and Faxes Virtual Folder -->
+	<xmlToolScripts>
+		<key>PrintersAndFaxesFolder</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>Printers</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>PrintersAndFaxesFolder</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>Printers</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>PrintersAndFaxesFolder</key>
+		<OS>Windows 7 x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>Printers</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>PrintersAndFaxesFolder</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe Printers</strAgument>
+	</xmlToolScripts>
+
+	<!-- Disk defragmentation GUI tool -->
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>dfrg.msc</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>mmc.exe dfrg.msc</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows XP</OS>
+		<strCommand>dfrg.msc</strCommand>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>dfrgui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>dfrgui.exe</strCommand>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows 7 x86 32-bit</OS>
+		<strCommand>dfrgui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows 8</OS>
+		<strCommand>dfrgui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>Windows 8.1</OS>
+		<strCommand>dfrgui.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DiskDefragmentationGUI</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>dfrgui.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Control Panel -->
+	<xmlToolScripts>
+		<key>ControlPanel</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Mouse Control Panel -->
+	<xmlToolScripts>
+		<key>MouseControlPanel</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe mouse</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>MouseControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>mouse</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Keyboard Control Panel -->
+	<xmlToolScripts>
+		<key>KeyboardControlPanel</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe keyboard</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>KeyboardControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>keyboard</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Joystick Control Panel -->
+	<xmlToolScripts>
+		<key>JoystickControlPanel</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe joy.cpl</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>JoystickControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>joy.cpl</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Network Control Panel -->
+	<xmlToolScripts>
+		<key>NetworkControlPanel</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe netconnections</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>NetworkControlPanel</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>netconnections</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Pen Control Panel -->
+	<xmlToolScripts>
+		<key>PenControlPanel</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe tabletpc.cpl</strAgument>
+	</xmlToolScripts>	
+	
+	<!-- DirectX Diagnostics -->
+	<xmlToolScripts>
+		<key>DirectXDiagnostics</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>dxdiag.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DirectXDiagnostics</key>
+		<OS>default</OS>
+		<strCommand>dxdiag.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	
+	<!-- File Signature Verification -->
+	<xmlToolScripts>
+		<key>FileSignatureVerification</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>sigverif.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>FileSignatureVerification</key>
+		<OS>default</OS>
+		<strCommand>sigverif.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	
+	<!-- System Configuration -->
+	<xmlToolScripts>
+		<key>SystemConfiguration</key>
+		<OS>Windows x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>{windir}\PCHEALTH\HELPCTR\Binaries\msconfig.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>SystemConfiguration</key>
+		<OS>default</OS>
+		<strCommand>msconfig.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	
+	<!-- Digitizer -->
+	<xmlToolScripts>
+		<key>Digitizer</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>tabcal.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>Digitizer</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>tabcal.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	
+	<!-- Color Management -->
+	<xmlToolScripts>
+		<key>ColorManagement</key>
+		<OS>default</OS>
+		<strCommand>colorcpl.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+	
+	<!-- Installed Applications -->
+	<xmlToolScripts>
+		<key>InstalledPrograms</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe appwiz.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!-- Power Options -->
+	<xmlToolScripts>
+		<key>PowerOptions</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe powercfg.cpl</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Volume Control -->
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows 7 x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>sndvol.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>sndvol.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows Vista</OS>
+		<strCommand>sndvol.exe</strCommand>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows 7</OS>
+		<strCommand>sndvol.exe</strCommand>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>sndvol32.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>Windows XP</OS>
+		<strCommand>sndvol32.exe</strCommand>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VolumeMixer</key>
+		<OS>default</OS>
+		<strCommand>sndvol.exe</strCommand>
+	</xmlToolScripts>
+	
+
+
+	<!-- Windows Security Center -->
+	<xmlToolScripts>
+		<key>WindowsSecurityCenter</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe wscui.cpl</strAgument>
+	</xmlToolScripts>
+
+	<!-- Disk CleanUp -->
+	<xmlToolScripts>
+		<key>DiskCleanup</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\cleanmgr.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Backup Wizard -->
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>explorer.exe shell:::{21EC2020-3AEA-1069-A2DD-08002B30309D}\::{335A31DD-F04B-4D76-A925-D6B47CF360DF}</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows Vista x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>explorer.exe shell:::{21EC2020-3AEA-1069-A2DD-08002B30309D}\::{335A31DD-F04B-4D76-A925-D6B47CF360DF}</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\ntbackup.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\ntbackup.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows 8.1 x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control /name Microsoft.Recovery</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>Windows 8.1 x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control /name Microsoft.Recovery</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>BackupWizard</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>sdclt.exe</strAgument>
+	</xmlToolScripts>
+	
+	<!-- FileHistory Backup Wizard -->
+	<xmlToolScripts>
+		<key>FileHistory</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control /name Microsoft.FileHistory</strAgument>
+	</xmlToolScripts>
+
+	<!-- Recycle Bin -->
+	<xmlToolScripts>
+		<key>RecycleBin</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>explorer.exe shell:::{645FF040-5081-101B-9F08-00AA002F954E}</strAgument>
+	</xmlToolScripts>
+	
+	<!-- Problem Steps Recorder -->
+	<xmlToolScripts>
+		<key>ProblemStepsRecorder</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>psr.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Explorer -->
+	<xmlToolScripts>
+		<key>WindowsExplorer</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>explorer.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Power Manager -->
+	<xmlToolScripts>
+		<key>PowerManager</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\rundll32.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Access Connection -->
+	<xmlToolScripts>
+		<key>AccessConnection</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+
+	<!--Access Update-->
+	<xmlToolScripts>
+		<key>AccessUpdate</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument></strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Update: Download and install -->
+	<xmlToolScripts>
+		<key>WindowsUpdate</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\system32\wupdmgr.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>WindowsUpdate</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\system32\wupdmgr.exe</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>WindowsUpdate</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.WindowsUpdate</strAgument>
+	</xmlToolScripts>
+
+	<xmlToolScripts>
+		<key>WindowsUpdateSettings</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\system32\wuauclt.exe /ShowSettingsDialog</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>WindowsUpdateSettings</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\system32\wuauclt.exe /ShowSettingsDialog</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>WindowsUpdateSettings</key>
+		<OS>default</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.WindowsUpdate -page pageSettings</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Defender -->
+	<xmlToolScripts>
+		<key>WindowsDefender</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>"C:\\Program Files\\Windows Defender\\MSASCui.exe"</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Media Player: No args -->
+	<xmlToolScripts>
+		<key>WindowsMediaPlayer</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%programfiles%\Windows Media Player\wmplayer.exe</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Media Player: DVD -->
+	<xmlToolScripts>
+		<key>WindowsMediaPlayerDvd</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%programfiles%\Windows Media Player\wmplayer.exe /Device:DVD</strAgument>
+	</xmlToolScripts>
+
+	<!-- Windows Media Player: Audio -->
+	<xmlToolScripts>
+		<key>WindowsMediaPlayerAudio</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%programfiles%\Windows Media Player\wmplayer.exe /Device:Audio CD</strAgument>
+	</xmlToolScripts>
+
+	<!-- Reboot Computer -->
+	<xmlToolScripts>
+		<key>RebootComputer</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%SystemRoot%\System32\shutdown.exe -r -t 0</strAgument>
+	</xmlToolScripts>
+
+	<!-- Default Programs -->
+	<xmlToolScripts>
+		<key>DefaultPrograms</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>appwiz.cpl,,3</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DefaultPrograms</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe appwiz.cpl,,3</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DefaultPrograms</key>
+		<OS>Windows Vista x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.DefaultPrograms</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DefaultPrograms</key>
+		<OS>Windows 7 x86 32-bit</OS>
+		<strCommand>control.exe</strCommand>
+		<strAgument>/name Microsoft.DefaultPrograms</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>DefaultPrograms</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control.exe /name Microsoft.DefaultPrograms</strAgument>
+	</xmlToolScripts>
+
+	<!-- Startup Programs -->
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>%windir%\pchealth\helpctr\binaries\msconfig.exe</strCommand>
+		<strAgument>-6</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>msconfig.exe -6</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows 8 x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>taskmgr.exe /7 /Startup</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows 8 x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>taskmgr.exe /7 /Startup</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows 8.1 x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>taskmgr.exe /7 /Startup</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>Windows 8.1 x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>taskmgr.exe /7 /Startup</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>StartupPrograms</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>msconfig.exe -4</strAgument>
+	</xmlToolScripts>
+
+	<!-- Services -->
+	<xmlToolScripts>
+		<key>Services</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>%windir%\pchealth\helpctr\binaries\msconfig.exe</strCommand>
+		<strAgument>-5</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>Services</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>msconfig.exe -5</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>Services</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>msconfig.exe -3</strAgument>
+	</xmlToolScripts>
+
+	<!-- Virtual Memory Settings -->
+	<xmlToolScripts>
+		<key>VirtualMemorySettings</key>
+		<OS>Windows XP x86 32-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control sysdm.cpl,,3</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VirtualMemorySettings</key>
+		<OS>Windows XP x86 64-bit</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>control sysdm.cpl,,3</strAgument>
+	</xmlToolScripts>
+	<xmlToolScripts>
+		<key>VirtualMemorySettings</key>
+		<OS>default</OS>
+		<strCommand>applauncher.exe</strCommand>
+		<strAgument>%windir%\system32\SystemPropertiesPerformance.exe /pagefile</strAgument>
+	</xmlToolScripts>
+</ArrayOfXmlToolScripts>

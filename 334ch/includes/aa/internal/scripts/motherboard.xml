@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Script name="SystemInformation.motherboardTitle">
+	<TestSet>
+		<Device type="AgpBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="BIOS"/>
+	</TestSet>
+	<TestSet>
+		<Device type="BlueTooth"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Channel"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Chassis"/>
+	</TestSet>
+	<TestSet>
+		<Device type="CMOS"/>
+	</TestSet>
+	<TestSet>
+		<Device type="ComBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="DockingStation"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Firmware"/>
+	</TestSet>
+	<TestSet>
+		<Device type="GenericWindows"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Hardware"/>
+	</TestSet>
+	<TestSet>
+		<Device type="HDAudioController"/>
+	</TestSet>
+	<TestSet>
+		<Device type="HT"/>
+	</TestSet>
+	<TestSet>
+		<Device type="HUB"/>
+	</TestSet>
+	<TestSet>
+		<Device type="I2CBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="IEEE1394"/>
+	</TestSet>
+	<TestSet>
+		<Device type="IEEE1394Bus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="IEEE1394Controller"/>
+	</TestSet>
+	<TestSet>
+		<Device type="InfaredPort"/>
+	</TestSet>
+	<TestSet>
+		<Device type="InternalHub"/>
+	</TestSet>
+	<TestSet>
+		<Device type="IsaBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="LptBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="MassStorageController"/>
+	</TestSet>
+	<TestSet>
+		<Device type="MemoryBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="MMX"/>
+	</TestSet>
+	<TestSet>
+		<Device type="OnBoardDevice"/>
+	</TestSet>
+	<TestSet>
+		<Device type="OperatingSystem"/>
+	</TestSet>
+	<TestSet>
+		<Device type="ParallelPort"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCI"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIBridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PciBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCICardBusBridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIEISABridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIExpress"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIHostBridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIISABridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIPCIBridge"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCIX"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PCMCIASlot"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Port"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PowerSupply"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PS2Bus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="PSE36"/>
+	</TestSet>
+	<TestSet>
+		<Device type="RTC"/>
+	</TestSet>
+	<TestSet>
+		<Device type="ScsiBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SerialPort"/>
+	</TestSet>
+	<TestSet>
+		<Device type="Slot"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SMBIOS"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SMBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SMBusController"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SSE"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SSE2"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SSE3"/>
+	</TestSet>
+	<TestSet>
+		<Device type="System"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SystemBoard"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SystemboardAdvancedTest"/>
+	</TestSet>
+	<TestSet>
+		<Device type="SystemBus"/>
+	</TestSet>
+	<TestSet>
+		<Device type="TempSensor"/>
+	</TestSet>
+	<TestSet>
+		<Device type="ThermalZone"/>
+	</TestSet>
+	<TestSet>
+		<Device type="UHCI"/>
+	</TestSet>
+	<TestSet>
+		<Device type="UnitTester"/>
+	</TestSet>
+	<TestSet>
+		<Device type="VoltSensor"/>
+	</TestSet>
+</Script>

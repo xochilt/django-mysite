@@ -1,0 +1,5 @@
+<Script name="AbstractTestConfirmationPage.memoryTest">
+	<TestSet>
+		<Device capabilities="Memory"/>          
+	</TestSet>
+</Script>

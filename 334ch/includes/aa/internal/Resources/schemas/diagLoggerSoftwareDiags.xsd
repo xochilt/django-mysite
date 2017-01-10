@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:pcd="http://www.pc-doctor.com/2004/8/diagLogger" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.pc-doctor.com/2004/8/diagLogger" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+  <xs:annotation>
+    <xs:documentation>
+      A schema redefinition for DiagLogger xml output to implement Software Diagnostics.
+      Copyright 2013 PC-Doctor, Inc. All rights reserved.
+    </xs:documentation>
+  </xs:annotation>
+  <!-- redefine acts as an 'include/import'-->
+  <xs:redefine schemaLocation="http://www.pc-doctor.com/2004/8/diagLogger/diagLogger.xsd">
+    <xs:complexType name="SystemInfoType">
+      <xs:complexContent>
+        <xs:extension base="pcd:SystemInfoType">
+          <xs:choice>
+            <xs:element name="Notifications" type="pcd:NotificationsType" minOccurs="0"/>
+            <xs:element name="WarrantyInfo" type="pcd:WarrantyInfoType" minOccurs="0"/>
+          </xs:choice>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="DiagInfoType">
+      <xs:complexContent>
+        <xs:extension base="pcd:DiagInfoType">
+          <xs:sequence>
+            <xs:element name="SoftwareDiagnostic" type="pcd:SoftwareDiagnosticType" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:redefine>
+  <xs:complexType name="SoftwareDiagnosticType">
+    <xs:sequence>
+      <xs:element name="GUID" type="xs:token" minOccurs="1"/>
+      <xs:element name="TestResult" type="pcd:TestResultType" minOccurs="0"/>
+      <xs:element name="Issues" type="pcd:IssuesType" minOccurs="0"/>
+      <xs:element name="FixActions" type="pcd:FixActionsType" minOccurs="0"/>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborting" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborted" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:token"/>
+  </xs:complexType>
+  <xs:complexType name="IssuesType">
+    <xs:sequence>
+      <xs:element name="Issue" type="pcd:IssueType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IssueType">
+    <xs:sequence>
+      <xs:element name="IssueData" type="pcd:IssueDataType"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string"/>
+    <xs:attribute name="Description" type="xs:string"/>
+	  <xs:attribute name="Status" type="pcd:StatusForFixActionType"/>
+  </xs:complexType>
+  <xs:complexType name="IssueDataType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="pcd:ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="Parameter" type="pcd:ParameterDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParameterDefinitionType">
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="FixActionsType">
+    <xs:sequence>
+      <xs:element name="FixAction" type="pcd:FixActionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FixActionType">
+    <xs:sequence>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="GUID" type="xs:token"/>
+    <xs:attribute name="Description" type="xs:string"/>
+    <xs:attribute name="IssueNames" type="xs:string"/>
+    <xs:attribute name="TestRunIndex" type="xs:string"/>
+    <xs:attribute name="Status" type="pcd:StatusForFixActionType"/>
+  </xs:complexType>
+  <xs:complexType name="NotificationsType">
+    <xs:sequence>
+      <xs:element name="Notification" type="pcd:NotificationType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NotificationType">
+    <xs:sequence>
+      <xs:element name="ActionItemStatus" type="pcd:ActionItemStatusType"/>
+      <xs:element name="Tip" type="pcd:TipType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="GUID" type="xs:string"/>
+    <xs:attribute name="LocalizedTitle" type="xs:string"/>
+    <xs:attribute name="LocalizedDescription" type="xs:string"/>
+    <xs:attribute name="ShortLocalizedDescription" type="xs:string"/>
+    <xs:attribute name="TriggerDate" type="xs:dateTime"/>
+    <xs:attribute name="Archived" type="pcd:TrueOrFalseType"/>
+    <xs:attribute name="Read" type="pcd:TrueOrFalseType" />
+  </xs:complexType>
+  <xs:complexType name="ActionItemStatusType">
+    <xs:attribute name="Status" type="pcd:StatusForActionItemType"/>
+    <xs:attribute name="LocalizedStatus" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="WarrantyInfoType">
+    <xs:attribute name="EndDate" type="xs:string"/>
+  </xs:complexType>
+  <xs:simpleType name="TrueOrFalseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="True"/>
+      <xs:enumeration value="False"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StatusForActionItemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HelpfulHint"/>
+      <xs:enumeration value="Recommended"/>
+      <xs:enumeration value="Critical"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="StatusForFixActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FIXED"/>
+      <xs:enumeration value="NOT_FIXED"/>
+      <xs:enumeration value="NOT_RUN"/>
+      <xs:enumeration value="EXECUTING"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

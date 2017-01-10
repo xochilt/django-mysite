@@ -1,0 +1,20 @@
+<style>
+body {background-color: powderblue;}
+h1   {color: green;}
+h2   {color: blue;}
+ul   {color: red;}
+</style>
+
+
+<h1> POLLS </h1>
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'detail' question.id %}"><h2>{{ question.question_text }}</h2></a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+<a href="{% url 'test' %}"><h2>TEST</h2></a>

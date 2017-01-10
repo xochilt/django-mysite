@@ -1,0 +1,32 @@
+<SysinfoFilter>
+	<!--
+		 This is an older (Version 1) profiler filter.  
+		 Each <Device capability="..."/> makes devices with that capability be included
+		 in profiling.  Each child <Property/> makes that property key be included
+		 in profiling for the devices selected by the parent <Device> capability.
+	-->
+    <Device capability="HardDrive">
+        <Property key="ModelNumber" name="Model Number" type="STRING" />
+        <Property key="SerialNumber" name="Serial Number" type="STRING" />
+        <Property key="FirmwareVersion" name="Firmware Revision" type="STRING" />
+    </Device>
+    <Device capability="DrivePartition">
+        <Property key="VolumeFreeSpace" name="Volume Free Space" type="DISCRETEMEASUREMENT" />
+    </Device>
+    <Device capability="ATA">
+        <Property key="ATAPowerCycles" name="Power Cycles" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATAPowerOnHours" name="Power On Hours" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATAStartStopCount" name="Start Stop Count" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATASpinUpTime" name="Spin Up Time" type="DISCRETEMEASUREMENT" inventoryTolerancePercentage="0.5" />
+        <Property key="ATASpinUpTimeAvg" name="Average Spin Up Time" type="DISCRETEMEASUREMENT" inventoryTolerancePercentage="0.5" />
+        <Property key="ATASMARTTemp" name="Temperature" type="STRING" />
+        <Property key="ATATempLifeMin" name="Minimum Temperature (Lifetime)" type="STRING" />
+        <Property key="ATATempLifeMax" name="Maximum Temperature (Lifetime)" type="STRING" />
+        <Property key="ATARetractCnt" name="Power Off Retract Count" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATAReallocCnt" name="Reallocations" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATACurPendingCnt" name="Pending Reallocation Count" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATAOffUncorrectCnt" name="Offline Scan Uncorrectable Errors" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATAUDMA_CRCErrs" name="Ultra DMA CRC Errors" type="UINT32" inventoryTolerancePercentage="0.5" />
+        <Property key="ATACalibRetryCnt" name="Calibration Retries" type="UINT32" inventoryTolerancePercentage="0.5" />
+    </Device>
+</SysinfoFilter>

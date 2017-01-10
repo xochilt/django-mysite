@@ -1,0 +1,8 @@
+<pcd:logger>   
+	<logger name="Root" priority="Error" >
+		<appender type="console" name="ConsoleErr" out="err" priority="Disabled"/>
+		<appender type="file" name="File1" priority="Error" usepid="true" file="logs/pcd.log" overwrite="true" />
+	</logger>
+	<logger name="Verbose" priority="Error"/>
+	<logger name="Localization" priority="Error"/>
+</pcd:logger>

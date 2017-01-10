@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script name="fullScriptKey" description="extendedTest" haltOnResults="" passes="1">
+	<TestSet description="CPU" isParallel="true">
+		<Device capabilities="CPU"/>
+		<ExcludeTest key="StressTest"/>
+	</TestSet>
+	<TestSet description="Memory" isParallel="true">
+		<Device capabilities="Memory"/>
+		<ExcludeTest key="AdvancedPatternTest"/>
+	</TestSet>
+	<TestSet description="Video" isParallel="true">
+		<Test key="VideoMemoryTest" module="pcdr2d3dvideo"/>
+		<Test key="PrimarySurfaceTest" module="pcdr2d3dvideo"/>
+		<Test key="GPUPipelineDataTest" module="pcdr2d3dvideo"/>
+		<Test key="ShaderRenderingTest" module="pcdr2d3dvideo"/>
+		<Test key="FixedTLPipelineTest" module="pcdr2d3dvideo"/>
+		<Test key="FixedTLPipelineWireframeTest" module="pcdr2d3dvideo"/>
+		<Test key="WireframeShaderRenderingTest" module="pcdr2d3dvideo"/>
+		<Test key="ShaderRenderingDX10Test" module="pcdr2d3dvideo"/>
+		<Test key="ShaderRenderingDX11Test" module="pcdr2d3dvideo"/>
+		<Test key="MultiRenderingDX9Test" module="pcdr2d3dvideo"/>
+	</TestSet>
+	<TestSet description="Nvidia" isParallel="true">
+		<Test key="SLITest" module="pcdr2d3dvideo"/>
+		<Test key="StandardMathematicalOperations" module="pcdrcuda"/>
+		<Test key="AdvancedMathematicalOperations" module="pcdrcuda"/>
+		<Test key="MemoryFaultTest" module="pcdrcuda"/>
+		<Test key="AddressFaultTest" module="pcdrcuda"/>
+		<Test key="OwnAddressTest" module="pcdrcuda"/>
+		<Test key="MovingInversionTest" module="pcdrcuda"/>
+		<Test key="PatternTest" module="pcdrcuda"/>
+		<Test key="BlockMoveTest" module="pcdrcuda"/>
+		<Test key="RandomNumberSequenceTest" module="pcdrcuda"/>
+	</TestSet>
+	<TestSet description="Optical" isParallel="true">
+		<Test key="DRAMTest" module="pcdrobistdl">
+			<Parameter key="UpFrontMediaCheck" value="false"/>
+		</Test>
+		<Test key="FlashROMTest" module="pcdrobistdl"/>
+		<Test key="MainICTest" module="pcdrobistdl"/>
+		<Test key="OpuTest" module="pcdrobistdl"/>
+		<Test key="TrayOutTest" module="pcdrobistdl"/>
+		<Test key="SpindleTest" module="pcdrobistdl"/>
+		<Test key="TrayInTest" module="pcdrobistdl"/>
+	</TestSet>
+	<TestSet description="HDD/SSD" isParallel="true">
+		<Device capabilities="HardDrive"/>
+		<Test key="SelfTest" module="pcdrscsi2"/>
+		<Test key="SMARTStatusTest"/>
+		<Test key="SMARTThresholdsTest"/>
+		<Test key="TargetedReadTest"/>
+		<Test key="RandomSeekTest"/>
+		<Test key="FunnelSeekTest"/>
+		
+		<!-- Linear Read Test Inner 20 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+20GB"/>
+			<Parameter key="SectorPercentToTest" value="100"/>
+		</Test>
+		
+		<!-- Linear Read Test Outer 20 GIG-->
+		<Test key="LinearReadTest" module="pcdrharddrive2">
+			<Parameter key="StartRange" value="MAX-20GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="100"/>
+		</Test>
+
+		<!-- Linear Read Test Inner 40 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MIN"/>
+			<Parameter key="EndRange" value="MIN+40GB"/>
+			<Parameter key="SectorPercentToTest" value="100"/>
+		</Test>
+
+		<!-- Linear Read Test Outer 40 GIG-->
+		<Test key="LinearReadTest" module="pcdrssd">
+			<Parameter key="StartRange" value="MAX-40GB"/>
+			<Parameter key="EndRange" value="MAX"/>
+			<Parameter key="SectorPercentToTest" value="100"/>
+		</Test>
+		
+		<Test key="SSDWearLevelTest" module="pcdrssd"/>
+		<Test key="IntelSSDWearLevelTest" module="pcdrssd"/>
+		
+	</TestSet>
+	<TestSet description="Other" isParallel="true">
+		<Test key="BatteryLifeTest" module="pcdrbattery"/>
+		<Test key="BusResetTest" module="pcdrieee1394"/>
+		<Test key="ConfigROMTest" module="pcdrieee1394"/>
+		<Test key="CardBusStatusTest" module="pcdrpccard"/>
+		<Test key="StatusTest" module="pcdrpciexpress"/>
+		<Test key="PcmciaStatusTest" module="pcdrpccard"/>
+		<Test key="ConfigTest" module="pcdrpci"/>
+		<Test key="StatusTest" module="pcdrusb"/>
+		<Test key="ScanCardReaderTest" module="pcdrcardreader">
+			<Parameter key="PromptUserForMedia" value="false"/>
+		</Test>
+		<Test key="NetworkTCPIPInternalLoopbackTest" module="pcdrnetwork"/>
+		<Test key="IntelNetworkEEPROMTest" module="pcdrnal"/>
+		<Test key="IntelNetworkFIFOTest" module="pcdrnal"/>
+		<Test key="IntelNetworkInterruptTest" module="pcdrnal"/>
+		<Test key="IntelNetworkRegisterTest" module="pcdrnal"/>
+		<Test key="EdgeDetectionTest" module="pcdrwebcam"/>
+		<Test key="LuminanceDepthTest" module="pcdrwebcam"/>
+		<Test key="RGBChannelTest" module="pcdrwebcam"/>
+		<Test key="RGBColorDepthTest" module="pcdrwebcam"/>
+		<Test key="RGBLineAmplifierTest" module="pcdrwebcam"/>
+		<Test key="RGBLineDriverTest" module="pcdrwebcam"/>
+		<Test key="RGBPixelTest" module="pcdrwebcam"/>
+	</TestSet>
+	
+	<TestSet description="SystemBoard" isParallel="false">
+		<Test key="RTCAccuracyTest" module="pcdrsystemboard"/>
+		<Test key="ChecksumTest" module="pcdrcmos"/>
+		<Test key="PatternTest" module="pcdrcmos"/>
+	</TestSet>
+	<TestSet description="Final SMART Checks" isParallel="false">
+		<Test key="SMARTShortSelfTest"/>
+		<Test key="SMARTThresholdsTest"/>
+	</TestSet>
+	
+	<TestSet description="StressTest" isParallel="true" minTimePerTest="300">
+		<Test key="StressTest" module="pcdrcpu">
+			<Parameter key="TestRunTime" value="300"/>
+		</Test>
+		<Test key="AdvancedPatternTest" module="pcdrmemory2"/>
+		<Test key="RandomSeekTest" module="pcdrharddrive2">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+		<Test key="RandomSeekTest" module="pcdrssd">
+			<Parameter key="NumberOfSeeks" value="1000"/>
+		</Test>
+	</TestSet>
+	
+	<TestSet description="Video1StressTest" isParallel="true">
+		<Device type="VideoCard">
+			<inventory-check>
+				<device type="VideoCard">
+					<not>
+						<property key="HybridGPUCategory"/>
+					</not>
+				</device>
+			</inventory-check>
+		</Device>
+		<Test key="TLPipelineStressTest" module="pcdr2d3dvideo">
+			<Parameter key="AnimationLength" value="300000"/>
+			<Parameter key="WindowedMode" value="false"/>
+		</Test>
+	</TestSet>
+	
+	<TestSet description="Video2StressTest" isParallel="true">
+		<Device type="VideoCard">
+			<inventory-check>
+				<device type="VideoCard">
+					<property key="HybridGPUCategory"/>
+				</device>
+			</inventory-check>
+		</Device>
+		<Test key="TLPipelineStressTest" module="pcdr2d3dvideo">
+			<Parameter key="AnimationLength" value="150000"/>
+			<Parameter key="WindowedMode" value="false"/>
+		</Test>
+	</TestSet>
+</Script>

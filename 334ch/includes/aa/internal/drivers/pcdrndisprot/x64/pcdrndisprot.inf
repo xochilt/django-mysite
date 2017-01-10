@@ -1,0 +1,86 @@
+;-------------------------------------------------------------------------
+; PCDRNDISPROT.INF -- PCDRNDIS Protocol Driver
+;
+; Copyright (c) 2003, Microsoft Corporation
+;-------------------------------------------------------------------------
+[version]
+Signature   = "$Windows NT$"
+Class       = NetTrans
+ClassGUID   = {4d36e975-e325-11ce-bfc1-08002be10318}
+Provider    = %Msft%
+DriverVer   = 04/25/2012,6.0.6027.35
+CatalogFile = pcdrndisprot.cat
+
+[Manufacturer]
+%Msft%=MSFT,NTx86,NTia64,NTamd64
+
+[MSFT]
+%PCDRNDISPROT_Desc%=Install, PCDR_PCDRNDISPROT
+
+[MSFT.NTx86]
+%PCDRNDISPROT_Desc%=Install, PCDR_PCDRNDISPROT
+
+[MSFT.NTia64]
+%PCDRNDISPROT_Desc%=Install, PCDR_PCDRNDISPROT
+
+[MSFT.NTamd64]
+%PCDRNDISPROT_Desc%=Install, PCDR_PCDRNDISPROT
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[Install]
+AddReg=Inst_Ndi
+Characteristics=0x28 ; NCF_HIDDEN | NCF_NOT_USER_REMOVABLE
+CopyFiles=CpyFiles_Sys
+
+;-------------------------------------------------------------------------
+; Ndi installation support
+;-------------------------------------------------------------------------
+[Inst_Ndi]
+HKR,Ndi,Service,,"pcdrndisprot"
+HKR,Ndi,HelpText,,%PCDRNDISPROT_HelpText%
+HKR,Ndi\Interfaces, UpperRange,, noupper
+HKR,"Ndi\Interfaces","LowerRange",,"ndis5,ndis4,ndis5_prot"
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[Install.Services]
+AddService=pcdrndisprot,,PcdrNDISPROT_Service_Inst
+
+[PcdrNDISPROT_Service_Inst]
+DisplayName     = %PCDRNDISPROT_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 3 ;SERVICE_DEMAND_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\pcdrndisprot.sys
+LoadOrderGroup  = NDIS
+Description     = %PCDRNDISPROT_Desc%
+
+[Install.Remove.Services]
+DelService=pcdrndisprot,0x200
+
+;-------------------------------------------------------------------------
+; Declare Destination Directories for file copy/deletion
+;-------------------------------------------------------------------------
+[SourceDisksNames]
+1=%PCDRNDISPROT_Desc%,"",,
+
+[SourceDisksFiles]
+pcdrndisprot.sys=1
+
+[DestinationDirs]
+CpyFiles_Sys    = 12    ; DIRID_DRIVERS
+
+
+;-------------------------------------------------------------------------
+; Files to Copy/Delete - Referenced by Install and Remove sections above
+;-------------------------------------------------------------------------
+[CpyFiles_Sys]
+pcdrndisprot.sys,,,2
+
+[Strings]
+Msft = "Microsoft"
+PCDRNDISPROT_Desc = "PCDRNDISPROT Usermode I/O Protocol"
+PCDRNDISPROT_HelpText = "A PC-Doctor driver to support user-mode I/O on NDIS devices"

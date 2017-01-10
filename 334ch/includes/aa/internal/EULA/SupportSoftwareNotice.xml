@@ -1,0 +1,376 @@
+﻿<SupportSoftwareLegalNotice>
+  <Formatting>
+    <Title FontType="Calibri" FontSize="14"></Title>
+    <Intro FontType="Arial" FontSize="10"></Intro>
+    <E1Title FontType="Calibri" FontSize="11"></E1Title>
+    <E1Text FontType="Arial" FontSize="10"></E1Text>
+    <E1Prompt FontType="Arial" FontSize="8"></E1Prompt>
+    <E2Title FontType="Calibri" FontSize="11"></E2Title>
+    <E2Text FontType="Arial" FontSize="10"></E2Text>
+    <E2Prompt FontType="Arial" FontSize="8"></E2Prompt>
+    <Button FontType="Arial" FontSize="10"></Button>
+  </Formatting>
+  <CheckedStatus>
+    <Destination E1Country="US">true</Destination>
+    <Destination E2Country="US">false</Destination>
+    <ManufacturingSite E1region="US">true</ManufacturingSite>
+    <ManufacturingSite E2region="US">false</ManufacturingSite>
+    <Destination E1Country="CA">true</Destination>
+    <Destination E2Country="CA">true</Destination>
+    <ManufacturingSite E1region="CA">true</ManufacturingSite>
+    <ManufacturingSite E2region="CA">true</ManufacturingSite>
+    <Destination E1Country="PR">true</Destination>
+    <Destination E2Country="PR">false</Destination>
+    <ManufacturingSite E1region="PR">true</ManufacturingSite>
+    <ManufacturingSite E2region="PR">false</ManufacturingSite>
+    <Destination E1Country="VI">true</Destination>
+    <Destination E2Country="VI">false</Destination>
+    <ManufacturingSite E1region="VI">true</ManufacturingSite>
+    <ManufacturingSite E2region="VI">false</ManufacturingSite>
+    <ManufacturingSite E1region="AMF">true</ManufacturingSite>
+    <ManufacturingSite E2region="AMF">false</ManufacturingSite>
+    <ManufacturingSite region="AMF">true</ManufacturingSite>
+  </CheckedStatus>
+  <Enables>
+    <E1Enables Country="">Updates</E1Enables>
+    <E1Enables Country="">DownloadMarketing</E1Enables>
+    <E2Enables Country="">UploadMarketing</E2Enables>
+    <E2Enables Country="">ServiceTag</E2Enables>
+    <E2Enables Country="">Usage</E2Enables>
+  </Enables>
+  <Text>
+    <LegalNotice Language="en">
+      <Title><![CDATA[Enable Auto-Updates && Better Support Benefits]]></Title>
+      <E1Title>DELL SOFTWARE AUTO-UPDATES</E1Title>      
+      <E1Prompt>I allow my system to receive these updates and alerts</E1Prompt>
+      <E2Title>DELL SYSTEM INFORMATION SHARING</E2Title>      
+      <E2Prompt>I allow Dell to collect Service Tag and other system usage data as described above</E2Prompt>
+      <Privacy>To review Dell’s privacy policy, visit www.dell.com/privacy (after Internet connection).</Privacy>
+      <Button>Finish</Button>
+    </LegalNotice>
+    <LegalNotice Language="tr">
+      <Title><![CDATA[Otomatik Güncellemeleri ve Daha İyi Destek Fırsatlarını Etkinleştirin]]></Title>
+      <E1Title>DELL YAZILIM OTOMATİK GÜNCELLEMELERİ</E1Title>      
+      <E1Prompt>Sistemimin bu güncellemeleri ve uyarıları almasına izin veriyorum</E1Prompt>
+      <E2Title>DELL SİSTEM BİLGİSİ PAYLAŞIMI</E2Title>      
+      <E2Prompt>Dell'in yukarıda açıklandığı gibi Servis Etiketi ve diğer sistem kullanım verileri toplamasına izin veriyorum</E2Prompt>
+      <Privacy>Dell'in gizlilik ilkesini incelemek için www.dell.com/privacy adresini ziyaret edin (Internet bağlantısından sonra).</Privacy>
+      <Button>Bitti</Button>
+    </LegalNotice>
+    <LegalNotice Language="ar">
+      <Title><![CDATA[تمكين التحديثات التلقائية ومزايا الدعم الأفضل]]></Title>
+      <E1Title>التحديثات التلقائية لبرامج DELL</E1Title>      
+      <E1Prompt>أسمح لنظامي بتلقي هذه التحديثات والتنبيهات</E1Prompt>
+      <E2Title>مشاركة معلومات نظام DELL</E2Title>      
+      <E2Prompt>أسمح لشركة Dell بتجميع بطاقة الخدمة (Service Tag) ومعلومات استخدام النظام الأخرى كما هو موضح أعلاه</E2Prompt>
+      <Privacy>لمراجعة سياسة خصوصية Dell، تفضل بزيارة www.dell.com/privacy (بعد الاتصال بالإنترنت).</Privacy>
+      <Button>انتهى</Button>
+    </LegalNotice>
+    <LegalNotice Language="brz">
+      <Title><![CDATA[Ativar atualizações automáticas e melhores benefícios de suporte]]></Title>
+      <E1Title>ATUALIZAÇÕES AUTOMÁTICAS DO SOFTWARE DELL</E1Title>      
+      <E1Prompt>Eu permito que o meu sistema receba estas atualizações e estes alertas</E1Prompt>
+      <E2Title>COMPARTILHAMENTO DE INFORMAÇÕES DO SISTEMA DELL</E2Title>      
+      <E2Prompt>Eu permito que a Dell colete o número da etiqueta de serviço e outras informações de uso do sistema, conforme descrito acima</E2Prompt>
+      <Privacy>Para ver a política de privacidade da Dell, visite o site www.dell.com/privacy </Privacy>
+      <Button>Fim</Button>
+    </LegalNotice>
+    <LegalNotice Language="chk">
+      <Title><![CDATA[Enable Auto-Updates && Better Support Benefits]]></Title>
+      <E1Title>DELL SOFTWARE AUTO-UPDATES</E1Title>      
+      <E1Prompt>I allow my system to receive these updates and alerts</E1Prompt>
+      <E2Title>DELL SYSTEM INFORMATION SHARING</E2Title>      
+      <E2Prompt>I allow Dell to collect Service Tag and other system usage data as described above</E2Prompt>
+      <Privacy>To review Dell’s privacy policy, visit www.dell.com/privacy (after Internet connection).</Privacy>
+      <Button>Finish</Button>
+    </LegalNotice>
+    <LegalNotice Language="chs">
+      <Title><![CDATA[启用自动更新并获得更好的技术支持]]></Title>
+      <E1Title>DELL 软件自动更新</E1Title>      
+      <E1Prompt>我允许我的系统接收这些更新和警报</E1Prompt>
+      <E2Title>DELL 系统信息共享</E2Title>      
+      <E2Prompt>我允许 Dell 收集服务标签和上述其他系统使用情况数据</E2Prompt>
+      <Privacy>要查看 Dell 的隐私政策，请访问 www.dell.com/privacy（需要互联网连接）。</Privacy>
+      <Button>完成</Button>
+    </LegalNotice>
+    <LegalNotice Language="cht">
+      <Title><![CDATA[啟用  Auto-Updates & Better Support Benefits]]></Title>
+      <E1Title>DELL 軟體 AUTO-UPDATES</E1Title>      
+      <E1Prompt>我允許我的系統接收這些更新與警示</E1Prompt>
+      <E2Title>DELL 系統資訊分享</E2Title>      
+      <E2Prompt>我允許 Dell 收集上述的服務標籤與其它系統使用資料</E2Prompt>
+      <Privacy>若要檢閱 Dell 的隱私權政策，請瀏覽 www.dell.com/privacy (需連接網路)。</Privacy>
+      <Button>完成</Button>
+    </LegalNotice>
+    <LegalNotice Language="cs">
+      <Title><![CDATA[Aktivujte automatické aktualizace a získejte výhody lepší odborné pomoci]]></Title>
+      <E1Title>AUTOMATICKÉ AKTUALIZACE SOFTWARU SPOLEČNOSTI DELL</E1Title>      
+      <E1Prompt>Souhlasím, aby můj systém tyto aktualizace a výstrahy získával</E1Prompt>
+      <E2Title>SDÍLENÍ INFORMACÍ O SYSTÉMU SPOLEČNOSTI DELL</E2Title>      
+      <E2Prompt>Souhlasím, aby společnost Dell shromažďovala označení Service Tag a jiné údaje o využití systému, jak je popsáno výše</E2Prompt>
+      <Privacy>Chcete-li se seznámit se zásadami ochrany osobních údajů společnosti Dell, navštivte adresu www.dell.com/privacy (po připojení k internetu).</Privacy>
+      <Button>Dokončit</Button>
+    </LegalNotice>
+    <LegalNotice Language="da">
+      <Title><![CDATA[Aktivér automatiske opdateringer & bedre supportfordele]]></Title>
+      <E1Title>AUTOMATISKE OPDATERINGER TIL DELL-SOFTWARE</E1Title>      
+      <E1Prompt>Jeg giver tilladelelse til, at mit system modtager disse opdateringer og meddelelserI</E1Prompt>
+      <E2Title>DELING AF DELL SYSTEMINFORMATION</E2Title>      
+      <E2Prompt>Jeg giver Dell tilladelelse til at indsamle Service Tag og andre data om systembrug som beskrevet ovenfor</E2Prompt>
+      <Privacy>For at gennemse Dell’s beskyttelse af personlige oplysningeskal du gå til www.dell.com/privacy (efter internetforbindelse).</Privacy>
+      <Button>Afslut</Button>
+    </LegalNotice>
+    <LegalNotice Language="de">
+      <Title><![CDATA[Automatische Aktualisierungen & Besseren Support zulassen]]></Title>
+      <E1Title>AUTOMATISCHE AKTUALISIERUNGEN VON DELL-SOFTWARE</E1Title>      
+      <E1Prompt>Ich stimme zu, dass mein System diese Aktualisierungen und Meldungen empfängt</E1Prompt>
+      <E2Title>FREIGABE VON DELL-SYSTEMINFORMATIONEN</E2Title>      
+      <E2Prompt>Ich stimme zu, dass Dell Servicekennungen und andere Daten zur Systemnutzung wie oben aufgeführt erfasst</E2Prompt>
+      <Privacy>Die Datenschutzgrundsätze von Dell finden Sie unter www.dell.com/privacy (nach erfolgter Internetverbindung).</Privacy>
+      <Button>Fertig stellen</Button>
+    </LegalNotice>
+    <LegalNotice Language="el">
+      <Title><![CDATA[Ενεργοποίηση αυτόματων ενημερώσεων και οφέλη καλύτερης υποστήριξης]]></Title>
+      <E1Title>ΑΥΤΟΜΑΤΕΣ ΕΝΗΜΕΡΩΣΕΙΣ ΛΟΓΙΣΜΙΚΟΥ DELL</E1Title>      
+      <E1Prompt>Επιτρέπω στο σύστημά μου να λαμβάνει αυτές τις ενημερώσεις και τις ειδοποιήσεις</E1Prompt>
+      <E2Title>ΚΟΙΝΗ ΧΡΗΣΗ ΠΛΗΡΟΦΟΡΙΩΝ ΣΥΣΤΗΜΑΤΟΣ DELL</E2Title>      
+      <E2Prompt>Επιτρέπω στην Dell να συλλέγει τα στοιχεία της Ετικέτας εξυπηρέτησής μου και άλλα δεδομένα χρήσης συστήματος όπως περιγράφεται παραπάνω</E2Prompt>
+      <Privacy>Για να δείτε την πολιτική απορρήτου της Dell, επισκεφθείτε τη διεύθυνση www.dell.com/privacy (αφού συνδεθείτε στο Internet).</Privacy>
+      <Button>Τέλος</Button>
+    </LegalNotice>
+    <LegalNotice Language="es">
+      <Title><![CDATA[Habilitar actualizaciones automáticas y Mejores beneficios de asistencia]]></Title>
+      <E1Title>ACTUALIZACIONES AUTOMÁTICAS DE SOFTWARE DELL</E1Title>      
+      <E1Prompt>Permito que mi sistema reciba estas actualizaciones y alertas</E1Prompt>
+      <E2Title>INTERCAMBIO DE INFORMACIÓN DEL SISTEMA DELL</E2Title>      
+      <E2Prompt>Permito que Dell recopile la información sobre la Etiqueta de servicio y otros usos del sistema según se describe a continuación</E2Prompt>
+      <Privacy>Para revisar la política de privacidad de Dell, visite www.dell.com/privacy (después de la conexión a internet).</Privacy>
+      <Button>Finalizar</Button>
+    </LegalNotice>
+    <LegalNotice Language="fi">
+      <Title><![CDATA[Ota käyttöön automaattiset päivitykset ja entistä paremmat tukiedut]]></Title>
+      <E1Title>DELL-OHJELMISTON AUTOMAATTISET PÄIVITYKSET</E1Title>      
+      <E1Prompt>Hyväksyn sen, että järjestelmäni vastaanottaa tällaisia päivityksiä ja ilmoituksia</E1Prompt>
+      <E2Title>DELLIN JÄRJESTELMÄTIETOJEN JAKAMINEN</E2Title>      
+      <E2Prompt>Hyväksyn sen, että Dell voi hakea palvelutunnuksen ja muita edellä kuvattuja järjestelmän käyttötietoja</E2Prompt>
+      <Privacy>Voit tutustua Dellin tietosuojakäytäntöön osoitteessa www.dell.com/privacy (edellyttää Internet-yhteyttä).</Privacy>
+      <Button>Loppu</Button>
+    </LegalNotice>
+    <LegalNotice Language="fr">
+      <Title><![CDATA[Activer les mises à jour automatiques et de meilleurs bénéfices de support]]></Title>
+      <E1Title>MISES À JOUR AUTOMATIQUES DE LOGICIEL DELL</E1Title>      
+      <E1Prompt>J'autorise mon système à recevoir ces mises à jour et alertes</E1Prompt>
+      <E2Title>PARTAGE D'INFORMATIONS SYSTÈME DELL</E2Title>      
+      <E2Prompt>J'autorise Dell à collecter le numéro de service et d'autres données d'utilisation du système tel que décrit ci-dessus</E2Prompt>
+      <Privacy>Pour consulter la politique de confidentialité de Dell, rendez-vous sur www.dell.com/privacy (après votre connexion à Internet).</Privacy>
+      <Button>Terminer</Button>
+    </LegalNotice>
+    <LegalNotice Language="he">
+    <Title><![CDATA[קבל את העדכונים האוטומטיים ואת היתרונות של תמיכה טובה יותר]]></Title>
+      <E1Title>עדכוני תכנה אוטומטיים של DELL</E1Title>      
+      <E1Prompt>אני מאפשר למערכת שלי לקבל את העדכונים וההתרעות האלו</E1Prompt>
+      <E2Title>שיתוף מידע על המערכת של DELL</E2Title>      
+      <E2Prompt>אני מאפשר ל-Dell לאסוף את תגית השירות ונתונים אחרים הקשורים לשימוש במערכת, כפי שמתואר לעיל</E2Prompt>
+      <Privacy>על מנת לצפות במדיניות הפרטיות של Dell, בקר באתר www.dell.com/privacy (לאחר שתתחבר לאינטרנט).</Privacy>
+      <Button>סיים</Button>
+    </LegalNotice>
+    <LegalNotice Language="hu">
+      <Title><![CDATA[Automatikus frissítések engedélyezése és még több támogatási előny]]></Title>
+      <E1Title>AUTOMATIKUS FRISSÍTÉSEK A DELL SZOFTVERHEZ</E1Title>      
+      <E1Prompt>Engedélyezem, hogy a rendszer fogadja ezeket a frissítéseket és értesítéseket</E1Prompt>
+      <E2Title>RENDSZERINFORMÁCIÓ MEGOSZTÁSA A DELL-LEL</E2Title>      
+      <E2Prompt>Engedélyezem, hogy a Dell a fentiekben ismertetett módon begyűjtse a szervizcímkét és más rendszerhasználati adatokat</E2Prompt>
+      <Privacy>A Dell adatvédelmi irányelveit itt tekintheti meg: www.dell.com/privacy (az internethez való csatlakozást követően).</Privacy>
+      <Button>Befejezés</Button>
+    </LegalNotice>
+    <LegalNotice Language="it">
+      <Title><![CDATA[Ottieni gli aggiornamenti automatici e i vantaggi di un supporto migliore]]></Title>
+      <E1Title>AGGIORNAMENTI AUTOMATICI DEL SOFTWARE DELL</E1Title>      
+      <E1Prompt>Consento al sistema di ricevere questi aggiornamenti e avvisi</E1Prompt>
+      <E2Title>CONDIVISIONE DELLE INFORMAZIONI SUL SISTEMA DELL</E2Title>      
+      <E2Prompt>Consento a Dell di raccogliere i dati sul Service Tag e sull'uso del sistema, come descritto in precedenza.</E2Prompt>
+      <Privacy>Per rivedere l'informativa sulla privacy della Dell, visitare il sito www.dell.com/privacy (è necessaria una connessione Internet).</Privacy>
+      <Button>Fine</Button>
+    </LegalNotice>
+    <LegalNotice Language="ja">
+      <Title><![CDATA[自動アップデートとより良いサポートの利用]]></Title>
+      <E1Title>DELL ソフトウェア自動アップデート</E1Title>      
+      <E1Prompt>このシステムがこれらのアップデートおよびアラートを受信することを許可します</E1Prompt>
+      <E2Title>DELL システム情報共有</E2Title>      
+      <E2Prompt>デルがサービスタグおよび前述のその他のシステム利用データを収集することを許可します</E2Prompt>
+      <Privacy>デルのプライバシーポリシーを確認するには、www.dell.com/privacy にアクセスしてください（インターネット接続が必要）。</Privacy>
+      <Button>終了</Button>
+    </LegalNotice>
+    <LegalNotice Language="ko">
+      <Title><![CDATA[자동 업데이트 & 향상된 지원 혜택 사용]]></Title>
+      <E1Title>DELL 소프트웨어 자동 업데이트</E1Title>      
+      <E1Prompt>내 시스템에 업데이트 및 경고 수신을 허용합니다.</E1Prompt>
+      <E2Title>DELL 시스템 정보 공유</E2Title>      
+      <E2Prompt>위에 설명된 대로 Dell에서 서비스 태그 및 기타 시스템 사용 데이터 수집을 허용합니다.</E2Prompt>
+      <Privacy>Dell의 개인 정보 보호 정책을 보려면 www.dell.com/privacy를 방문하십시오(인터넷 연결 필요).</Privacy>
+      <Button>완료</Button>
+    </LegalNotice>
+    <LegalNotice Language="nl">
+      <Title><![CDATA[Automatische updates en gerichte ondersteuning activeren]]></Title>
+      <E1Title>AUTOMATISCHE UPDATES VAN UW DELL-SOFTWARE</E1Title>      
+      <E1Prompt>Ik geef toestemming voor de ontvangst van deze updates en kennisgevingen op mijn computer</E1Prompt>
+      <E2Title>UITWISSELING VAN SYSTEEMINFORMATIE MET DELL</E2Title>      
+      <E2Prompt>Ik geef Dell toestemming om zoals hierboven beschreven de Service Tag en andere systeeminformatie te verzamelen</E2Prompt>
+      <Privacy>U kunt het privacybeleid van Dell raadplegen op www.dell.com/privacy.</Privacy>
+      <Button>Voltooien</Button>
+    </LegalNotice>
+    <LegalNotice Language="no">
+      <Title><![CDATA[Aktiver automatiske oppdateringer og bedre kundestøttefordeler]]></Title>
+      <E1Title>AUTOMATISKE DELL-PROGRAMVAREOPPDATERINGER</E1Title>      
+      <E1Prompt>Jeg tillater at systemet mitt mottar disse oppdateringene og varslingene</E1Prompt>
+      <E2Title>DELING AV DELL-SYSTEMINFORMASJON</E2Title>      
+      <E2Prompt>Jeg tillater at Dell innhenter servicemerket og andre systembruksdata som beskrevet ovenfor</E2Prompt>
+      <Privacy>Les om Dells retningslinjer for personvern på www.dell.com/privacy (etter Internett-forbindelse).</Privacy>
+      <Button>Finish</Button>
+    </LegalNotice>
+    <LegalNotice Language="pl">
+      <Title><![CDATA[Włącz aktualizacje automatyczne i uzyskaj lepsze wsparcie]]></Title>
+      <E1Title>AUTOMATYCZNE AKTUALIZACJE OPROGRAMOWANIA FIRMY DELL</E1Title>      
+      <E1Prompt>Zezwalam na pobieranie tych aktualizacji i alertów</E1Prompt>
+      <E2Title>UDOSTĘPNIANIE INFORMACJI O SYSTEMIE FIRMIE DELL</E2Title>      
+      <E2Prompt>Zezwalam firmie Dell na gromadzenie znacznika Service Tag i innych informacji o użyciu systemu, zgodnie z powyższym opisem</E2Prompt>
+      <Privacy>Aby zapoznać się z zasadami zachowania poufności informacji firmy Dell, odwiedź stronę www.dell.com/privacy (po nawiązaniu połączenia z Internetem).</Privacy>
+      <Button>Zakończ</Button>
+    </LegalNotice>
+    <LegalNotice Language="pt">
+      <Title><![CDATA[Enable Auto-Updates && Better Support Benefits]]></Title>
+      <E1Title>DELL SOFTWARE AUTO-UPDATES</E1Title>      
+      <E1Prompt>I allow my system to receive these updates and alerts</E1Prompt>
+      <E2Title>DELL SYSTEM INFORMATION SHARING</E2Title>      
+      <E2Prompt>I allow Dell to collect Service Tag and other system usage data as described above</E2Prompt>
+      <Privacy>To review Dell’s privacy policy, visit www.dell.com/privacy (after Internet connection).</Privacy>
+      <Button>Finish</Button>
+    </LegalNotice>
+    <LegalNotice Language="ru">
+      <Title><![CDATA[Включить автоматическое обновление и дополнительные преимущества при поддержке]]></Title>
+      <E1Title>АВТОМАТИЧЕСКОЕ ОБНОВЛЕНИЕ ПРОГРАММ DELL</E1Title>      
+      <E1Prompt>Я разрешаю получение компьютером таких обновлений и оповещений</E1Prompt>
+      <E2Title>ПРЕДОСТАВЛЕНИЕ ДОСТУПА К ИНФОРМАЦИИ О КОМПЬЮТЕРЕ DELL</E2Title>      
+      <E2Prompt>Я разрешаю Dell собирать информацию метки обслуживания и другие данные об использовании системы, в соответствии с приведенным выше описанием</E2Prompt>
+      <Privacy>Для ознакомления с политикой конфиденциальности Dell посетите веб-сайт www.dell.com/privacy (необходимо подключение к сети Интернет).</Privacy>
+      <Button>Закончить</Button>
+    </LegalNotice>
+    <LegalNotice Language="sv">
+      <Title><![CDATA[Aktivera automatiska uppdateringar och bättre supportfördelar]]></Title>
+      <E1Title>AUTOMATISKA UPPDATERINGAR AV PROGRAM FRÅN DELL</E1Title>      
+      <E1Prompt>Jag tillåter att min dator tar emot dessa uppdateringar och meddelanden</E1Prompt>
+      <E2Title>DELNING AV SYSTEMINFORMATION TILL DELL</E2Title>      
+      <E2Prompt>Jag tillåter att Dell samlar in information om servicemärket och annan information om hur datorn används enligt beskrivningen ovan</E2Prompt>
+      <Privacy>Du kan läsa Dells sekretesspolicy på www.dell.com/privacy (om du har en internetanslutning).</Privacy>
+      <Button>Finish</Button>
+    </LegalNotice>
+    <LegalNotice Language="lt">
+      <Title><![CDATA[Įjungti automatinius atnaujinimus ir geresnius palaikymo privalumus]]></Title>
+      <E1Title>AUTOMATINIAI „DELL“ PROGRAMINĖS ĮRANGOS ATNAUJINIMAI</E1Title>      
+      <E1Prompt>Aš leidžiu savo sistemai gauti šiuos atnaujinimus ir įspėjimus</E1Prompt>
+      <E2Title>KEITIMASIS „DELL“ SISTEMOS INFORMACIJA</E2Title>      
+      <E2Prompt>Aš leidžiu „Dell“ rinkti aptarnavimo žymės ir kitus sistemos naudojimo duomenis, kaip apibrėžta aukščiau</E2Prompt>
+      <Privacy>Norėdami peržiūrėti „Dell“ privatumo politiką, apsilankykite www.dell.com/privacy (prisijungę prie interneto).</Privacy>
+      <Button>Baigti</Button>
+    </LegalNotice>
+    <LegalNotice Language="bg">
+      <Title><![CDATA[Разрешете автоматичните актуализации и повече ползи от поддръжката]]></Title>
+      <E1Title>АВТОМАТИЧНИ АКТУАЛИЗАЦИИ НА СОФТУЕРА НА DELL</E1Title>      
+      <E1Prompt>Разрешавам на моята система да получава тези актуализации и предупреждения</E1Prompt>
+      <E2Title>СПОДЕЛЯНЕ НА ИНФОРМАЦИЯ ЗА СИСТЕМАТА НА DELL</E2Title>      
+      <E2Prompt>Разрешавам на Dell да събира сервизно обозначение и други данни за употреба на системата, както е описано по-горе</E2Prompt>
+      <Privacy>За да разгледате правилата за поверителност на Dell, посетете www.dell.com/privacy (след установяване на връзка с интернет).</Privacy>
+      <Button>Край</Button>
+    </LegalNotice>
+    <LegalNotice Language="th">
+      <Title><![CDATA[เปิดใช้งานการอัพเดตอัตโนมัติและประโยชน์ด้านการสนับสนุนที่ดีกว่า]]></Title>
+      <E1Title>การอัพเดตซอฟต์แวร์อัตโนมัติของ DELL</E1Title>      
+      <E1Prompt>ฉันอนุญาติให้ระบบทำการรับข้อมูลอัพเดตและข้อมูลแจ้งเตือนได้</E1Prompt>
+      <E2Title>การแชร์ข้อมูลเกี่ยวกับระบบของ DELL</E2Title>      
+      <E2Prompt>ฉันอนุญาตให้ Dell เก็บข้อมูล Service Tag และข้อมูลเกี่ยวกับการใช้ระบบอื่นๆ ตามที่ได้อธิบายไว้ข้างต้น</E2Prompt>
+      <Privacy>สำหรับนโยบายความเป็นส่วนตัวของ Dell กรุณาเข้าไปที่ www.dell.com/privacy (ต้องเชื่อมต่ออินเทอร์เน็ต)</Privacy>
+      <Button>สิ้นสุด</Button>
+    </LegalNotice>
+    <LegalNotice Language="et">
+      <Title><![CDATA[Võimaldage automaatsed uuendused ja parem tugi]]></Title>
+      <E1Title>DELLI AUTOMAATSED TARKVARAUUENDUSED</E1Title>      
+      <E1Prompt>Luban oma süsteemil võtta vastu neid uuendusi ja hoiatusi</E1Prompt>
+      <E2Title>DELLI SÜSTEEMITEABE JAGAMINE</E2Title>      
+      <E2Prompt>Luban Dellil koguda seerianumbrit ja muud eespool kirjeldatud teavet süsteemi kasutamise kohta</E2Prompt>
+      <Privacy>Delli privaatsuspoliitikaga tutvumiseks külastage veebilehte www.dell.com/privacy (pärast internetiühenduse loomist).</Privacy>
+      <Button>Lõpeta</Button>
+    </LegalNotice>
+    <LegalNotice Language="hi">
+      <Title><![CDATA[स्वत: अपडेट और बेहतर सहायता लाभों को सक्षम करें]]></Title>
+      <E1Title>DELL सॉफ़्टवेयर स्वत: अपडेट</E1Title>      
+      <E1Prompt>मैं अपने सिस्टम को ये अपडेट और अलर्ट प्राप्त करने की अनुमति देता/देती हूं</E1Prompt>
+      <E2Title>DELL सिस्टम जानकारी साझाकरण</E2Title>      
+      <E2Prompt>मैं Dell को उपरोक्त वर्णन के अनुसार सर्विस टैग और अन्य सिस्टम उपयोग डेटा एकत्रित करने की अनुमति देता/देती हूं</E2Prompt>
+      <Privacy>Dell की गोपनीयता नीति की समीक्षा करने के लिए, www.dell.com/privacy पर जाएं (इंटरनेट कनेक्शन के बाद).</Privacy>
+      <Button>समाप्त</Button>
+    </LegalNotice>
+    <LegalNotice Language="sr">
+      <Title><![CDATA[Omogući auto-ažuriranje i pogodnosti bolje podrške]]></Title>
+      <E1Title>AUTO-AŽURIRANJE DELL SOFTVERA</E1Title>      
+      <E1Prompt>Dozvoljavam da moj sistem dobija ove ispravke i upozorenja</E1Prompt>
+      <E2Title>DELJENJE INFORMACIJA O DELL SISTEMU</E2Title>      
+      <E2Prompt>Dozvoljavam kompaniji Dell da prikupi servisnu oznaku i druge informacije o korišćenju sistema na prethodno opisani način</E2Prompt>
+      <Privacy>Da biste se upoznali sa politikom privatnosti kompanije Dell, posetite www.dell.com/privacy (nakon priključivanja na Internet).</Privacy>
+      <Button>Kraj</Button>
+    </LegalNotice>
+    <LegalNotice Language="uk">
+      <Title><![CDATA[Увімкніть автоматичне оновлення та скористайтеся перевагами служби підтримки]]></Title>
+      <E1Title>АВТОМАТИЧНЕ ОНОВЛЕННЯ ПЗ DELL</E1Title>      
+      <E1Prompt>Я дозволяю, щоб моя система отримувала ці оновлення та попередження</E1Prompt>
+      <E2Title>ОБМІН СИСТЕМНОЮ ІНФОРМАЦІЄЮ З КОМПАНІЄЮ DELL</E2Title>      
+      <E2Prompt>Я дозволяю компанії Dell збирати сервісний код та інші дані щодо використання системи, як описано нижче</E2Prompt>
+      <Privacy>Для перегляду політики конфіденційності компанії Dell відвідайте веб-сайт www.dell.com/privacy (після встановлення під'єднання до інтернету).</Privacy>
+      <Button>Завершити</Button>
+    </LegalNotice>
+    <LegalNotice Language="sl">
+      <Title><![CDATA[Omogočite samodejne posodobitve in boljšo podporo]]></Title>
+      <E1Title>SAMODEJNE POSODOBITVE PROGRAMSKE OPREME DELL</E1Title>      
+      <E1Prompt>Dovolim mojemu sistemu, da sprejema te posodobitve in opozorila</E1Prompt>
+      <E2Title>SKUPNA RABA SISTEMSKIH INFORMACIJ DELL</E2Title>      
+      <E2Prompt>Dovolim podjetju Dell, da zbira servisno oznako in druge informacije o uporabi sistema, kot je navedeno zgoraj</E2Prompt>
+      <Privacy>Za ogled pravilnika zasebnosti Dell občiščite www.dell.com/privacy (po vzpostavitvi povezave z internetom).</Privacy>
+      <Button>Končaj</Button>
+   </LegalNotice>
+    <LegalNotice Language="sk">
+      <Title><![CDATA[Umožniť výhody automatických aktualizácií a lepšej podpory]]></Title>
+      <E1Title>AUTOMATICKÉ AKTUALIZÁCIE SOFTVÉRU DELL</E1Title>      
+      <E1Prompt>Povoľujem, aby môj systém získaval tieto aktualizácie a upozornenia</E1Prompt>
+      <E2Title>ZDIEĽANIE INFORMÁCIÍ O SYSTÉME DELL</E2Title>      
+      <E2Prompt>Povoľujem spoločnosti Dell zhromažďovať údaje o výrobnom čísle a inom využívaní systému uvedené vyššie</E2Prompt>
+      <Privacy>Informácie o ochrane osobných údajov v spoločnosti Dell nájdete na stránke www.dell.com/privacy (po pripojení na internet).</Privacy>
+      <Button>Dokončiť</Button>
+    </LegalNotice>
+    <LegalNotice Language="ro">
+      <Title><![CDATA[Activarea actualizărilor automate şi avantajele unei asistenţe superioare]]></Title>
+      <E1Title>ACTUALIZĂRI AUTOMATE SOFTWARE DELL</E1Title>      
+      <E1Prompt>Permit sistemului meu să primească aceste actualizări şi alerte</E1Prompt>
+      <E2Title>PARTAJARE INFORMAŢII DE SISTEM CU DELL</E2Title>      
+      <E2Prompt>Permit companiei Dell să colecteze eticheta de service şi alte date privind utilizarea sistemului, conform descrierii de mai sus</E2Prompt>
+      <Privacy>Pentru a examina politica de confidenţialitate Dell, vizitaţi www.dell.com/privacy (după conectarea la Internet).</Privacy>
+      <Button>Terminare</Button>
+    </LegalNotice>
+    <LegalNotice Language="hr">
+      <Title><![CDATA[Omogućite automatska ažuriranja i pogodnosti bolje podrške]]></Title>
+      <E1Title>AUTOMATSKA AŽURIRANJA DELL SOFTVERA</E1Title>      
+      <E1Prompt>Omogućujem prijem tih ažuriranja upozorenja za svoj sustav</E1Prompt>
+      <E2Title>ZAJEDNIČKO KORIŠTENJE PODATAKA O DELL SUSTAVU</E2Title>      
+      <E2Prompt>Dopuštam Dellu prikupljanje podataka o servisnom kodu i svih drugih podataka o korištenju sukladno gornjem opisu</E2Prompt>
+      <Privacy>Dellovu politiku privatnosti možete pogledati na www.dell.com/privacy (nakon povezivanja s internetom).</Privacy>
+      <Button>Završetak</Button>
+    </LegalNotice>
+    <LegalNotice Language="lv">
+      <Title><![CDATA[Automātisko atjauninājumu iespējošana un labākas atbalsta priekšrocības]]></Title>
+      <E1Title>DELL PROGRAMMATŪRAS AUTOMĀTISKIE ATJAUNINĀJUMI</E1Title>      
+      <E1Prompt>Es ļauju sistēmai saņemt šos atjauninājumus un brīdinājumus</E1Prompt>
+      <E2Title>DELL SISTĒMAS INFORMĀCIJAS KOPLIETOŠANA</E2Title>      
+      <E2Prompt>Es ļauju Dell ievākt servisa etiķetes datus un citus sistēmas lietošanas datus, kā aprakstīts iepriekš</E2Prompt>
+      <Privacy>Lai skatītu Dell privātuma politiku, apmeklējiet www.dell.com/privacy (pēc pieslēgšanās internetam).</Privacy>
+      <Button>Pabeigt</Button>
+    </LegalNotice>
+  </Text>
+</SupportSoftwareLegalNotice>

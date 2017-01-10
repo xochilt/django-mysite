@@ -1,0 +1,124 @@
+<SysinfoFilter>
+	<!--
+		 This is an older (Version 1) profiler filter.  
+		 Each <Device capability="..."/> makes devices with that capability be included
+		 in profiling.  Each child <Property/> makes that property key be included
+		 in profiling for the devices selected by the parent <Device> capability.
+	-->
+    <Device capability="Software">
+        <Property key="BrowserVersion" name="Browser Version" type="STRING" />
+        <Property key="DefaultBrowser" name="Is Default Browser" type="BOOLEAN" />
+        <Property key="BrowserSecurityLevel" name="Browser Security Level" type="STRING" />
+        <Property key="SecuritySetting_JavaScripts" name="Java Scripts" type="STRING" />
+        <Property key="SecuritySetting_PopUpBlocker" name="Pop Up Blocker" type="STRING" />
+        <Property key="SecuritySetting_Cookies" name="Cookies" type="STRING" />
+        <Property key="SecuritySetting_ViewMixedContent" name="View Mixed Content" type="STRING" />
+        <Property key="SecuritySetting_ClientCertificate" name="Client Certificate" type="STRING" />
+        <Property key="SecuritySetting_JavaPermissions" name="Java Permissions" type="STRING" />
+        <Property key="SecuritySetting_ItemOrFileDownloads" name="Item Or File Downloads" type="STRING" />
+        <Property key="SecuritySetting_DownloadSignedActiveXControl" name="Download Signed ActiveX Controls" type="STRING" />
+        <Property key="SecuritySetting_DownloadUnsignedActiveXControl" name="Download Unsigned ActiveX Controls" type="STRING" />
+        <Property key="SecuritySetting_RunActiveXControlAndPlugins" name="Run ActiveX Controls and Plugins" type="STRING" />
+        <Property key="SecuritySetting_AutomaticPromptingForActiveXControls" name="Automatic Prompting For ActiveX Controls" type="STRING" />
+        <Property key="SecuritySetting_AllowMetaRefresh" name="Allow Meta Refresh" type="STRING" />
+        <Property key="SecuritySetting_ScriptActiveXControlsMarkedAsSafeForScripting" name="Script ActiveX Controls Marked As Safe For Scripting" type="STRING" />
+        <Property key="SecuritySetting_PopUpsDisabledForPlugins" name="Pop Ups Disabled for Plugins" type="STRING" />
+        <Property key="SecuritySetting_WarnEnteringSecure" name="Warning for Entering a Secure Site" type="STRING" />
+        <Property key="SecuritySetting_WarnLeavingSecure" name="Warning for Leaving a Secure Site" type="STRING" />
+        <Property key="IsEmpty" name="Is Empty" type="STRING" />
+        <Property key="ScreenSaver_Enabled" name="Enabled" type="BOOLEAN" />
+        <Property key="ScreenSaver_Executable" name="Executable" type="STRING" />
+        <Property key="ScreenSaver_PasswordRequired" name="Password Required" type="BOOLEAN" />
+        <Property key="ScreenSaver_WaitTime" name="Wait Time" type="NONDISCRETEMEASUREMENT" />
+        <Property key="ProcessPath" name="Process Path" type="STRING" />
+        <Property key="ProcessModules" name="Process Modules" type="STRINGARRAY" />
+        <Property key="ProcessWorkingSetSize" name="Process Working Set Size" type="UINT32" />
+        <Property key="WindowsFirewallEnabled" name="Windows Firewall Enabled" type="BOOLEAN" />
+        <Property key="CompanyName" name="Company Name" type="STRING" />
+        <Property key="DisplayName" name="Product Name" type="STRING" />
+        <Property key="VersionNumber" name="Version Number" type="STRING" />
+        <Property key="ProgramEnabled" name="Program Enabled" type="BOOLEAN" />
+        <Property key="ProgramUpToDate" name="Program Up To Date" type="BOOLEAN" />
+        <Property key="OnAccessScanningEnabled" name="On Access Scanning Enabled" type="BOOLEAN" />
+        <Property key="LastVirusScanDate" name="Last Virus Scan Date" type="STRING" />
+        <Property key="LastVirusUpdateCheck" name="Last Virus Update Check" type="STRING" />
+        <Property key="StartupProcessInfo" name="Windows Startup Programs" type="STRINGARRAY" />
+        <Property key="ServiceId" name="Service Identifier" type="STRING" />
+        <Property key="ServiceType" name="Service Type" type="LOCALIZEDSTRING" />
+        <Property key="ServiceStatus" name="Service Status" type="LOCALIZEDSTRING" />
+        <Property key="WinSAT_BaseScore" name="Base Score" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_CPU" name="Processor Subscore" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_Memory" name="Memory (RAM) Subscore" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_Graphics" name="Graphics (Aero) Subscore" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_3DGraphics" name="Gaming Graphics Subscore" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_PrimaryHardDisk" name="Primary Disk Subscore" type="NONDISCRETEMEASUREMENT" />
+        <Property key="WinSAT_DateTime" name="Assessment Date" type="STRING" />
+        <Property key="WinSAT_State" name="Assessment State" type="STRING" />
+        <Property key="EventType" name="Event Type" type="STRING" />
+        <Property key="EventSource" name="Event Source" type="STRING" />
+        <Property key="EventId" name="Event Identifier" type="INT32" />
+        <Property key="Name" name="Name" type="STRING" />
+        <Property key="Version" name="Version" type="STRING" />
+        <Property key="Publisher" name="Publisher" type="STRING" />
+        <Property key="OSName" name="Name" type="STRING" />
+        <Property key="SystemName" name="System Name" type="STRING" />
+        <Property key="UserName" name="Name" type="STRING" />
+        <Property key="SystemDir" name="System Directory" type="STRING" />
+        <Property key="WinDir" name="Windows Directory" type="STRING" />
+        <Property key="ServicePack" name="Service Pack" type="STRING" />
+        <Property key="BuildNumber" name="Build Number" type="STRING" />
+        <Property key="ProductKey" name="Product Key" type="STRING" />
+        <Property key="ProductID" name="Product ID" type="STRING" />
+        <Property key="SystemDefaultLocaleID" name="System Default Locale ID" type="STRING" />
+        <Property key="SystemDefaultLocale" name="System Default Locale" type="STRING" />
+        <Property key="UserDefaultLocaleID" name="User Default Locale ID" type="STRING" />
+        <Property key="UserDefaultLocale" name="User Default Locale" type="STRING" />
+        <Property key="CountryCode" name="Country Code" type="STRING" />
+        <Property key="CountryName" name="Country Name" type="STRING" />
+        <Property key="DirectXVersion" name="DirectX Version" type="STRING" />
+        <Property key="UACEnabled" name="User Access Control (UAC) Enabled" type="BOOLEAN" />
+        <Property key="DeviceID" name="Device ID" type="STRINGARRAY" />
+        <Property key="DeviceName" name="Device Name" type="STRINGARRAY" />
+        <Property key="DeviceDriverINF" name="Device Driver INF File" type="STRINGARRAY" />
+        <Property key="DeviceDriverName" name="Device Driver Name" type="STRINGARRAY" />
+        <Property key="DeviceDriverVersion" name="Device Driver Version" type="STRINGARRAY" />
+        <Property key="DeviceDriverSigned" name="Device Driver Signed" type="STRINGARRAY" />
+        <Property key="AutoUpdateOption" name="Automatic Updates" type="STRING" />
+        <Property key="LastSync" name="Last checked" type="STRING" />
+        <Property key="LastBackupTime" name="Missing String: libLenovoInfo.p5p : Property.LastBackupTime.Name" type="UINT64" />
+        <Property key="BackupScheduled" name="Backup Scheduled" type="BOOLEAN" />
+        <Property key="BackupsCancelled" name="Backups Cancelled" type="UINT32" />
+        <Property key="BackupToLocal" name="Backup To Local" type="BOOLEAN" />
+        <Property key="BackupToNetwork" name="Backup To Network" type="BOOLEAN" />
+        <Property key="BackupToSecond" name="Backup To Second" type="BOOLEAN" />
+        <Property key="BackupToUSB" name="Backup To USB" type="BOOLEAN" />
+        <Property key="PageFiles_RecommendedTotalSize" name="Recommended Total Size" type="DISCRETEMEASUREMENT" />
+        <Property key="PageFile_MaximumSize" name="Maximum Size" type="DISCRETEMEASUREMENT" />
+        <Property key="PageFile_Location" name="Location" type="STRING" />
+    </Device>
+    <Device capability="Firewall" />
+    <Device capability="VirusScanner" />
+    <Device capability="ScreenSaver" />
+    <Device capability="RescueAndRecovery" />
+    <Device capability="ClientSecuritySolution" />
+    <Device capability="PasswordManager" />
+    <Device capability="SpywareScanner" />
+    <Device capability="WebBrowser" />
+    <Device capability="UserAccounts">
+        <Property key="UserAccounts_MinPasswordLength" name="Minimum Password Length" type="UINT32" />
+        <Property key="UserAccounts_MaxPasswordAgeDays" name="Maximum Password Age (days)" type="UINT32" />
+    </Device>
+    <Device capability="UserAccount">
+        <Property key="UserAccount_AccountName" name="Account Name" type="STRING" />
+        <Property key="UserAccount_AccountEnabled" name="Account Enabled" type="BOOLEAN" />
+        <Property key="UserAccount_PasswordRequired" name="Password Required" type="BOOLEAN" />
+        <Property key="UserAccount_PasswordNeverExpires" name="Password Never Expires" type="BOOLEAN" />
+    </Device>
+    <Device capability="NetworkShares" />
+    <Device capability="NetworkShare">
+        <Property key="NetworkShare_ShareName" name="Share Name" type="STRING" />
+        <Property key="NetworkShare_SharePath" name="Share Path" type="STRING" />
+        <Property key="NetworkShare_ShareComment" name="Comment" type="STRING" />
+        <Property key="NetworkShare_IsAdministrative" name="Is Administrative" type="BOOLEAN" />
+    </Device>
+</SysinfoFilter>

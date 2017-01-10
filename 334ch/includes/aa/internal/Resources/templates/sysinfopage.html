@@ -1,0 +1,338 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<html>
+<head>
+  <title>{{ title }}</title>
+  <style type="text/css">
+
+{% if forUI %}
+{% include "Resources/templates/sysinfopage.css" %}
+{% else %}
+{% include "Resources/templates/sysinfopage_forfile.css" %}
+{% endif %}
+
+    body
+	{
+		direction: {{ textDirection }};
+	}
+
+  </style>
+
+<!--[if lt IE 7]>
+<script defer language="JavaScript">
+{% include "Resources/templates/correctpng.js" %}
+</script>
+<![endif]--> 
+
+</head>
+<body>
+	{% if forUI %}{% else %}
+	<h1>{{ title }}</h1>
+	<h4>{{ date }}</h4>
+	{% endif %}
+	{% if forUI %}{% else %}
+	{{ metadata }}
+	{% endif %}
+<br />
+{% for section in sections %}
+{% if section.is_sysinfo %}
+<!-- Start of section -->
+      <table class="section_title">
+        <tr>
+          <td class="section_title_image"><img src="{{ section.imageURI }}"></td>
+          <td class="section_title_text">{{ section.title }}</td>
+        </tr>
+      </table>
+
+      {% if section.has_properties %}
+        <table class="section_title_property">
+          {% for stnproperty in section.properties %}
+          <!-- start of section property -->
+          <tr>
+            <td class="section_property_key section_alt{{ stnproperty.colorAlt }}">{{ stnproperty.key }}</td>
+			<td class="section_property_value section_alt{{ stnproperty.colorAlt }}"><bdo dir="ltr">{{ stnproperty.value }}</bdo></td>
+          </tr>
+		  {% if stnproperty.has_properties %}
+              <tr><td colspan=3>
+              <table class="section_device_property">
+                {% for stnsubproperty in stnproperty.properties %}
+                <!-- Start of sub property of top level property of section -->
+                      <tr>
+                        <td class="section_property_block"></td>
+                        <td class="section_property_key section_alt{{ stnsubproperty.colorAlt }}">{{ stnsubproperty.key }}</td>
+                        <td class="section_property_value section_alt{{ stnsubproperty.colorAlt }}"><bdo dir="ltr">{{ stnsubproperty.value }}</bdo></td>
+                      </tr>
+                      {% if stnsubproperty.has_properties %}
+                      <tr><td colspan=3>
+                      <table class="section_device_property">
+                        {% for stnsub2property in stnsubproperty.properties %}
+                        <!-- Start of sub sub property of top property of section -->
+                              <tr>
+                                <td class="section_property_block"></td>
+								<td class="section_property_block"></td>
+                                <td class="section_property_key section_alt{{ stnsub2property.colorAlt }}">{{ stnsub2property.key }}</td>
+                                <td class="section_property_value section_alt{{ stnsub2property.colorAlt }}"><bdo dir="ltr">{{ stnsub2property.value }}</bdo></td>
+                              </tr>  
+                        <!-- End of sub sub property of top property of section -->   
+                        {% endfor %}
+                        </table>
+                        </td></tr>
+                     {% endif %}      
+                <!-- End of sub property of top property of section -->
+                {% endfor %}
+                </table>
+                </td></tr>
+              {% endif %}  
+          <!-- end of section property -->
+          {% endfor %}
+        </table>
+      {% endif %}
+
+      {% for device in section.devices %}
+      <!-- Start of top level device in section --> 
+        <table class="section_device_title">
+          <tr>
+            <td class="section_device_title_text">{{ device.title }}</td>
+          </tr>    
+        </table>
+        
+        <table class="section_device_property">
+        {% for devproperty in device.properties %}
+        <!-- Start of top level property in top level device -->
+              <tr>
+                <td class="section_device_property_block"></td>
+                <td class="section_device_property_key{{ devproperty.colorAlt }}">{{ devproperty.key }}</td>
+        <td class="section_device_property_value{{ devproperty.colorAlt }}"><bdo dir="ltr">{{ devproperty.value }}</bdo></td>
+              </tr>
+              {% if devproperty.has_properties %}
+              <tr><td colspan=3>
+              <table class="section_device_property">
+                {% for devsubproperty in devproperty.properties %}
+                <!-- Start of sub property of top level property of top device -->
+                      <tr>
+                        <td class="section_device_property_block"></td>
+						<td class="section_device_property_block"></td>
+                        <td class="section_device_property_key{{ devsubproperty.colorAlt }}">{{ devsubproperty.key }}</td>
+                        <td class="section_device_property_value{{ devsubproperty.colorAlt }}"><bdo dir="ltr">{{ devsubproperty.value }}</bdo></td>
+                      </tr>
+                      {% if devsubproperty.has_properties %}
+                      <tr><td colspan=3>
+                      <table class="section_device_property">
+                        {% for devsub2property in devsubproperty.properties %}
+                        <!-- Start of sub sub property of top property of top device -->
+                              <tr>
+                                <td class="section_device_property_block"></td>
+								<td class="section_device_property_block"></td>
+								<td class="section_device_property_block"></td>
+                                <td class="section_device_property_key{{ devsub2property.colorAlt }}">{{ devsub2property.key }}</td>
+                                <td class="section_device_property_value{{ devsub2property.colorAlt }}"><bdo dir="ltr">{{ devsub2property.value }}</bdo></td>
+                              </tr>  
+                        <!-- End of sub sub property of top property of top device -->   
+                        {% endfor %}
+                        </table>
+                        </td></tr>
+                     {% endif %}      
+                <!-- End of sub property of top property of top device -->
+                {% endfor %}
+                </table>
+                </td></tr>
+              {% endif %}  
+        <!-- End of top level property in top level device -->
+        {% endfor %}
+        </table>
+        {% for subdevice in device.devices %}
+        <!-- Start of subdevice of top level device-->
+            <table class="section_device_title">
+              <tr>
+				<td class="section_device_title_block"></td>
+                <td class="section_device_title_text">{{ subdevice.title }}</td>
+              </tr>   
+            </table>
+            <table class="section_device_property">
+            {% for subdevproperty in subdevice.properties %}
+            <!-- Start of top level property of sub device -->
+                  <tr>
+                    <td class="section_device_property_block"></td>
+					<td class="section_device_property_block"></td>
+                    <td class="section_device_property_key{{ subdevproperty.colorAlt }}">{{ subdevproperty.key }}</td>
+        <td class="section_device_property_value{{ subdevproperty.colorAlt }}"><bdo dir="ltr">{{ subdevproperty.value }}</bdo></td>
+                  </tr>
+                  {% if subdevproperty.has_properties %}
+                  <tr><td colspan=3>
+                  <table class="section_device_property">
+                    {% for subdevsubproperty in subdevproperty.properties %}
+                    <!-- start of sub property of top level property of sub device -->
+                          <tr>
+                            <td class="section_device_property_block"></td>
+							<td class="section_device_property_block"></td>
+							<td class="section_device_property_block"></td>
+                            <td class="section_device_property_key{{ subdevsubproperty.colorAlt }}">{{ subdevsubproperty.key }}</td>
+                            <td class="section_device_property_value{{ subdevsubproperty.colorAlt }}"><bdo dir="ltr">{{ subdevsubproperty.value }}</bdo></td>
+                          </tr>
+                          {% if subdevsubproperty.has_properties %}
+                          <tr><td colspan=3>
+                          <table class="section_device_property">
+                            {% for subdevsub2property in subdevsubproperty.properties %}
+                            <!-- start of sub sub property of top level property of sub device -->
+                                  <tr>
+                                    <td class="section_device_property_block"></td>
+									<td class="section_device_property_block"></td>
+									<td class="section_device_property_block"></td>
+									<td class="section_device_property_block"></td>
+                                    <td class="section_device_property_key{{ subdevsub2property.colorAlt }}">{{ subdevsub2property.key }}</td>
+                                    <td class="section_device_property_value{{ subdevsub2property.colorAlt }}"><bdo dir="ltr">{{ subdevsub2property.value }}</bdo></td>
+                                  </tr>
+                            <!-- end of sub sub property of top level property of sub device -->   
+                            {% endfor %}
+                            </table>
+                            </td></tr>
+                         {% endif %}      
+                    <!-- end of sub property of top level property of sub device -->
+                    {% endfor %}
+                    </table>
+                    </td></tr>
+                  {% endif %}  
+            <!-- End of top level property of sub device -->
+            {% endfor %}
+            </table>
+            {% for sub2device in subdevice.devices %}
+            <!-- start of sub sub device of top level device -->
+                <table class="section_device_title">
+                  <tr>
+                    <td class="section_device_title_block"></td>
+					<td class="section_device_title_block"></td>
+                    <td class="section_device_title_text">{{ sub2device.title }}</td>
+                  </tr>   
+                </table>
+                <table class="section_device_property">
+                {% for sub2devproperty in sub2device.properties %}
+                <!-- start of top level property of sub sub device -->
+                      <tr>
+                        <td class="section_device_property_block"></td>
+						<td class="section_device_property_block"></td>
+						<td class="section_device_property_block"></td>
+                        <td class="section_device_property_key{{ sub2devproperty.colorAlt }}">{{ sub2devproperty.key }}</td>
+                        <td class="section_device_property_value{{ sub2devproperty.colorAlt }}"><bdo dir="ltr">{{ sub2devproperty.value }}</bdo></td>
+                      </tr>
+                      {% if sub2devproperty.has_properties %}
+                      <tr><td colspan=3>
+                      <table class="section_device_property">
+                        {% for sub2devsubproperty in sub2devproperty.properties %}
+                        <!-- start of sub property of top level property of sub sub device -->
+                              <tr>
+                                <td class="section_device_property_block"></td>
+								<td class="section_device_property_block"></td>
+								<td class="section_device_property_block"></td>
+								<td class="section_device_property_block"></td>
+                                <td class="section_device_property_key{{ sub2devsubproperty.colorAlt }}">{{ sub2devsubproperty.key }}</td>
+                                <td class="section_device_property_value{{ sub2devsubproperty.colorAlt }}"><bdo dir="ltr">{{ sub2devsubproperty.value }}</bdo></td>
+                              </tr>
+                              {% if sub2devsubproperty.has_properties %}
+                              <tr><td colspan=3>
+                              <table class="section_device_property">
+                                {% for sub2devsub2property in sub2devsubproperty.properties %}
+                                <!-- start of sub sub property of top level property of sub sub device -->
+                                      <tr>
+                                        <td class="section_device_property_block"></td>
+										<td class="section_device_property_block"></td>
+										<td class="section_device_property_block"></td>
+										<td class="section_device_property_block"></td>
+										<td class="section_device_property_block"></td>
+                                        <td class="section_device_property_key{{ sub2devsub2property.colorAlt }}">{{ sub2devsub2property.key }}</td>
+                                        <td class="section_device_property_value{{ sub2devsub2property.colorAlt }}"><bdo dir="ltr">{{ sub2devsub2property.value }}</bdo></td>
+                                      </tr>     
+                                <!-- end of sub sub property of top level property of sub sub device -->
+                                {% endfor %}
+                                </table>
+                                </td></tr>
+                             {% endif %}      
+                        <!-- end of sub property of top level property of sub sub device -->
+                        {% endfor %}
+                        </table>
+                        </td></tr>
+                      {% endif %}  
+                    
+                <!-- end of top level property of sub sub device -->
+                {% endfor %}
+                </table>
+            <!-- end of sub sub device of top level device -->
+            {% endfor %}
+        <!-- End of subdevice of top level device-->
+        {% endfor %}
+      <!-- End of top level device in section -->
+      {% endfor %} 
+        <table class="section_divider">
+          <tr>
+            <td class="section_divider_block"></td>
+            <td class="section_divider_area"></td>
+          </tr>
+          <tr class="section_divider_spacing"><td></td></tr>
+        </table>
+ <!-- End of section -->
+ {% else %}
+	{% if section.is_results %}
+		<table class="section_title">
+			<tr>
+				<td class="section_title_image"><img src="{{ section.imageURI }}"></td>
+				<td class="section_title_text">{{ section.title }}</td>
+			</tr>
+		</table>
+		{% for script in section.devices %}
+		<table class="section_device_title">
+			<tr>
+				<td class="section_script_date">{{ script.time }}</td>
+				<td class="section_script_title">{{ script.title }}</td>
+				<td class="section_script_result">{{ script.result }}</td>
+			</tr>    
+        </table>
+			{% for test in script.tests %}
+			<table class="section_device_property">
+				<tr>
+					<td class="section_device_property_block"></td>
+					<td class="section_device_property_key{{test.colorAlt}}">{{ test.name }}</td>
+					<td class="section_device_property_value{{test.colorAlt}}">{{ test.result }}</td>
+					<td class="section_device_property_value{{test.colorAlt}}">{{ test.errorCode }}</td>
+				</tr>    
+			</table>
+			{% endfor %}
+		{% endfor %}
+		<table class="section_divider">
+			<tr>
+				<td class="section_divider_block"></td>
+				<td class="section_divider_area"></td>
+			</tr>
+			<tr class="section_divider_spacing"><td></td></tr>
+        </table>
+	{% else %}
+		{% if section.is_history %}
+			<table class="section_title">
+				<tr>
+					<td class="section_title_image"><img src="{{ section.imageURI }}"></td>
+					<td class="section_title_text">{{ section.title }}</td>
+				</tr>
+			</table>
+			{% for ev in section.events %}
+				<table class="section_device_property">
+					<tr>
+						<td class="section_device_property_key{{ev.colorAlt}}">{{ ev.time }}</td>
+						<td class="section_device_property_value{{ev.colorAlt}}"><b>{{ev.type}}:</b> {{ ev.message }}</td>
+					</tr>    
+			</table>
+			{% endfor %}
+			<table class="section_divider">
+				<tr>
+					<td class="section_divider_block"></td>
+					<td class="section_divider_area"></td>
+				</tr>
+				<tr class="section_divider_spacing"><td></td></tr>
+			</table>
+		{% endif %}
+	{% endif %}
+	
+ {% endif %}
+{% endfor %}
+
+{% if forUI %}{% else %}
+<p>{{ version }}</p>
+{% endif %}
+</body>
+</html>

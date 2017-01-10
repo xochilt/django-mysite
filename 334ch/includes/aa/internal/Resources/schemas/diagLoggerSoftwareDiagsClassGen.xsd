@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:pcd="http://www.pc-doctor.com/2004/8/diagLogger" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.pc-doctor.com/2004/8/diagLogger" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+  <xs:annotation>
+    <xs:documentation>
+      A schema redefinition for DiagLogger xml output to implement Software Diagnostics.
+      Copyright 2013 PC-Doctor, Inc. All rights reserved.
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name="DiagLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Application" type="pcd:ApplicationType" minOccurs="0"/>
+        <xs:element name="SysInfo" type="pcd:SystemInfoType" minOccurs="0"/>
+        <xs:element name="DiagInfo" type="pcd:DiagInfoType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Alert" type="pcd:AlertType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Scriptlet" type="pcd:ScriptletType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ApplicationType">
+    <xs:sequence>
+      <xs:element name="RunType" type="xs:string" minOccurs="0"/>
+      <xs:element name="version" type="xs:string" minOccurs="0"/>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="OS" type="xs:string" minOccurs="0"/>
+      <xs:element name="Stop" type="pcd:ActionType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SystemInfoType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="System" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Manufacturer" minOccurs="0">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                    <xs:attribute name="key" type="xs:string" use="optional"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HardDisk" type="xs:string" minOccurs="0"/>
+            <xs:element name="Display" type="xs:string" minOccurs="0"/>
+            <xs:element name="NetworkAdapter" type="xs:string" minOccurs="0"/>
+            <xs:element name="ThermalState" type="xs:string" minOccurs="0"/>
+            <xs:element name="BootupState" type="xs:string" minOccurs="0"/>
+            <xs:element name="PowerState" type="xs:string" minOccurs="0"/>
+            <xs:element name="Status" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute name="CPUType" type="xs:string" use="optional"/>
+          <xs:attribute name="totalMemory" type="xs:string" use="optional"/>
+          <xs:attribute name="serialNumber" type="xs:string" use="optional"/>
+          <xs:attribute name="version" type="xs:string" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OS" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Manufacturer" type="xs:string" minOccurs="0"/>
+            <xs:element name="WindowDirectory" type="xs:string" minOccurs="0"/>
+            <xs:element name="SystemDirectory" type="xs:string" minOccurs="0"/>
+            <xs:element name="ProductID" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute name="name" type="xs:string" use="optional"/>
+          <xs:attribute name="type" type="xs:string" use="optional"/>
+          <xs:attribute name="servicePack" type="xs:string" use="optional"/>
+          <xs:attribute name="buildNumber" type="xs:string" use="optional"/>
+          <xs:attribute name="version" type="xs:string" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="BIOS" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Manufacturer" type="xs:string" minOccurs="0"/>
+            <xs:element name="NumberOfLanguages" type="xs:string" minOccurs="0"/>
+            <xs:element name="CurrentLanguage" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute name="version" type="xs:string" use="optional"/>
+          <xs:attribute name="releaseDate" type="xs:string" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeviceEnumerationCompleted" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Module" type="xs:string" minOccurs="0"/>
+            <xs:element name="NumOfDevicesEnumerated" type="xs:int" minOccurs="0"/>
+            <xs:element name="Duration" type="pcd:DurationType" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeviceEnumerationFailed" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Module" type="xs:string"/>
+            <xs:element name="Details" type="xs:string"/>
+            <xs:element name="Duration" type="pcd:DurationType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TestEnumerationCompleted" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Module" type="xs:string"/>
+            <xs:element name="NumOfTestsEnumerated" type="xs:int"/>
+            <xs:element name="Duration" type="pcd:DurationType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TestEnumerationFailed" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Module" type="xs:string"/>
+            <xs:element name="Details" type="xs:string"/>
+            <xs:element name="Duration" type="pcd:DurationType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllModules" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Module" type="pcd:ModuleType" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Device" type="pcd:DeviceType" minOccurs="0"/>
+      <xs:element name="Notifications" type="pcd:NotificationsType" minOccurs="0"/>
+            <xs:element name="WarrantyInfo" type="pcd:WarrantyInfoType" minOccurs="0"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="VersionType">
+    <xs:attribute name="revisionNumber" type="xs:int" use="optional"/>
+    <xs:attribute name="majorNumber" type="xs:int" use="optional"/>
+    <xs:attribute name="minorNumber" type="xs:int" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="DiagInfoType">
+    <xs:sequence>
+      <xs:element name="Tests" type="pcd:TestsType" minOccurs="0"/>
+      <xs:element name="TestRun" type="pcd:TestRunType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="SoftwareDiagnostic" type="pcd:SoftwareDiagnosticType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>  
+  <xs:complexType name="TestsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="Description" type="xs:string" minOccurs="0"/>
+      <xs:element name="MaxTimePerPass" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="MinTimePerTest" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="MaxTimePerTest" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="ScriptFile" type="xs:string" minOccurs="0"/>
+      <xs:element name="ScriptVersion" type="xs:string" minOccurs="0"/>
+      <xs:element name="ProductVersion" type="xs:string" minOccurs="0"/>
+      <xs:element name="MultiPassTestRun" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Test" type="pcd:TestType" minOccurs="0"/>
+            <xs:element name="Device" type="pcd:DeviceType" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute name="currentPass" type="xs:int" use="required"/>
+          <xs:attribute name="totalPass" type="xs:int" use="required"/>
+          <xs:attribute name="index" type="xs:int" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Pass" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="Start" type="pcd:ActionType"/>
+            <xs:element name="Finished" type="pcd:ActionType"/>
+          </xs:choice>
+          <xs:attribute name="value" type="xs:int" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborting" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborted" type="pcd:ActionType" minOccurs="0"/>      
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="MaxTimeExceeded" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="EngineShutDown" type="pcd:ActionType" minOccurs="0"/>      
+      <xs:element name="MissingItemForTestRun">
+        <xs:complexType>
+          <xs:complexContent mixed="true">
+            <xs:restriction base="xs:anyType">
+              <xs:sequence>
+                <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+               </xs:sequence>      
+              </xs:restriction>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>      
+      <xs:element name="ElapsedTime" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="PercentComplete" type="pcd:PercentCompleteType" minOccurs="0"/>
+      <xs:element name="ProgressMessage" type="pcd:ProgressInfoType" minOccurs="0"/>
+      <xs:element name="NumOfSucceededTestRuns" type="xs:int" minOccurs="0"/>
+      <xs:element name="Result" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:token">
+              <xs:attribute name="EnglishResult" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>      
+    </xs:choice>
+    <xs:attribute name="errorLimit" type="xs:int" use="required"/>
+    <xs:attribute name="passes" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="DurationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:double">
+        <xs:attribute name="unit" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ActionType">
+    <xs:sequence>
+      <xs:element name="Time" type="pcd:TimeType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PercentCompleteType">
+    <xs:sequence>
+      <xs:element name="Time" type="pcd:TimeType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="value" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ProgressInfoType">
+    <xs:sequence>
+      <xs:element name="Time" type="pcd:TimeType" minOccurs="0"/>
+      <xs:element name="Message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TimeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime">
+        <xs:attribute name="hour" type="xs:int" use="required"/>
+        <xs:attribute name="minute" type="xs:int" use="required"/>
+        <xs:attribute name="second" type="xs:int" use="required"/>
+        <xs:attribute name="millisecond" type="xs:int" use="required"/>
+        <xs:attribute name="month" type="xs:int" use="required"/>
+        <xs:attribute name="day" type="xs:int" use="required"/>
+        <xs:attribute name="year" type="xs:int" use="required"/>
+        <xs:attribute name="utcOffset" type="xs:int" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TestRunType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="GUID" type="xs:token" minOccurs="0"/>
+      <xs:element name="MaxTime" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="Test" type="pcd:TestType" minOccurs="0"/>
+      <xs:element name="Device" type="pcd:DeviceType" minOccurs="0"/>
+      <xs:element name="EstimatedTimeLeft" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="Parameter" type="pcd:ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="TestRunEvent" type="pcd:TestRunEventType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="MessageBox" type="pcd:MessageBoxType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborted" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="TestResult" type="pcd:TestResultType" minOccurs="0"/>
+      <xs:element name="ElapsedTime" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="PercentComplete" type="pcd:PercentCompleteType" minOccurs="0"/>
+      <xs:element name="ProgressMessage" type="pcd:ProgressInfoType" minOccurs="0"/>
+      <xs:element name="CustomerErrorCode" type="xs:string" minOccurs="0"/>
+      <xs:element name="Tip" type="pcd:TipType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:choice>
+    <xs:attribute name="currentPass" type="xs:int" use="required"/>
+    <xs:attribute name="index" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="TestResultType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="EnglishResult" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ModuleType">
+    <xs:sequence>
+      <xs:element name="BuildDate" type="xs:string" minOccurs="0"/>
+      <xs:element name="Company" type="xs:string" minOccurs="0"/>
+      <xs:element name="Path" type="xs:string" minOccurs="0"/>
+      <xs:element name="SupportedCapabilities" type="xs:string" minOccurs="0"/>
+      <xs:element name="Test" type="pcd:TestType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="guid" type="xs:token" use="required"/>
+    <xs:attribute name="version" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="TestType">
+    <xs:sequence>
+      <xs:element name="Description" type="xs:string" minOccurs="0"/>
+      <xs:element name="GUID" type="xs:token" minOccurs="0"/>
+      <xs:element name="ModuleGUID" type="xs:token" minOccurs="0"/>
+      <xs:element name="Interactive" type="xs:token" minOccurs="0"/>
+      <xs:element name="SupportedCapability" type="pcd:CapabilityType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="FriendlyGUID" type="xs:string" minOccurs="0"/>
+      <xs:element name="Parameter" type="pcd:ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:token" use="required"/>
+    <xs:attribute name="enabled" type="xs:boolean" use="optional"/>
+    <xs:attribute name="index" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="DeviceType">
+    <xs:sequence>
+      <xs:element name="LocationUID" minOccurs="0"/>
+      <xs:element name="DeviceUID" minOccurs="0"/>
+      <xs:element name="Name" minOccurs="0"/>
+      <xs:element name="Description" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="required" type="xs:boolean" use="optional" default="false"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GUID" minOccurs="0"/>
+      <xs:element name="OS_Locator" minOccurs="0"/>
+      <xs:element name="HW_Locator" minOccurs="0"/>
+      <xs:element name="Parent_HW_GUID" minOccurs="0"/>
+      <xs:element name="Child_HW_GUID" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="DeviceType" type="pcd:CapabilityType" minOccurs="0"/>
+      <xs:element name="FriendlyGUID" type="xs:string" minOccurs="0"/>
+      <xs:element name="BusType" minOccurs="0"/>
+      <xs:element name="Capability" type="pcd:CapabilityType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="ChildBusID" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Property" type="pcd:PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Test" type="pcd:TestType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Device" type="pcd:DeviceType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="index" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="CapabilityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="icon" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PropertyType">
+    <xs:sequence>
+      <xs:element name="Description" type="xs:string" minOccurs="0"/>
+      <xs:element name="SourceModule" type="xs:token" minOccurs="0"/>
+      <xs:element name="DataType" type="xs:string" minOccurs="0"/>
+      <xs:element name="Key" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:token">
+              <xs:attribute name="displayName" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Value" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Property" type="pcd:PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="category" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ParameterType">
+    <xs:sequence>
+      <xs:element name="Key" type="xs:string" minOccurs="0"/>
+      <xs:element name="Description" type="xs:string" minOccurs="0"/>
+      <xs:element name="ValueSource" type="xs:string" minOccurs="0"/>
+      <xs:element name="Value" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:token" use="required"/>
+    <xs:attribute name="type" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="TestRunEventType">
+    <xs:sequence>
+      <xs:element name="Time" type="pcd:TimeType" minOccurs="0"/>
+      <xs:element name="Message" type="xs:string" minOccurs="0"/>
+      <xs:element name="Tip" type="pcd:TipType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="key" type="xs:string" use="required"/>
+    <xs:attribute name="eventCode" type="xs:int" use="required"/>
+    <xs:attribute name="eventType" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="MessageBoxType">
+    <xs:sequence>
+      <xs:element name="Title" type="xs:string" minOccurs="0"/>
+      <xs:element name="Message" type="xs:string" minOccurs="0"/>
+      <xs:element name="Timeout" type="pcd:DurationType" minOccurs="0"/>
+      <xs:element name="Input" type="xs:string" minOccurs="0"/>
+      <xs:element name="Return" type="xs:token" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:token" use="required"/>
+    <xs:attribute name="option" type="xs:token" use="required"/>
+    <xs:attribute name="lookAndFeel" type="xs:token" use="required"/>
+    <xs:attribute name="modal" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="AlertType">
+    <xs:sequence>
+      <xs:element name="Time" type="pcd:TimeType" minOccurs="0"/>
+      <xs:element name="KeyValue" type="pcd:KeyValueType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Tip" type="pcd:TipType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Key" type="xs:token" use="required"/>
+    <xs:attribute name="Type" type="xs:token" use="required"/>
+    <xs:attribute name="Title" type="xs:string" use="required"/>
+    <xs:attribute name="Message" type="xs:string" use="required"/>
+    <xs:attribute name="Device" type="xs:token" use="required"/>
+    <xs:attribute name="DeviceIndex" type="xs:token" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="KeyValueType">
+    <xs:attribute name="Key" type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="TipType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="key" type="xs:token" use="required"/>
+        <xs:attribute name="type" type="xs:token" use="required"/>
+        <xs:attribute name="title" type="xs:string" use="required"/>
+        <xs:attribute name="content" type="xs:string" use="required"/>
+        <xs:attribute name="contentEx" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ScriptletType">
+    <xs:sequence>
+      <xs:element name="Run" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Time" type="pcd:TimeType" minOccurs="0"/>
+            <xs:element name="TestResult" type="pcd:TestResultType" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>     
+    <xs:attribute name="key" type="xs:token" use="required"/>
+    <xs:attribute name="category" type="xs:token" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="SoftwareDiagnosticType">
+    <xs:sequence>
+      <xs:element name="GUID" type="xs:token" minOccurs="1"/>
+      <xs:element name="TestResult" type="pcd:TestResultType" minOccurs="0"/>
+      <xs:element name="Issues" type="pcd:IssuesType" minOccurs="0"/>
+      <xs:element name="FixActions" type="pcd:FixActionsType" minOccurs="0"/>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborting" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Aborted" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:token"/>
+  </xs:complexType>
+  <xs:complexType name="IssuesType">
+    <xs:sequence>
+      <xs:element name="Issue" type="pcd:IssueType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IssueType">
+    <xs:sequence>
+      <xs:element name="IssueData" type="pcd:IssueDataType"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string"/>
+    <xs:attribute name="Description" type="xs:string"/>
+	  <xs:attribute name="Status" type="pcd:StatusForFixActionType"/>
+  </xs:complexType>
+  <xs:complexType name="IssueDataType">
+    <xs:sequence>
+      <xs:element name="Parameters" type="pcd:ParametersType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="Parameter" type="pcd:ParameterDefinitionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParameterDefinitionType">
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="FixActionsType">
+    <xs:sequence>
+      <xs:element name="FixAction" type="pcd:FixActionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FixActionType">
+    <xs:sequence>
+      <xs:element name="Start" type="pcd:ActionType" minOccurs="0"/>
+      <xs:element name="Finished" type="pcd:ActionType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="GUID" type="xs:token"/>
+    <xs:attribute name="Description" type="xs:string"/>
+    <xs:attribute name="IssueNames" type="xs:string"/>
+    <xs:attribute name="TestRunIndex" type="xs:string"/>
+    <xs:attribute name="Status" type="pcd:StatusForFixActionType"/>
+  </xs:complexType>
+  <xs:complexType name="NotificationsType">
+    <xs:sequence>
+      <xs:element name="Notification" type="pcd:NotificationType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NotificationType">
+    <xs:sequence>
+      <xs:element name="ActionItemStatus" type="pcd:ActionItemStatusType"/>
+      <xs:element name="Tip" type="pcd:TipType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="GUID" type="xs:string"/>
+    <xs:attribute name="LocalizedTitle" type="xs:string"/>
+    <xs:attribute name="LocalizedDescription" type="xs:string"/>
+    <xs:attribute name="ShortLocalizedDescription" type="xs:string"/>
+    <xs:attribute name="TriggerDate" type="xs:dateTime"/>
+    <xs:attribute name="Archived" type="pcd:TrueOrFalseType"/>
+    <xs:attribute name="Read" type="pcd:TrueOrFalseType" />
+  </xs:complexType>
+  <xs:complexType name="ActionItemStatusType">
+    <xs:attribute name="Status" type="pcd:StatusForActionItemType"/>
+    <xs:attribute name="LocalizedStatus" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="WarrantyInfoType">
+    <xs:attribute name="EndDate" type="xs:string"/>
+  </xs:complexType>
+  <xs:simpleType name="TrueOrFalseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="True"/>
+      <xs:enumeration value="False"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StatusForActionItemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HelpfulHint"/>
+      <xs:enumeration value="Recommended"/>
+      <xs:enumeration value="Critical"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="StatusForFixActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FIXED"/>
+      <xs:enumeration value="NOT_FIXED"/>
+      <xs:enumeration value="NOT_RUN"/>
+      <xs:enumeration value="EXECUTING"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

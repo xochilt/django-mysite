@@ -1,0 +1,6 @@
+<Script name="AbstractTestConfirmationPage.memoryStressTest">>
+	<TestSet minTimePerTest="900">
+		<Device capabilities="Memory"/>          
+		<Test key="AdvancedPatternTest"/> 
+	</TestSet>
+</Script> 
