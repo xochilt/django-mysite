@@ -2,7 +2,7 @@
 Polls
 =====
 
-Polls is a simple Django app to conduct Web-based polls. For each
+Mysite is a simple Django app to conduct Web-based polls. For each
 question, visitors can choose between a fixed number of answers.
 
 Detailed documentation is in the "docs" directory.
@@ -10,11 +10,11 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 
-1. Add "polls" to your INSTALLED_APPS setting like this::
+1. Add "mysite" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
-        'polls',
+        'mysite',
     ]
 
 2. Include the polls URLconf in your project urls.py like this::
